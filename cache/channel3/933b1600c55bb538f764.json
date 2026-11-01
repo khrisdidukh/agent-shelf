@@ -1,0 +1,520 @@
+{
+ "query": "Need a vanilla soy candle delivered tomorrow, small size, for my desk, fast shipping.",
+ "at": "2026-11-01T08:19:54.835Z",
+ "products": [
+  {
+   "id": "9irkyuC",
+   "title": "Vanilla Frosting Soy Candle",
+   "brand": "Woolzies",
+   "description": "Indulge in the sweet, comforting aroma of the Woolzies Vanilla Frosting Soy Candle, scented with Vanilla & Peppermint Essential Oils. This petite 3.5 oz candle is made from 100% natural soy wax, creating a deliciously cozy fragrance inspired by freshly frosted holiday treats to bring warmth and sweetness to your home.",
+   "category": "Candles",
+   "materials": [
+    "Soy Wax",
+    "Vanilla Essential Oil",
+    "Peppermint Essential Oil"
+   ],
+   "key_features": [
+    "100% natural soy candle",
+    "Scented with Vanilla & Peppermint Essential Oils",
+    "Sweet, creamy & refreshing holiday aroma",
+    "Approx. 19-hour burn time",
+    "Perfect for cozy home fragrance & holiday gifting",
+    "Festive, gift-ready packaging"
+   ],
+   "attributes": {
+    "pattern": [
+     "Stars"
+    ],
+    "scent": [
+     "Vanilla"
+    ],
+    "candle-container-material": [
+     "Glass"
+    ],
+    "candle-material": [
+     "Soy wax"
+    ],
+    "candle-type": [
+     "Container"
+    ]
+   },
+   "colors": [
+    "#f8d6be",
+    "#e4ae89",
+    "#7c300a",
+    "#9c5523",
+    "#421a09",
+    "#c68449"
+   ],
+   "price": {
+    "amount": 7.99,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "woolzies.com",
+   "url": "https://buy.trychannel3.com/9irkyuC-yKfk-r1Q8ex?o=01M4C2P6E1Q7AB9K9EX9RRJ9YT&aid=01M6B335NMQC2YX3DB303W9SW9",
+   "image": "https://cdn.trychannel3.com/0a8ddbc8-59a4-4798-bde5-8ea257419c87?aid=01M6B335NMQC2YX3DB303W9SW9&mid=yKfk",
+   "rating": null,
+   "dimensions": {
+    "length": null,
+    "width": null,
+    "height": null,
+    "weight": {
+     "number": 3.5,
+     "unit": "oz"
+    }
+   }
+  },
+  {
+   "id": "NCSohnD",
+   "title": "Lavender & Vanilla Soy Candle",
+   "brand": "Public Goods",
+   "description": "A calming, clean-burning soy candle infused with lavender essential oil and vanilla for a balanced, soothing aroma. Features a plastic-free glass jar with a reusable acacia wood lid. Includes guidance for repurposing the jar after use. Available in 3.5 oz size; note on other size 12.3 oz as shown on product page.",
+   "category": "Candles",
+   "materials": [
+    "Soy wax",
+    "Lavender essential oil",
+    "Vanilla fragrance",
+    "Fir needles",
+    "Tonka bean",
+    "Glass",
+    "Acacia wood lid"
+   ],
+   "key_features": [
+    "Calming blend of lavender and vanilla",
+    "Plastic-free glass jar with reusable acacia wood lid",
+    "Soy wax for cleaner burn and fragrance",
+    "Includes guidance to repurpose jar after use"
+   ],
+   "attributes": {
+    "decoration-material": [
+     "Wood"
+    ],
+    "scent": [
+     "Lavender",
+     "Vanilla"
+    ],
+    "pattern": [
+     "Solid"
+    ],
+    "candle-container-material": [
+     "Glass"
+    ],
+    "usage-type": [
+     "Reusable"
+    ],
+    "candle-material": [
+     "Soy wax"
+    ],
+    "candle-type": [
+     "Container"
+    ]
+   },
+   "colors": [
+    "#a08e79",
+    "#e1dcc9",
+    "#c5b9a5",
+    "#5b5046"
+   ],
+   "price": {
+    "amount": 13.95,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "publicgoods.com",
+   "url": "https://buy.trychannel3.com/NCSohnD-aKkE-r1Q8ex?o=01KF0MNHTT82DGRVPZC8F16VQ5&aid=01M6B335NMQC2YX3DB303W9SW9",
+   "image": "https://cdn.trychannel3.com/77b58223-3950-44d0-ae8f-13fa8f29d525?aid=01M6B335NMQC2YX3DB303W9SW9&mid=aKkE",
+   "rating": {
+    "value": 4.7,
+    "count": 291
+   },
+   "dimensions": {
+    "length": null,
+    "width": null,
+    "height": null,
+    "weight": {
+     "number": 0.7,
+     "unit": "lb"
+    }
+   }
+  },
+  {
+   "id": "6PGwdIt",
+   "title": "Scented Candle",
+   "brand": "Maria Lucia Hohan",
+   "description": "A luxurious scented candle by Maria Lucia Hohan, featuring the comforting aroma of warm vanilla. This candle is housed in a refined glass container and crafted from a blend of paraffin and plant-based soy wax. For an added touch of magic, it is adorned with decorative crystals. The candle comes presented in an elegant box featuring a playful lips design, making it an ideal choice for relaxation or gifting.",
+   "category": "Candles",
+   "materials": [
+    "soy wax",
+    "paraffin wax",
+    "glass"
+   ],
+   "key_features": [
+    "Infused with comforting warm vanilla aromas",
+    "Adorned with decorative crystals",
+    "Housed in a refined glass container",
+    "Includes an elegant packaging box with a playful lips design",
+    "Blend of paraffin and plant-based soy wax"
+   ],
+   "attributes": {
+    "decoration-material": [
+     "Crystal"
+    ],
+    "scent": [
+     "Vanilla"
+    ],
+    "candle-container-material": [
+     "Glass"
+    ],
+    "candle-type": [
+     "Container"
+    ],
+    "candle-material": [
+     "Paraffin wax",
+     "Soy wax"
+    ]
+   },
+   "colors": [
+    "#e5a890",
+    "#f6ddd2",
+    "#f1c1ab",
+    "#b67c6e"
+   ],
+   "price": {
+    "amount": 65,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "marialuciahohan.com",
+   "url": "https://buy.trychannel3.com/6PGwdIt-TV3p-r1Q8ex?o=01M23P17M7AYSY88P1C66ARFVD&aid=01M6B335NMQC2YX3DB303W9SW9",
+   "image": "https://cdn.trychannel3.com/ba805e1b-f84f-47cd-bd3d-271000328cc1?aid=01M6B335NMQC2YX3DB303W9SW9&mid=TV3p",
+   "rating": null,
+   "dimensions": {
+    "length": null,
+    "width": null,
+    "height": {
+     "number": 5,
+     "unit": "cm"
+    },
+    "weight": null
+   }
+  },
+  {
+   "id": "NSBUXr5",
+   "title": "Vanilla Bean Single Wick Candle",
+   "brand": "White Barn",
+   "description": "A sweet and smooth vanilla fragranced candle featuring notes of Madagascar vanilla bean, homemade marshmallow, and warm cinnamon nutmeg. This single wick candle is crafted with an exclusive soy wax blend and is designed for smaller rooms and spaces, providing up to 45 hours of room-filling scent. It comes presented in a glass jar with a decorative lid.",
+   "category": "Candles",
+   "materials": [
+    "soy wax blend",
+    "glass",
+    "cotton",
+    "rayon"
+   ],
+   "key_features": [
+    "Up to 45 hours of room-filling scent",
+    "Even, consistent burn from start to finish",
+    "Exclusive soy wax blend",
+    "Premium lead-free wick",
+    "Glass jar with decorative lid"
+   ],
+   "attributes": {
+    "candle-type": [
+     "Container"
+    ],
+    "scent": [
+     "Vanilla"
+    ],
+    "candle-container-material": [
+     "Glass"
+    ]
+   },
+   "colors": [
+    "#e4d5bb",
+    "#ac9a7a",
+    "#d4ba94",
+    "#534630",
+    "#beb4a0"
+   ],
+   "price": {
+    "amount": 5.95,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "bathandbodyworks.com",
+   "url": "https://buy.trychannel3.com/NSBUXr5-xeQP-r1Q8ex?o=01M0VHTEK3FQ18NCMCH7Y3EW2W&aid=01M6B335NMQC2YX3DB303W9SW9",
+   "image": "https://cdn.trychannel3.com/605e2dc9-49ee-4d36-b79a-7a3844a29e81?aid=01M6B335NMQC2YX3DB303W9SW9&mid=xeQP",
+   "rating": {
+    "value": 4.8,
+    "count": 193
+   },
+   "dimensions": {
+    "length": null,
+    "width": null,
+    "height": null,
+    "weight": {
+     "number": 8,
+     "unit": "oz"
+    }
+   }
+  },
+  {
+   "id": "WgnsFod",
+   "title": "Soy Candle",
+   "brand": "Woolzies",
+   "description": "The Vanilla Jasmine Soy Candle is a refined and timeless home fragrance designed to create a welcoming atmosphere. Crafted from 100% natural soy wax and scented with pure essential oils, it blends creamy vanilla with delicate jasmine, soft citrus, and gentle woody notes. This vegan, cruelty-free, and paraben-free candle provides a clean, even burn, making it ideal for relaxing or thoughtful gifting.",
+   "category": "Candles",
+   "materials": [
+    "soy wax",
+    "essential oils"
+   ],
+   "key_features": [
+    "Made with 100% soy wax",
+    "Scented with pure essential oils",
+    "Free of paraffin and synthetic fragrances",
+    "Clean-burning and long-lasting",
+    "Vegan, cruelty-free, and paraben-free"
+   ],
+   "attributes": {
+    "candle-container-material": [
+     "Glass"
+    ],
+    "candle-material": [
+     "Soy wax"
+    ],
+    "candle-type": [
+     "Container"
+    ],
+    "pattern": [
+     "Floral"
+    ],
+    "scent": [
+     "Jasmine",
+     "Vanilla",
+     "Citrus",
+     "Woody"
+    ]
+   },
+   "colors": [
+    "#272623",
+    "#583c28",
+    "#8c8d77"
+   ],
+   "price": {
+    "amount": 7.99,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "woolzies.com",
+   "url": "https://buy.trychannel3.com/WgnsFod-yKfk-r1Q8ex?o=01M0QCMRFV666FB6QPPC2HK3P6&aid=01M6B335NMQC2YX3DB303W9SW9",
+   "image": "https://cdn.trychannel3.com/2064437b-a2b5-4e3b-8879-4eaccc7b88bc?aid=01M6B335NMQC2YX3DB303W9SW9&mid=yKfk",
+   "rating": null,
+   "dimensions": {
+    "length": null,
+    "width": null,
+    "height": null,
+    "weight": {
+     "number": 3,
+     "unit": "oz"
+    }
+   }
+  },
+  {
+   "id": "WR57oSP",
+   "title": "Vanilla Sunday Candle",
+   "brand": "Voluspa",
+   "description": "Indulge in the comforting sweetness of Vanilla Sunday, a gourmand-inspired small jar candle designed to turn any day into a relaxing retreat. This handcrafted candle features a rich blend of Plum Butter, Whipped Vanilla, Praline Mousse, and Skin Musk, creating a soft, velvety aroma that settles the mind. Housed in a stunning embossed white glass vessel with a matching lid, it offers a clean-burning experience with a coconut wax blend and natural wicks.",
+   "category": "Candles",
+   "materials": [
+    "Coconut wax blend",
+    "Glass",
+    "Natural wicks"
+   ],
+   "key_features": [
+    "Fragrance family: Gourmand",
+    "Fragrance notes: Plum Butter, Whipped Vanilla, Praline Mousse, Skin Musk, Freesia, Orris, and Amber",
+    "Burn time: Approximately 50 hours",
+    "Vessel: 5.5 oz embossed swirly white glass with coordinating lid",
+    "Wax: Proprietary clean-burning coconut wax blend",
+    "Handcrafted in California, USA",
+    "Vegan and free of phthalates, parabens, and sulfates",
+    "Cruelty-free (never tested on animals)",
+    "Dimensions: 2.67” D x 3.66” H"
+   ],
+   "attributes": {
+    "pattern": [
+     "Swirl"
+    ],
+    "candle-container-material": [
+     "Glass"
+    ],
+    "candle-type": [
+     "Container"
+    ],
+    "scent": [
+     "Vanilla"
+    ],
+    "decoration-material": [
+     "Glass"
+    ],
+    "candle-material": [
+     "Soy wax"
+    ],
+    "usage-type": [
+     "Reusable"
+    ]
+   },
+   "colors": [
+    "#c0bcac",
+    "#a19c90",
+    "#838381",
+    "#636362"
+   ],
+   "price": {
+    "amount": 28,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "voluspa.com",
+   "url": "https://buy.trychannel3.com/WR57oSP-qhwF-r1Q8ex?o=01M0MR4RFJYD3RABTZ3KEXSTXT&aid=01M6B335NMQC2YX3DB303W9SW9",
+   "image": "https://cdn.trychannel3.com/78f4b287-f068-4c66-86cd-444dc7cf36b6?aid=01M6B335NMQC2YX3DB303W9SW9&mid=qhwF",
+   "rating": null,
+   "dimensions": {
+    "length": {
+     "number": 68,
+     "unit": "mm"
+    },
+    "width": {
+     "number": 68,
+     "unit": "mm"
+    },
+    "height": {
+     "number": 93,
+     "unit": "mm"
+    },
+    "weight": {
+     "number": 156,
+     "unit": "g"
+    }
+   }
+  },
+  {
+   "id": "1gJuNdV",
+   "title": "Cardamom Vanilla Soy Candle",
+   "brand": "Broken Top",
+   "description": "Experience a cozy, exotic twist on a classic vanilla scent with this Cardamom Vanilla Soy Candle. Hand-poured using 100% U.S.-grown soybean wax and a cotton core wick, it blends sweet tonka, woody cedar, and warm spices to evocative the feeling of reading a good book by the fire with treats in the oven. This vegan and phthalate-free candle provides a clean burn and is housed in a glass jar.",
+   "category": "Candles",
+   "materials": [
+    "soy wax",
+    "cotton",
+    "fragrance oils"
+   ],
+   "key_features": [
+    "Hand-poured with 100% U.S.-grown soybean wax",
+    "80 hour burn time",
+    "Vegan, gluten-free, paraben-free, and phthalate-free",
+    "Scent notes of tonka, cedar, and spices",
+    "Cotton core wick"
+   ],
+   "attributes": {
+    "candle-material": [
+     "Soy wax"
+    ],
+    "candle-container-material": [
+     "Glass"
+    ],
+    "candle-type": [
+     "Container"
+    ],
+    "scent": [
+     "Vanilla"
+    ]
+   },
+   "colors": [
+    "#100d0a",
+    "#4f4c45",
+    "#bfc2ba",
+    "#878a83",
+    "#262523",
+    "#745129",
+    "#472c1a"
+   ],
+   "price": {
+    "amount": 36,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "brokentopcandleco.com",
+   "url": "https://buy.trychannel3.com/1gJuNdV-Zjfw-r1Q8ex?o=01M0MPV9VCHBKP4G9FXDNXDJ36&aid=01M6B335NMQC2YX3DB303W9SW9",
+   "image": "https://cdn.trychannel3.com/41612fcd-305f-4b28-8d16-53afd2cdae57?aid=01M6B335NMQC2YX3DB303W9SW9&mid=Zjfw",
+   "rating": null,
+   "dimensions": {
+    "length": null,
+    "width": null,
+    "height": null,
+    "weight": {
+     "number": 453,
+     "unit": "g"
+    }
+   }
+  },
+  {
+   "id": "2Qoms9p",
+   "title": "Vanilla Bomb Candle",
+   "brand": "La Jolie Muse",
+   "description": "The Marvella Vanilla Bomb is a luxurious 10oz scented candle housed in a high-quality glass jar featuring a distinctive hobnail pattern. Crafted from non-toxic, natural soy wax with a lead-free cotton wick, it offers a vegan and cruelty-free experience. The fragrance is a harmonious blend of citrus and creamy notes, opening with lemon zest, featuring a heart of freesia, and settling into a warm base of vanilla and patchouli.",
+   "category": "Candles",
+   "materials": [
+    "Soy Wax",
+    "Glass",
+    "Cotton"
+   ],
+   "key_features": [
+    "Non-toxic natural soy wax",
+    "Vegan & Cruelty-Free",
+    "100% lead-free cotton wicks",
+    "Free from formaldehyde, sulfates, phthalates, pesticides, and parabens",
+    "Recyclable packaging",
+    "Hobnail patterned glass jar",
+    "Fragrance notes: Lemon Zest (Top), Freesia (Heart), Vanilla & Patchouli (Base)"
+   ],
+   "attributes": {
+    "candle-material": [
+     "Soy wax"
+    ],
+    "scent": [
+     "Vanilla"
+    ],
+    "candle-container-material": [
+     "Glass"
+    ],
+    "candle-type": [
+     "Container"
+    ]
+   },
+   "colors": [
+    "#e9e7df",
+    "#f7edd1",
+    "#9b956f"
+   ],
+   "price": {
+    "amount": 29,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "lajoliemuse.com",
+   "url": "https://buy.trychannel3.com/2Qoms9p-oDqx-r1Q8ex?o=01M144C366EFGV51EFWJ2CF4MR&aid=01M6B335NMQC2YX3DB303W9SW9",
+   "image": "https://cdn.trychannel3.com/d99b8a0b-6056-4577-8cf9-414439c8c98b?aid=01M6B335NMQC2YX3DB303W9SW9&mid=oDqx",
+   "rating": null,
+   "dimensions": {
+    "length": null,
+    "width": null,
+    "height": null,
+    "weight": {
+     "number": 285,
+     "unit": "g"
+    }
+   }
+  }
+ ]
+}

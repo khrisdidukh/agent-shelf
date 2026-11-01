@@ -1,0 +1,25 @@
+{
+  "name": "agent-shelf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@ai-sdk/openai-compatible": "^0.2.16",
+    "@channel3/sdk": "^4.6.0",
+    "@modelcontextprotocol/sdk": "1.32.2",
+    "@paypal/agent-toolkit": "^1.11.0",
+    "ag-grid-community": "^32.3.3",
+    "zod": "3.25.76"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

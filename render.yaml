@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: agent-shelf
+    runtime: node
+    plan: free
+    buildCommand: npm ci
+    startCommand: node server.mjs
+    healthCheckPath: /api/config
+    envVars:
+      - key: NEARAI_API_KEY
+        sync: false
+      - key: PAYPAL_CLIENT_ID
+        sync: false
+      - key: PAYPAL_CLIENT_SECRET
+        sync: false
+      - key: CHANNEL3_API_KEY
+        sync: false
+      - key: PUBLIC_URL
+        value: https://agent-shelf.onrender.com
+      - key: DAILY_RUNS
+        value: "60"

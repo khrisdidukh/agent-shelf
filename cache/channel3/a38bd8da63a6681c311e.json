@@ -1,0 +1,506 @@
+{
+ "query": "Need a nice soy candle for my mom's birthday, lavender scent, gift wrapped, under $30.",
+ "at": "2026-11-01T08:19:52.792Z",
+ "products": [
+  {
+   "id": "GOYVzd9",
+   "title": "Vrbgify Lavender Scented Candle",
+   "brand": "Vrbgify",
+   "description": "Bring tranquility and elegance into your home with this 7.5 oz highly scented lavender candle, expertly crafted from natural soy wax and featuring a 6 percent essential oil concentration for a rich, long-lasting fragrance. Housed in a sophisticated purple glass jar, this candle delivers over 40 hours of clean, even burn thanks to its lead-free cotton wick. The residue-free formula is free from paraffin and chemical additives, and the elegant jar can be repurposed as a decorative vase or storage container after use.",
+   "category": "Candles",
+   "materials": [
+    "Soy Wax",
+    "Glass",
+    "Cotton"
+   ],
+   "key_features": [
+    "6 percent essential oil concentration for a rich, long-lasting fragrance",
+    "Made from natural soy wax, free from paraffin and chemical residuals",
+    "Over 40 hours of clean, even burn with a lead-free cotton wick",
+    "Reusable purple glass jar can be repurposed as a vase or storage container",
+    "Residue-free formula for easy cleanup"
+   ],
+   "attributes": {
+    "candle-container-material": [
+     "Glass"
+    ],
+    "usage-type": [
+     "Reusable"
+    ],
+    "candle-type": [
+     "Container"
+    ],
+    "scent": [
+     "Lavender"
+    ],
+    "candle-material": [
+     "Soy wax"
+    ],
+    "pattern": [
+     "Solid"
+    ]
+   },
+   "colors": [
+    "#8970b0",
+    "#624d89",
+    "#efe8f3",
+    "#b1a0ca"
+   ],
+   "price": {
+    "amount": 44.98,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "lowes.com",
+   "url": "https://buy.trychannel3.com/GOYVzd9-Qqxu-r1Q8ex?o=01M3V24JHA4XYE8Z2Z4Y2STD9X&aid=01M6B333G6QEXJRER11ZV121V9",
+   "image": "https://cdn.trychannel3.com/c5108046-53e0-42af-be34-34531e27bbff?aid=01M6B333G6QEXJRER11ZV121V9&mid=Qqxu",
+   "rating": null,
+   "dimensions": {
+    "length": {
+     "number": 3.54,
+     "unit": "in"
+    },
+    "width": {
+     "number": 2.76,
+     "unit": "in"
+    },
+    "height": {
+     "number": 2.76,
+     "unit": "in"
+    },
+    "weight": {
+     "number": 7.5,
+     "unit": "oz"
+    }
+   }
+  },
+  {
+   "id": "mY9Wq7C",
+   "title": "Lavender Soy Candle",
+   "brand": "Lowe's",
+   "description": "This extra large 35oz lavender scented candle is designed for a soothing ambiance with three lead-free cotton wicks that ensure an even burn for up to 150 hours. Crafted from a premium blend of natural soy and renewable palm wax, it provides a cleaner, slower burn and a stronger scent throw. The candle comes in an elegant jar featuring a purple and pink floral pattern with a gold accent, packaged in a stylish gift box making it an ideal present for various occasions.",
+   "category": "Candles",
+   "materials": [
+    "soy wax",
+    "palm wax",
+    "cotton"
+   ],
+   "key_features": [
+    "35oz weight",
+    "Up to 150 hours burn time",
+    "Three lead-free cotton wicks",
+    "Blend of natural soy and renewable palm wax",
+    "Elegant floral-patterned jar with gold accent",
+    "Includes a refined gift box"
+   ],
+   "attributes": {
+    "candle-material": [
+     "Soy wax"
+    ],
+    "pattern": [
+     "Floral"
+    ],
+    "candle-type": [
+     "Container"
+    ],
+    "scent": [
+     "Lavender"
+    ],
+    "candle-container-material": [
+     "Glass"
+    ]
+   },
+   "colors": [
+    "#d4c7cd",
+    "#6e6372",
+    "#baa3b1",
+    "#928995",
+    "#473a4a"
+   ],
+   "price": {
+    "amount": 94.98,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "lowes.com",
+   "url": "https://buy.trychannel3.com/mY9Wq7C-Qqxu-r1Q8ex?o=01M1G0ZGG46EAHJ63DZ67DRQQ3&aid=01M6B333G6QEXJRER11ZV121V9",
+   "image": "https://cdn.trychannel3.com/fdb6820c-61fa-4fad-89aa-9fa649d495e3?aid=01M6B333G6QEXJRER11ZV121V9&mid=Qqxu",
+   "rating": null,
+   "dimensions": {
+    "length": null,
+    "width": null,
+    "height": {
+     "number": 6.2,
+     "unit": "in"
+    },
+    "weight": {
+     "number": 35,
+     "unit": "oz"
+    }
+   }
+  },
+  {
+   "id": "HHCsxxM",
+   "title": "Lavender Scented Soy Votive Candle",
+   "brand": "Sonoma Lavender Co",
+   "description": "This charming lavender-scented soy votive candle is hand-poured into a white glass jar and topped with a natural wooden lid. Infused with a special soy blend wax and pure lavender essential oil, it provides a soothingly soft aroma perfect for small spaces or relaxing baths. Each 2-ounce candle comes elegantly packaged with a lavender ribbon and bow, making it an ideal gift choice.",
+   "category": "Candles",
+   "materials": [
+    "soy wax",
+    "glass",
+    "wood",
+    "lavender essential oil"
+   ],
+   "key_features": [
+    "Hand-poured soy blend wax",
+    "Infused with lavender essential oil",
+    "Includes a natural wooden lid",
+    "Decorated with a lavender ribbon and bow",
+    "2 ounce votive size"
+   ],
+   "attributes": {
+    "candle-material": [
+     "Soy wax"
+    ],
+    "candle-container-material": [
+     "Glass"
+    ],
+    "candle-type": [
+     "Votive"
+    ],
+    "decoration-material": [
+     "Wood",
+     "Fabric"
+    ],
+    "scent": [
+     "Lavender"
+    ],
+    "pattern": [
+     "Solid"
+    ]
+   },
+   "colors": [
+    "#c5c1bf",
+    "#7f7277",
+    "#a598a1"
+   ],
+   "price": {
+    "amount": 17.95,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "sonomalavender.com",
+   "url": "https://buy.trychannel3.com/HHCsxxM-1Ddm-r1Q8ex?o=01M0JDST5FKD2Y9AY1D02DHDSC&aid=01M6B333G6QEXJRER11ZV121V9",
+   "image": "https://cdn.trychannel3.com/fb4dad68-816f-48bb-b76e-fbf940729b15?aid=01M6B333G6QEXJRER11ZV121V9&mid=1Ddm",
+   "rating": {
+    "value": 4.9,
+    "count": 8
+   },
+   "dimensions": {
+    "length": null,
+    "width": null,
+    "height": {
+     "number": 2.5,
+     "unit": "in"
+    },
+    "weight": {
+     "number": 2,
+     "unit": "oz"
+    }
+   }
+  },
+  {
+   "id": "EXya9cy",
+   "title": "Scented Soy Candle",
+   "brand": "Mrs. Meyer's Clean Day",
+   "description": "A high-quality soy wax candle from Mrs. Meyer's Clean Day, featuring the relaxing and soothing scent of lavender. This candle offers a substantial 35-hour burn time, making it ideal for long-lasting home fragrance. Mrs. Meyer's commitment to cruelty-free practices is noted, as this product is not tested on animals. It comes in a reusable glass jar with a black lid.",
+   "category": "Candles",
+   "materials": [],
+   "key_features": [],
+   "attributes": {
+    "pattern": [
+     "Solid"
+    ],
+    "candle-material": [
+     "Soy wax"
+    ],
+    "candle-type": [
+     "Container"
+    ],
+    "scent": [
+     "Lavender"
+    ]
+   },
+   "colors": [
+    "#fdfdf8",
+    "#9f3231",
+    "#d0cac5",
+    "#9c6e6a"
+   ],
+   "price": {
+    "amount": 13.38,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "iherb.com",
+   "url": "https://buy.trychannel3.com/EXya9cy-zcep-r1Q8ex?o=01KBPC2712WG5P3QWDB3M6ZDSK&aid=01M6B333G6QEXJRER11ZV121V9",
+   "image": "https://cdn.trychannel3.com/5f7ab7f4-eb9d-4046-9401-af3918e44e23?aid=01M6B333G6QEXJRER11ZV121V9&mid=zcep",
+   "rating": {
+    "value": 4.4,
+    "count": 1905
+   },
+   "dimensions": null
+  },
+  {
+   "id": "IgR8Qm5",
+   "title": "Lavender Scented Soy Wax Candle, 10oz",
+   "brand": "Lovery",
+   "description": "A playful and thoughtful gift candle designed for parents, featuring a humorous message on the label: 'BEING YOUR FAVORITE CHILD SEEMS LIKE GIFT ENOUGH... BUT HERE'S A CANDLE'. The candle is hand-poured using pure soy wax with a lead-free cotton wick for a clean burn and is housed in an elegant amber glass jar with a gold lid. It is scented with calming lavender to promote relaxation and serenity.",
+   "category": "Candles",
+   "materials": [
+    "soy wax",
+    "glass"
+   ],
+   "key_features": [
+    "Hand-poured with soy wax",
+    "Lead-free cotton wick",
+    "Calming lavender fragrance",
+    "Encased in an elegant amber jar",
+    "Ready for gifting"
+   ],
+   "attributes": {
+    "scent": [
+     "Lavender"
+    ],
+    "candle-type": [
+     "Container"
+    ],
+    "candle-material": [
+     "Soy wax"
+    ],
+    "pattern": [
+     "Stars"
+    ],
+    "candle-container-material": [
+     "Glass"
+    ]
+   },
+   "colors": [
+    "#1d1b23",
+    "#b2b0b0",
+    "#4f352e",
+    "#d9d6ce",
+    "#332022",
+    "#806f6a"
+   ],
+   "price": {
+    "amount": 35.4,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "macys.com",
+   "url": "https://buy.trychannel3.com/IgR8Qm5-K6RA-r1Q8ex?o=01M41XEWWDANPC25KH8X37TBDM&aid=01M6B333G6QEXJRER11ZV121V9",
+   "image": "https://cdn.trychannel3.com/a90799d3-d3ed-401e-9d34-ace80fb44fab?aid=01M6B333G6QEXJRER11ZV121V9&mid=K6RA",
+   "rating": null,
+   "dimensions": {
+    "length": null,
+    "width": null,
+    "height": null,
+    "weight": {
+     "number": 10,
+     "unit": "oz"
+    }
+   }
+  },
+  {
+   "id": "vJdV8AU",
+   "title": "Lavender & Vanilla Soy Candle",
+   "brand": "Public Goods",
+   "description": "A soothing 12.3 oz soy candle featuring a calming lavender and vanilla fragrance blend. Infused with lavender essential oil for relaxation and balanced with fir needles and tonka bean for a warm, inviting scent. Packaged in a plastic-free glass jar with an acacia wood lid, designed for repurposing after the candle is finished. Includes a 3-wick option and is available in 12.3 oz size. Ideal for creating a tranquil ambiance in living spaces.",
+   "category": "Candles",
+   "materials": [
+    "soy wax",
+    "essential oils",
+    "glass jar",
+    "wood lid"
+   ],
+   "key_features": [
+    "Calming lavender and vanilla scent",
+    "3-wick soy candle for even burn",
+    "Plastic-free glass jar with acacia wood lid",
+    "Upcycle-ready jar for storage after use",
+    "Calming blend of lavender, vanilla, fir, and tonka bean",
+    "Made with soy wax and essential oils",
+    "Reusable jar suitable for storage after use",
+    "12.3 oz size with option to choose 3.5 oz",
+    "Therapeutic lavender essential oil for relaxation",
+    "Glass jar is reusable after candle is gone"
+   ],
+   "attributes": {
+    "candle-container-material": [
+     "Glass"
+    ],
+    "decoration-material": [
+     "Wood"
+    ],
+    "candle-material": [
+     "Soy wax"
+    ],
+    "candle-type": [
+     "Container"
+    ],
+    "scent": [
+     "Lavender",
+     "Vanilla"
+    ]
+   },
+   "colors": [
+    "#d3cbbc",
+    "#b3a084",
+    "#7d6a56"
+   ],
+   "price": {
+    "amount": 39.95,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "publicgoods.com",
+   "url": "https://buy.trychannel3.com/vJdV8AU-aKkE-r1Q8ex?o=01KHEFB97QZ3PJFW5NY0MTGFR3&aid=01M6B333G6QEXJRER11ZV121V9",
+   "image": "https://cdn.trychannel3.com/ad99492d-512e-4009-9884-2b269b487155?aid=01M6B333G6QEXJRER11ZV121V9&mid=aKkE",
+   "rating": {
+    "value": 4.7,
+    "count": 291
+   },
+   "dimensions": {
+    "length": null,
+    "width": null,
+    "height": null,
+    "weight": {
+     "number": 2,
+     "unit": "lb"
+    }
+   }
+  },
+  {
+   "id": "uyDZsaM",
+   "title": "Soy Candle",
+   "brand": "Unplug Soy Candles",
+   "description": "Part of The Seasonal Edit by Unplug Soy Candles, this minimalist soy candle features a calming blend of lavender, sage, and mint. Housed in a clean glass jar with a delicate square label, it is crafted from 100% pure soy wax with a cotton-braided wick, providing a clean burn for up to 80 hours.",
+   "category": "Candles",
+   "materials": [
+    "Soy Wax",
+    "Glass",
+    "Cotton"
+   ],
+   "key_features": [
+    "Scented with lavender, sage, and mint",
+    "100% Pure Soy Wax",
+    "75-80 hours burn time",
+    "Cotton-braided wick",
+    "Minimalist square label design"
+   ],
+   "attributes": {
+    "candle-material": [
+     "Soy wax"
+    ],
+    "candle-type": [
+     "Container"
+    ],
+    "scent": [
+     "Lavender"
+    ]
+   },
+   "colors": [
+    "#e5e7e4",
+    "#aa9cb5"
+   ],
+   "price": {
+    "amount": 36,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "unplugsoycandles.com",
+   "url": "https://buy.trychannel3.com/uyDZsaM-NuTj-r1Q8ex?o=01M0SVJJ17FYGG3AV11SBKVY55&aid=01M6B333G6QEXJRER11ZV121V9",
+   "image": "https://cdn.trychannel3.com/6dc9d1ad-d200-4ef8-8f0d-8e6c8e6f5b4c?aid=01M6B333G6QEXJRER11ZV121V9&mid=NuTj",
+   "rating": null,
+   "dimensions": {
+    "length": {
+     "number": 3.5,
+     "unit": "in"
+    },
+    "width": null,
+    "height": {
+     "number": 4,
+     "unit": "in"
+    },
+    "weight": {
+     "number": 11.5,
+     "unit": "oz"
+    }
+   }
+  },
+  {
+   "id": "4S1HccO",
+   "title": "Soy Glass Jar Candle",
+   "brand": "Mrs. Meyer's Clean Day",
+   "description": "Enjoy the calming, garden-inspired aroma of this Mrs. Meyer's Lavender Soy Candle. Crafted with a vegetable soy wax base and scented with natural essential oils, this candle provides up to 25 hours of clean, aromatic burn time. The product is proudly vegan and cruelty-free, tested by people, not animals. Once the candle has fully burned, the glass jar is designed to be reused, promoting sustainability.",
+   "category": "Candles",
+   "materials": [
+    "Soy wax",
+    "Glass",
+    "Cotton wick"
+   ],
+   "key_features": [
+    "Vegetable soy wax base",
+    "Up to 25-hour burn time",
+    "Made with natural essential oils",
+    "Vegan and cruelty-free (tested by people, not animals)",
+    "Reusable glass jar",
+    "Lavender scent"
+   ],
+   "attributes": {
+    "candle-container-material": [
+     "Glass"
+    ],
+    "scent": [
+     "Lavender"
+    ],
+    "candle-type": [
+     "Container"
+    ],
+    "usage-type": [
+     "Reusable"
+    ],
+    "candle-material": [
+     "Soy wax"
+    ],
+    "decoration-material": [
+     "Glass"
+    ],
+    "pattern": [
+     "Floral"
+    ]
+   },
+   "colors": [
+    "#beb4a6",
+    "#e2ddd2",
+    "#191818",
+    "#928c89",
+    "#635655"
+   ],
+   "price": {
+    "amount": 10.99,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "grove.co",
+   "url": "https://buy.trychannel3.com/4S1HccO-4p47-r1Q8ex?o=01KBPBQNWD226BFPR6FG5AP90Z&aid=01M6B333G6QEXJRER11ZV121V9",
+   "image": "https://cdn.trychannel3.com/27ec60c4-a7f1-49c0-9d34-c27810eac614?aid=01M6B333G6QEXJRER11ZV121V9&mid=4p47",
+   "rating": {
+    "value": 4.3,
+    "count": 1389
+   },
+   "dimensions": null
+  }
+ ]
+}

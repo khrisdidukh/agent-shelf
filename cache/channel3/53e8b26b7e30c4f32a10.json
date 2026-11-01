@@ -1,0 +1,508 @@
+{
+ "query": "I need a premium deep orange soy candle in a ceramic vessel for a client.",
+ "at": "2026-11-01T08:18:37.490Z",
+ "products": [
+  {
+   "id": "HYtexr6",
+   "title": "Moroccan Terracotta Soy Candle",
+   "brand": "Verve Culture",
+   "description": "Handcrafted in Marrakesh, Morocco, this Moroccan Terracotta Soy Candle features a warm amber scent housed in a handmade glazed terracotta vessel. The natural soy wax creates a soothing atmosphere, and once the candle is burned through, the rustic cup can be repurposed as a decorative accent, a small storage container, or a coffee cup.",
+   "category": "Candles",
+   "materials": [
+    "terracotta",
+    "soy wax"
+   ],
+   "key_features": [
+    "Handmade glazed terracotta cup crafted by artisans in Marrakesh, Morocco",
+    "Natural soy wax blended with a rich amber fragrance",
+    "Reusable vessel can be repurposed for coffee, storage, or home decor",
+    "100% recyclable packaging",
+    "Traditional hand-glazed finishes"
+   ],
+   "attributes": {
+    "candle-material": [
+     "Soy wax"
+    ],
+    "candle-type": [
+     "Container"
+    ],
+    "usage-type": [
+     "Reusable"
+    ]
+   },
+   "colors": [
+    "#e2cda4",
+    "#f2e1c5",
+    "#dbaa78",
+    "#baa484",
+    "#b8906b",
+    "#a56b45"
+   ],
+   "price": {
+    "amount": 24,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "macys.com",
+   "url": "https://buy.trychannel3.com/HYtexr6-K6RA-r1Q8ex?o=01M48TWHPMT92W395E22NNS2ZX&aid=01M6B30SZQE3QA52BY5ZZTPJMT",
+   "image": "https://cdn.trychannel3.com/20be4448-f3b8-460a-ad72-0e29d9e5a808?aid=01M6B30SZQE3QA52BY5ZZTPJMT&mid=K6RA",
+   "rating": null,
+   "dimensions": {
+    "length": null,
+    "width": {
+     "number": 2.6,
+     "unit": "in"
+    },
+    "height": {
+     "number": 2.5,
+     "unit": "in"
+    },
+    "weight": null
+   }
+  },
+  {
+   "id": "SJE1vZF",
+   "title": "Ceramic Golden Moments Jar Candle",
+   "brand": "Modern Sprout",
+   "description": "This 6oz soy wax candle is designed to capture snapshots in time inspired by nature. The candle vessel is made of ceramic and is designed to be repurposed as a planter once the candle has burned down. The product includes seeds for aromatic plants to continue its life beyond the flame.",
+   "category": "Candles",
+   "materials": [
+    "ceramic",
+    "soy wax"
+   ],
+   "key_features": [
+    "Vessel transforms into a planter",
+    "Includes seeds for aromatic plants",
+    "Flecked glossy interior vessel"
+   ],
+   "attributes": {
+    "candle-type": [
+     "Container"
+    ],
+    "candle-material": [
+     "Soy wax"
+    ],
+    "pattern": [
+     "Floral"
+    ],
+    "candle-container-material": [
+     "Ceramic"
+    ],
+    "usage-type": [
+     "Reusable"
+    ]
+   },
+   "colors": [
+    "#f2a84c",
+    "#fcbc4e",
+    "#f6e9f5",
+    "#c57846",
+    "#ecd3d0",
+    "#f0bc60",
+    "#d2965e"
+   ],
+   "price": {
+    "amount": 19.99,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "target.com",
+   "url": "https://buy.trychannel3.com/SJE1vZF-QnTm-r1Q8ex?o=01M62N0A0FD5S2QP3FPFMZMQYS&aid=01M6B30SZQE3QA52BY5ZZTPJMT",
+   "image": "https://cdn.trychannel3.com/da4d836e-58d6-4491-aea0-27004e491ed8?aid=01M6B30SZQE3QA52BY5ZZTPJMT&mid=QnTm",
+   "rating": null,
+   "dimensions": {
+    "length": null,
+    "width": null,
+    "height": null,
+    "weight": {
+     "number": 170,
+     "unit": "g"
+    }
+   }
+  },
+  {
+   "id": "eE57mAd",
+   "title": "Moroccan Terracotta Soy Candle",
+   "brand": "Verve Culture",
+   "description": "A handmade terracotta glazed candle vessel from Morocco houses amber scented soy wax. Crafted in Marrakesh, each cup features hand-glazed finishes with a cream and terracotta color block. The candle offers a warm amber aroma, and once burned, the ceramic cup can be repurposed as a decorative piece or small storage. Specifications include a compact size and weight, with care instructions noting hand-washing due to terracotta’s porous nature and minor glaze cracking that may occur from artisanal production.",
+   "category": "Candles",
+   "materials": [
+    "Terracotta glaze",
+    "Soy Wax",
+    "Amber Scent"
+   ],
+   "key_features": [
+    "Handmade Moroccan terracotta vessel",
+    "Amber scented soy candle",
+    "Cream and terracotta color block glaze",
+    "Vessel is reusable after candle",
+    "Compact size: 2.5' height x 2.6' diameter",
+    "Care: hand-wash recommended",
+    "Includes hand-glazed, artisanal finish",
+    "Dimensions: approx 2.5 inches height x 2.6 inches diameter"
+   ],
+   "attributes": {
+    "candle-material": [
+     "Soy wax"
+    ],
+    "candle-type": [
+     "Container"
+    ],
+    "pattern": [
+     "Color-block"
+    ]
+   },
+   "colors": [
+    "#e2cda5",
+    "#f2e2c6",
+    "#baa484",
+    "#dbaa78",
+    "#b8906b",
+    "#a66b45"
+   ],
+   "price": {
+    "amount": 96,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "verveculture.com",
+   "url": "https://buy.trychannel3.com/eE57mAd-afYj-r1Q8ex?o=01KFDMAFSWBEVWWYN2D3K9513F&aid=01M6B30SZQE3QA52BY5ZZTPJMT",
+   "image": "https://cdn.trychannel3.com/f432b43a-e451-4c05-97a3-138fcc12836f?aid=01M6B30SZQE3QA52BY5ZZTPJMT&mid=afYj",
+   "rating": {
+    "value": 5,
+    "count": 1
+   },
+   "dimensions": {
+    "length": null,
+    "width": null,
+    "height": null,
+    "weight": {
+     "number": 8,
+     "unit": "oz"
+    }
+   }
+  },
+  {
+   "id": "N9QvpgH",
+   "title": "Apothecary 18 Ceramic Jar Candle",
+   "brand": "Maeve",
+   "description": "A beautifully crafted ceramic jar candle with a lid, featuring a warm and inviting 'Spice Orchard Woods' fragrance. Inspired by French apothecary jars, this candle offers a sophisticated scent profile with notes of woodland acorns, orchard apples, cardamom, and clove, all housed in an elegant ceramic vessel. It provides a long-lasting burn time of approximately 65 hours, making it a perfect addition to any home decor or a thoughtful gift.",
+   "category": "Candles",
+   "materials": [],
+   "key_features": [],
+   "attributes": {
+    "decoration-material": [
+     "Ceramic"
+    ],
+    "scent": [
+     "Spicy",
+     "Woody"
+    ],
+    "candle-container-material": [
+     "Ceramic"
+    ],
+    "pattern": [
+     "Leaves",
+     "Floral"
+    ],
+    "candle-type": [
+     "Container"
+    ]
+   },
+   "colors": [
+    "#abb695",
+    "#848d6d",
+    "#4d4f38",
+    "#ced6ba"
+   ],
+   "price": {
+    "amount": 29.95,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "anthropologie.com",
+   "url": "https://buy.trychannel3.com/N9QvpgH-gb5P-r1Q8ex?o=01KBP83WQKBCBM8D8D607RQNT4&aid=01M6B30SZQE3QA52BY5ZZTPJMT",
+   "image": "https://cdn.trychannel3.com/60d30a64-cc44-4f1d-bf5c-84ff1665b8e2?aid=01M6B30SZQE3QA52BY5ZZTPJMT&mid=gb5P",
+   "rating": {
+    "value": 4.83,
+    "count": 12
+   },
+   "dimensions": null
+  },
+  {
+   "id": "h2rHz3a",
+   "title": "Cranberry Orange Soy Candle",
+   "brand": "Broken Top",
+   "description": "A hand-poured soy candle with a quintessential seasonal scent featuring tart cranberry and zesty citrus balanced with warm spices. It is made from 100% U.S.-grown soybean wax with a cotton core wick, and is vegan, gluten-free, paraben-free, and phthalate-free.",
+   "category": "Candles",
+   "materials": [
+    "Soy wax",
+    "Cotton",
+    "Essential Oil Infused Fragrance Oils"
+   ],
+   "key_features": [
+    "Hand-poured with 100% U.S.-grown soybean wax",
+    "Cotton core wick",
+    "Vegan",
+    "Gluten-free",
+    "Paraben-free",
+    "Phthalate-free",
+    "80 hour burn time for 16oz size"
+   ],
+   "attributes": {
+    "scent": [
+     "Citrus",
+     "Spicy"
+    ],
+    "candle-container-material": [
+     "Glass"
+    ],
+    "candle-material": [
+     "Soy wax"
+    ],
+    "candle-type": [
+     "Container"
+    ]
+   },
+   "colors": [
+    "#130e0a",
+    "#625038",
+    "#d4d8d1",
+    "#a6a9a2",
+    "#33302c",
+    "#746d5e"
+   ],
+   "price": {
+    "amount": 36,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "brokentopcandleco.com",
+   "url": "https://buy.trychannel3.com/h2rHz3a-Zjfw-r1Q8ex?o=01M43W2M91AB5K71B8FHF902G6&aid=01M6B30SZQE3QA52BY5ZZTPJMT",
+   "image": "https://cdn.trychannel3.com/b40cc7a2-8335-4bea-9c87-69795b49b118?aid=01M6B30SZQE3QA52BY5ZZTPJMT&mid=Zjfw",
+   "rating": null,
+   "dimensions": {
+    "length": null,
+    "width": null,
+    "height": null,
+    "weight": {
+     "number": 453,
+     "unit": "g"
+    }
+   }
+  },
+  {
+   "id": "ThXbpQ4",
+   "title": "Soy Wax Ceramic Candle",
+   "brand": "Italic",
+   "description": "This luxurious 2-pack set features two soy wax candles in elegant, hand-glazed ceramic vessels. The collection includes 'Lilac Mist', an evocative floral scent blending jasmine and lilac with a sandalwood base, and 'Matcha Bloom', a bright citrus tea fragrance with notes of jasmine, matcha, and creamy white chocolate. Developed by master Swiss perfumers, these 100% vegan candles are designed to burn evenly without tunneling or residue for up to 40 hours. The reusable satin-matte ceramic containers are crafted to be timeless decor pieces for your space long after the candle has finished.",
+   "category": "Candles",
+   "materials": [
+    "soy wax",
+    "fragrance oils",
+    "ceramic"
+   ],
+   "key_features": [
+    "100% vegan soy wax formulation",
+    "Scent developed by master Swiss perfumers",
+    "Hand-glazed ceramic vessel with satin-matte finish",
+    "Burns evenly without tunneling or residue",
+    "Reusable ceramic container",
+    "Burn time of up to 40 hours"
+   ],
+   "attributes": {
+    "scent": [
+     "Spicy"
+    ],
+    "decoration-material": [
+     "Ceramic"
+    ],
+    "pattern": [
+     "Solid"
+    ],
+    "usage-type": [
+     "Reusable"
+    ],
+    "candle-container-material": [
+     "Ceramic"
+    ],
+    "candle-type": [
+     "Container"
+    ],
+    "candle-material": [
+     "Soy wax"
+    ]
+   },
+   "colors": [
+    "#c6b7c6",
+    "#9b8999",
+    "#63535d"
+   ],
+   "price": {
+    "amount": 198,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "italic.com",
+   "url": "https://buy.trychannel3.com/ThXbpQ4-XHtY-r1Q8ex?o=01M0WKT5J9P8ZQPH27YTHKACEK&aid=01M6B30SZQE3QA52BY5ZZTPJMT",
+   "image": "https://cdn.trychannel3.com/a121b627-eaa8-4318-98e9-210b64490b99?aid=01M6B30SZQE3QA52BY5ZZTPJMT&mid=XHtY",
+   "rating": {
+    "value": 4.6,
+    "count": 16
+   },
+   "dimensions": {
+    "length": null,
+    "width": {
+     "number": 3.54,
+     "unit": "in"
+    },
+    "height": {
+     "number": 2.76,
+     "unit": "in"
+    },
+    "weight": {
+     "number": 220,
+     "unit": "g"
+    }
+   }
+  },
+  {
+   "id": "9M2Lq8y",
+   "title": "Large Ceramic Candle",
+   "brand": "Staud",
+   "description": "A one-of-a-kind, large-scale ceramic candle featuring a brushed toffee glaze that showcases the unique movements of fire and hand-crafting. The candle is poured with a soy coconut wax blend and offers a complex scent profile with notes of vanilla and frankincense, grounded by patchouli, sandalwood, and palo santo. Due to its artisanal nature, each piece possesses subtle variations in glaze and finish.",
+   "category": "Candles",
+   "materials": [
+    "Ceramic",
+    "Soy Coconut Wax Blend"
+   ],
+   "key_features": [
+    "One-of-a-kind artisanal design",
+    "Brushed toffee glaze finish",
+    "Scent notes of vanilla, frankincense, patchouli, sandalwood, and palo santo",
+    "100% ceramic vessel",
+    "100% Soy Coconut Wax Blend"
+   ],
+   "attributes": {
+    "candle-container-material": [
+     "Ceramic"
+    ],
+    "pattern": [
+     "Texture"
+    ],
+    "scent": [
+     "Vanilla",
+     "Sandalwood"
+    ],
+    "candle-material": [
+     "Soy wax"
+    ],
+    "candle-type": [
+     "Container"
+    ]
+   },
+   "colors": [
+    "#3c393c",
+    "#1b191c",
+    "#e4ddc5",
+    "#5c5a5c",
+    "#a2a09e"
+   ],
+   "price": {
+    "amount": 275,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "staud.clothing",
+   "url": "https://buy.trychannel3.com/9M2Lq8y-zD6h-r1Q8ex?o=01M26B3GT20M92760HXY1TFX5E&aid=01M6B30SZQE3QA52BY5ZZTPJMT",
+   "image": "https://cdn.trychannel3.com/cf791e19-49a6-4989-af7f-1cb2d7953a63?aid=01M6B30SZQE3QA52BY5ZZTPJMT&mid=zD6h",
+   "rating": null,
+   "dimensions": {
+    "length": {
+     "number": 10,
+     "unit": "in"
+    },
+    "width": {
+     "number": 10,
+     "unit": "in"
+    },
+    "height": {
+     "number": 4,
+     "unit": "in"
+    },
+    "weight": null
+   }
+  },
+  {
+   "id": "hstNFf9",
+   "title": "Chérie Ceramic Candle - French Linen & Orris",
+   "brand": "Paddywax",
+   "description": "The Chérie Ceramic Candle in French Linen & Orris is an elegant home fragrance piece presented in a charming, oval porcelain vessel. The vessel features a scalloped lid with a round knob and hand-painted maroon and white detailing, reminiscent of a sophisticated cake or classic porcelain. This soy wax candle offers a fresh scent profile featuring top notes of Italian Bergamot and Eucalyptus, heart notes of French Lavender and Salted Fig, and a base of Tonka Bean and sea-soaked woods. Once the candle has burned down, the vessel is designed to be repurposed as a stylish trinket dish or decorativ",
+   "category": "Candles",
+   "materials": [
+    "ceramic",
+    "porcelain",
+    "soy wax"
+   ],
+   "key_features": [
+    "Hand-painted porcelain vessel with scalloped edges",
+    "Reusable vessel for use as a trinket dish",
+    "Soy wax blend",
+    "Fragrance notes: Italian Bergamot, Eucalyptus Leaves, Ocean Air, Blue Violet, French Lavender, Salted Fig, Cucumber, Venezuelan Tonka Bean Absolute, French Sage, and Sea Soaked Woods",
+    "5.5 oz size",
+    "Porcelain vessel with hand-painted maroon and white detailing",
+    "Repurposable porcelain vessel (trinket dish, jewelry holder)",
+    "Poured in Nashville, TN"
+   ],
+   "attributes": {
+    "decoration-material": [
+     "Ceramic"
+    ],
+    "candle-type": [
+     "Container"
+    ],
+    "scent": [
+     "Fresh",
+     "Fresh linen",
+     "Lavender",
+     "Eucalyptus"
+    ],
+    "candle-material": [
+     "Soy wax"
+    ],
+    "usage-type": [
+     "Reusable"
+    ],
+    "candle-container-material": [
+     "Ceramic"
+    ],
+    "pattern": [
+     "Solid",
+     "Chevron"
+    ]
+   },
+   "colors": [
+    "#dddad0",
+    "#a4494c"
+   ],
+   "price": {
+    "amount": 27,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "huntandbloom.com",
+   "url": "https://buy.trychannel3.com/hstNFf9-KzH7-r1Q8ex?o=01M2JRE424VZDR89D2NHFMFYJS&aid=01M6B30SZQE3QA52BY5ZZTPJMT",
+   "image": "https://cdn.trychannel3.com/f3293e30-1adc-4a5e-9d0c-e04b951281d5?aid=01M6B30SZQE3QA52BY5ZZTPJMT&mid=KzH7",
+   "rating": null,
+   "dimensions": {
+    "length": null,
+    "width": null,
+    "height": null,
+    "weight": {
+     "number": 155,
+     "unit": "g"
+    }
+   }
+  }
+ ]
+}

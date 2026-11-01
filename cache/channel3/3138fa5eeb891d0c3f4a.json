@@ -1,0 +1,463 @@
+{
+ "query": "Cheapest large soy candle available, any scent, just need it to last a long time.",
+ "at": "2026-11-01T08:19:53.600Z",
+ "products": [
+  {
+   "id": "MkejTsN",
+   "title": "Soy Candle",
+   "brand": "Matt & Nat",
+   "description": "Elevate your relaxation with the Girl's Night In Large Soy Candle from Matt & Nat. This warm and ethereal candle features a Pink Champagne scent, blending creamy powdery heliotrope with lush garden roses to create a sophisticated atmosphere. Housed in a frosted glass jar with a removable bamboo logo embossed lid, it is crafted from a blend of 95% soy and 5% paraffin wax. This vegan and cruelty-free candle offers up to 32 hours of burn time, making it a sustainable choice for your home wellness routine.",
+   "category": "Candles",
+   "materials": [
+    "soy",
+    "paraffin",
+    "glass",
+    "bamboo",
+    "cotton"
+   ],
+   "key_features": [
+    "Pink Champagne Scent",
+    "95% soy, 5% paraffin wax",
+    "Burn time up to 32 hours",
+    "Frosted glass jar with removable bamboo lid",
+    "Cotton wick",
+    "Vegan and cruelty-free"
+   ],
+   "attributes": {
+    "candle-container-material": [
+     "Glass"
+    ],
+    "candle-type": [
+     "Container"
+    ],
+    "candle-material": [
+     "Soy wax",
+     "Paraffin wax"
+    ],
+    "decoration-material": [
+     "Bamboo"
+    ]
+   },
+   "colors": [
+    "#e3e3e3",
+    "#c2c2bc",
+    "#b9946a"
+   ],
+   "price": {
+    "amount": 34.5,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "mattandnat.com",
+   "url": "https://buy.trychannel3.com/MkejTsN-yW33-r1Q8ex?o=01M031D0MMVDF6PZENHM4XPF9V&aid=01M6B334GP0E3AHP2TZJ4QM8W1",
+   "image": "https://cdn.trychannel3.com/14a38b14-ebba-4c3b-974c-4ebdd9c511cd?aid=01M6B334GP0E3AHP2TZJ4QM8W1&mid=yW33",
+   "rating": null,
+   "dimensions": {
+    "length": {
+     "number": 10,
+     "unit": "cm"
+    },
+    "width": {
+     "number": 10,
+     "unit": "cm"
+    },
+    "height": {
+     "number": 8.5,
+     "unit": "cm"
+    },
+    "weight": {
+     "number": 340,
+     "unit": "g"
+    }
+   }
+  },
+  {
+   "id": "3l8Z1PD",
+   "title": "Wellness Soy Candle",
+   "brand": "Woolzies",
+   "description": "The Woolzies Wellness Soy Candle is a 100% natural soy wax candle designed to create a bright and balanced atmosphere. Scented with a blend of Orange and Ylang Ylang essential oils, it offers a fresh, uplifting aroma with juicy citrus and soft floral notes. This eco-friendly candle provides up to 55 hours of burn time and comes in a beautiful, gift-ready presentation, making it ideal for home fragrance, self-care routines, or gifting.",
+   "category": "Candles",
+   "materials": [
+    "soy wax",
+    "essential oils"
+   ],
+   "key_features": [
+    "100% natural soy candle",
+    "Scented with Orange & Ylang Ylang Essential Oils",
+    "Bright, citrusy & softly floral aroma",
+    "Up to 55 hours burn time",
+    "Perfect for home fragrance, self-care & gifting",
+    "Beautiful, gift-ready presentation"
+   ],
+   "attributes": {
+    "pattern": [
+     "Leaves"
+    ],
+    "candle-type": [
+     "Container"
+    ],
+    "candle-material": [
+     "Soy wax"
+    ],
+    "scent": [
+     "Citrus",
+     "Floral"
+    ],
+    "candle-container-material": [
+     "Glass"
+    ]
+   },
+   "colors": [
+    "#e5eed8",
+    "#3e4c2f",
+    "#899c7d",
+    "#5e7958",
+    "#c1c3a8"
+   ],
+   "price": {
+    "amount": 19.99,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "woolzies.com",
+   "url": "https://buy.trychannel3.com/3l8Z1PD-yKfk-r1Q8ex?o=01M3YYTPAN15KGY3V3RWZD8QY9&aid=01M6B334GP0E3AHP2TZJ4QM8W1",
+   "image": "https://cdn.trychannel3.com/fe4ab9b1-a787-44c6-a5ed-4d9bbb849ce3?aid=01M6B334GP0E3AHP2TZJ4QM8W1&mid=yKfk",
+   "rating": null,
+   "dimensions": null
+  },
+  {
+   "id": "dNyhM7Z",
+   "title": "Oud Soy Candle",
+   "brand": "Woolzies",
+   "description": "The Woolzies Oud Soy Candle is a luxurious home fragrance featuring a sophisticated blend of woody agarwood and warm amber. Made from 100% natural soy wax, this 11 oz candle provides an elegant, inviting atmosphere with a burn time of up to 55 hours.",
+   "category": "Candles",
+   "materials": [
+    "Soy wax"
+   ],
+   "key_features": [
+    "100% natural soy candle",
+    "Rich Agarwood & Amber fragrance",
+    "Deep, woody & beautifully warm aroma",
+    "Up to 55 hours burn time",
+    "11 oz / 325 ml",
+    "Elegant, gift-ready packaging"
+   ],
+   "attributes": {
+    "candle-material": [
+     "Soy wax"
+    ],
+    "pattern": [
+     "Plaid"
+    ],
+    "candle-type": [
+     "Container"
+    ],
+    "candle-container-material": [
+     "Glass"
+    ],
+    "scent": [
+     "Woody"
+    ]
+   },
+   "colors": [
+    "#15100b",
+    "#efe6d6",
+    "#473f33",
+    "#686052",
+    "#b7aa91"
+   ],
+   "price": {
+    "amount": 19.99,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "woolzies.com",
+   "url": "https://buy.trychannel3.com/dNyhM7Z-yKfk-r1Q8ex?o=01M3Z0HJRBV2V0Z164S59G160K&aid=01M6B334GP0E3AHP2TZJ4QM8W1",
+   "image": "https://cdn.trychannel3.com/b6eae008-3342-4e4c-9f8e-1c5713e43cc9?aid=01M6B334GP0E3AHP2TZJ4QM8W1&mid=yKfk",
+   "rating": null,
+   "dimensions": {
+    "length": null,
+    "width": null,
+    "height": null,
+    "weight": {
+     "number": 454,
+     "unit": "g"
+    }
+   }
+  },
+  {
+   "id": "UFM5QtJ",
+   "title": "In Season Pumpkin Spiced Cake Soy Candle",
+   "brand": "Glasshouse Fragrances",
+   "description": "A luxurious, large-format soy wax candle from Glasshouse Fragrances, presented in a sleek black vessel with a matching lid. This candle features the 'In Season' fragrance profile of Pumpkin Spiced Cake and weighs 380g (approximately 13.4 oz). The packaging is vibrant orange with diagonal stripes, highlighting the scent and size information.",
+   "category": "Candles",
+   "materials": [
+    "Soy wax"
+   ],
+   "key_features": [
+    "Pumpkin Spiced Cake fragrance",
+    "Soy wax construction",
+    "Large 380g / 13.4 oz size",
+    "Comes in a reusable black vessel with lid"
+   ],
+   "attributes": {
+    "scent": [
+     "Vanilla"
+    ],
+    "candle-container-material": [
+     "Glass"
+    ],
+    "candle-material": [
+     "Soy wax"
+    ],
+    "pattern": [
+     "Floral"
+    ],
+    "candle-type": [
+     "Container"
+    ]
+   },
+   "colors": [
+    "#120f0f",
+    "#3b3534",
+    "#b5a484",
+    "#69625f"
+   ],
+   "price": {
+    "amount": 55,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "neimanmarcus.com",
+   "url": "https://buy.trychannel3.com/UFM5QtJ-e6W9-r1Q8ex?o=01KC47CZKVV0TVM68W9SSK0HY5&aid=01M6B334GP0E3AHP2TZJ4QM8W1",
+   "image": "https://cdn.trychannel3.com/9ffd8fb5-e3f3-44dd-896c-a03a0233f996?aid=01M6B334GP0E3AHP2TZJ4QM8W1&mid=e6W9",
+   "rating": null,
+   "dimensions": null
+  },
+  {
+   "id": "QmqW2Cu",
+   "title": "Soy Candle",
+   "brand": "Wax Buffalo",
+   "description": "Transport yourself to a cozy corner of your local cafe with the Coffee Shop soy candle. This inviting scent features top notes of coffee, sweet cream, and coffee in the middle, grounded by a warm base of vanilla and chocolate. Hand-poured in small batches in St. Augustine, FL, this 8 oz candle is crafted from natural soy wax with organic cotton wicks, ensuring a clean, vegan, and phthalate-free burn for approximately 45 hours.",
+   "category": "Candles",
+   "materials": [
+    "Soy Wax",
+    "Organic Cotton"
+   ],
+   "key_features": [
+    "Natural soy wax candle",
+    "Hand-poured in small batches",
+    "Vegan and dye-free",
+    "Phthalate-free fragrance oils",
+    "Organic cotton wicks",
+    "Approximately 45 hours burn time",
+    "Scent notes: Coffee, Sweet Cream, Vanilla, and Chocolate"
+   ],
+   "attributes": {
+    "candle-container-material": [
+     "Glass"
+    ],
+    "candle-material": [
+     "Soy wax"
+    ],
+    "candle-type": [
+     "Container"
+    ]
+   },
+   "colors": [
+    "#883c0f",
+    "#733718",
+    "#b28055",
+    "#a9642e",
+    "#cfa984",
+    "#8e5b3a"
+   ],
+   "price": {
+    "amount": 20,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "waxbuffalo.com",
+   "url": "https://buy.trychannel3.com/QmqW2Cu-g6yr-r1Q8ex?o=01M0FHH0CG64FHXGY79NK3V1W8&aid=01M6B334GP0E3AHP2TZJ4QM8W1",
+   "image": "https://cdn.trychannel3.com/9d8b801b-6bca-4428-b063-0cb7ecf3002f?aid=01M6B334GP0E3AHP2TZJ4QM8W1&mid=g6yr",
+   "rating": null,
+   "dimensions": {
+    "length": null,
+    "width": null,
+    "height": null,
+    "weight": {
+     "number": 8,
+     "unit": "oz"
+    }
+   }
+  },
+  {
+   "id": "KsnyeXR",
+   "title": "Honey Horchata Soy Candle",
+   "brand": "Broken Top",
+   "description": "A sweet and comforting soy candle with a fragrance profile featuring honeyed rice, creamy vanilla, and cinnamon. Hand-poured in the USA, this candle provides a cozy aroma reminiscent of fresh waffle cones at an ice cream shop. It is crafted from 100% U.S.-grown soybean wax and is vegan, gluten-free, and phthalate-free.",
+   "category": "Candles",
+   "materials": [
+    "soy wax",
+    "cotton",
+    "fragrance oils"
+   ],
+   "key_features": [
+    "Hand-poured with 100% U.S.-grown soybean wax",
+    "Cotton core wicks",
+    "Vegan, gluten-free, paraben-free, and phthalate-free",
+    "Approximately 50 hour burn time",
+    "Scent notes of Rice, Vanilla, and Cinnamon"
+   ],
+   "attributes": {
+    "candle-type": [
+     "Container"
+    ],
+    "fragrance-level": [
+     "Lightly scented"
+    ],
+    "pattern": [
+     "Solid"
+    ],
+    "scent": [
+     "Vanilla",
+     "Cinnamon"
+    ],
+    "candle-container-material": [
+     "Glass"
+    ],
+    "candle-material": [
+     "Soy wax"
+    ]
+   },
+   "colors": [
+    "#16100e",
+    "#403b39",
+    "#c8ccc6",
+    "#969993",
+    "#5f5f5c"
+   ],
+   "price": {
+    "amount": 26,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "brokentopcandleco.com",
+   "url": "https://buy.trychannel3.com/KsnyeXR-Zjfw-r1Q8ex?o=01M0MRDCWBSEFSZZTA663ZTW25&aid=01M6B334GP0E3AHP2TZJ4QM8W1",
+   "image": "https://cdn.trychannel3.com/b458cc24-88da-4ec8-b384-a9fbd6fa2fd7?aid=01M6B334GP0E3AHP2TZJ4QM8W1&mid=Zjfw",
+   "rating": null,
+   "dimensions": {
+    "length": null,
+    "width": null,
+    "height": null,
+    "weight": {
+     "number": 9,
+     "unit": "oz"
+    }
+   }
+  },
+  {
+   "id": "1LFnNJc",
+   "title": "The Hamptons Soy Candle & Fragrance Diffuser",
+   "brand": "Glasshouse Fragrances",
+   "description": "A luxury fragrance set featuring 'The Hamptons' scent by Glasshouse. This bundle includes a 7.05 oz (208 ml) soy wax candle in a clear glass jar and a 5.07 oz (150 ml) fragrance diffuser, designed to bring a sophisticated aroma to any living space.",
+   "category": "Home Fragrances",
+   "materials": [
+    "soy wax",
+    "glass"
+   ],
+   "key_features": [
+    "Soy wax candle",
+    "Fragrance diffuser",
+    "The Hamptons scent"
+   ],
+   "attributes": {
+    "pattern": [
+     "Solid"
+    ],
+    "material": [
+     "Glass"
+    ]
+   },
+   "colors": [
+    "#f0ebdd"
+   ],
+   "price": {
+    "amount": 108.99,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "fragrancenet.com",
+   "url": "https://buy.trychannel3.com/1LFnNJc-MMoD-r1Q8ex?o=01M5Y3P477C3RFE935CDP6C2N6&aid=01M6B334GP0E3AHP2TZJ4QM8W1",
+   "image": "https://cdn.trychannel3.com/afeb5147-4df0-4e06-bbcd-a42e1299969f?aid=01M6B334GP0E3AHP2TZJ4QM8W1&mid=MMoD",
+   "rating": null,
+   "dimensions": null
+  },
+  {
+   "id": "XfcrGrN",
+   "title": "Bouquet Soy Candle",
+   "brand": "Woolzies",
+   "description": "The Woolzies Bouquet Soy Candle is an all-natural aromatherapy candle designed to fill your space with a beautiful floral fragrance of Rose and Jasmine essential oils. Made from 100% biodegradable and renewable soy wax, this eco-friendly candle provides a clean, toxin-free burn without the use of paraffin or synthetic fragrances. The candle is vegan, paraben-free, and cruelty-free, ensuring a high-quality sensory experience that is welcoming and gentle.",
+   "category": "Candles",
+   "materials": [
+    "soy wax",
+    "essential oil"
+   ],
+   "key_features": [
+    "Scented with Rose and Jasmine essential oils",
+    "Made from 100% soy wax",
+    "Free of paraffin and synthetic fragrances",
+    "Vegan, paraben-free and cruelty-free",
+    "55-hour burn time",
+    "Biodegradable and renewable resource"
+   ],
+   "attributes": {
+    "candle-container-material": [
+     "Glass"
+    ],
+    "fragrance-level": [
+     "Lightly scented"
+    ],
+    "usage-type": [
+     "Reusable"
+    ],
+    "pattern": [
+     "Solid"
+    ],
+    "candle-material": [
+     "Soy wax"
+    ],
+    "scent": [
+     "Rose",
+     "Jasmine"
+    ],
+    "candle-type": [
+     "Container"
+    ]
+   },
+   "colors": [
+    "#943850",
+    "#6d2731",
+    "#b89299"
+   ],
+   "price": {
+    "amount": 24.99,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "woolzies.com",
+   "url": "https://buy.trychannel3.com/XfcrGrN-yKfk-r1Q8ex?o=01M1KKMM3VEN4G5BMVVTRP6SJ5&aid=01M6B334GP0E3AHP2TZJ4QM8W1",
+   "image": "https://cdn.trychannel3.com/64d6fe33-ac30-4116-8182-01e6a8a23740?aid=01M6B334GP0E3AHP2TZJ4QM8W1&mid=yKfk",
+   "rating": null,
+   "dimensions": {
+    "length": null,
+    "width": null,
+    "height": null,
+    "weight": {
+     "number": 12,
+     "unit": "oz"
+    }
+   }
+  }
+ ]
+}

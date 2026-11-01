@@ -1,0 +1,530 @@
+{
+ "query": "Two soy candles for coworkers, different scents, under $20 total, simple packaging.",
+ "at": "2026-11-01T08:19:56.400Z",
+ "products": [
+  {
+   "id": "3AhG0ZL",
+   "title": "Paddywax Pink Pistachio and Black Fig Puzzle Piece Jar Candles, Set of 2",
+   "brand": "Paddywax",
+   "description": "Enjoy the complementary scents of these two candles that fit together like puzzle pieces. The sweet aromas of pink pistachio and black fig commingle as they burn in their ceramic jars.",
+   "category": "Candles",
+   "materials": [
+    "Ceramic, Soy Wax"
+   ],
+   "key_features": [
+    "Puzzle piece shaped",
+    "Soy wax",
+    "Two wicks",
+    "Lit illustration",
+    "4 oz each ceramic jar",
+    "Modern gift box with magnetic closure"
+   ],
+   "attributes": {
+    "scent": [
+     "Floral"
+    ],
+    "candle-material": [
+     "Beeswax"
+    ],
+    "pattern": [
+     "Solid"
+    ],
+    "decoration-material": [
+     "Marble"
+    ],
+    "fragrance-level": [
+     "Fragrance-free"
+    ],
+    "candle-container-material": [
+     "Glass"
+    ]
+   },
+   "colors": [
+    "#50282d",
+    "#efe7d5"
+   ],
+   "price": {
+    "amount": 32.99,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "hallmark.com",
+   "url": "https://buy.trychannel3.com/3AhG0ZL-f0Ej-r1Q8ex?o=01KF01XHCX93C4H91WQZS6Z99S&aid=01M6B3377TWFYSTRG2R3Z38VFR",
+   "image": "https://cdn.trychannel3.com/0a2707ba-1465-4a30-94b1-8a42f0f5a80e?aid=01M6B3377TWFYSTRG2R3Z38VFR&mid=f0Ej",
+   "rating": null,
+   "dimensions": {
+    "length": null,
+    "width": null,
+    "height": null,
+    "weight": {
+     "number": 113,
+     "unit": "g"
+    }
+   }
+  },
+  {
+   "id": "7u4eOFq",
+   "title": "Wassail Scented Soy with Frosted Glass Holder Jar Candle",
+   "brand": "Melrose",
+   "description": "This set of two wassail scented soy candles in red and green frosted glass holders offers a rustic charm and a festive aroma of spiced cider. Each candle measures 4\" x 4\" x 5\" and features two wicks for an even burn, making them perfect for holiday decorations or gifting. Crafted from a blend of white paraffin and soy wax, these candles are designed for indoor use and add a cozy, spiced fragrance to any seasonal celebration.",
+   "category": "Candles",
+   "materials": [
+    "soy wax",
+    "paraffin wax",
+    "glass"
+   ],
+   "key_features": [
+    "Set of two candles",
+    "Frosted glass holders with distressed texture",
+    "Wassail spiced cider scent",
+    "Made with a blend of white paraffin and soy wax",
+    "Each candle has two wicks for an even and long-lasting burn",
+    "Set of Two Assorted Designs"
+   ],
+   "attributes": {
+    "candle-container-material": [
+     "Glass"
+    ],
+    "candle-material": [
+     "Paraffin wax",
+     "Soy wax"
+    ],
+    "candle-type": [
+     "Container",
+     "Votive"
+    ],
+    "decoration-material": [
+     "Glass"
+    ]
+   },
+   "colors": [
+    "#9faf7f",
+    "#889163",
+    "#656b46",
+    "#bcc79e"
+   ],
+   "price": {
+    "amount": 46.99,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "scheels.com",
+   "url": "https://buy.trychannel3.com/7u4eOFq-98k8-r1Q8ex?o=01KBPB51G7WE91YFAM051QV8AT&aid=01M6B3377TWFYSTRG2R3Z38VFR",
+   "image": "https://cdn.trychannel3.com/100f4111-6c80-4d09-bedf-34b51a8c5a7f?aid=01M6B3377TWFYSTRG2R3Z38VFR&mid=98k8",
+   "rating": null,
+   "dimensions": null
+  },
+  {
+   "id": "mH2iTwB",
+   "title": "Soy Candle Duo",
+   "brand": "Glasshouse Fragrances",
+   "description": "A luxurious floral-themed gift set featuring two 200g scented candles. The duo includes the limited edition Radiance In Bloom, with soft pink wax and notes of sparkling sea salt, tuberose, and musk, and the enchanting Velvet Rhapsody, a lush blend of aquatic florals and ripe fruits. The set is presented in a beautiful gift box featuring exclusive illustrations by artist Sally Ann.",
+   "category": "Candles",
+   "materials": [
+    "soy blend wax",
+    "cotton wicks"
+   ],
+   "key_features": [
+    "Contains 1 x Radiance In Bloom 20g Candle",
+    "Contains 1 x Velvet Rhapsody 20g Candle",
+    "Non-toxic soy blend wax",
+    "Natural lead-free cotton wicks",
+    "Limited edition floral-themed set",
+    "Exclusive illustrations by artist Sally Ann",
+    "No parabens, silicones, or PEGs",
+    "Glass jar",
+    "Botanical pattern",
+    "Adult age group"
+   ],
+   "attributes": {
+    "candle-material": [
+     "Soy wax"
+    ],
+    "candle-container-material": [
+     "Glass"
+    ],
+    "pattern": [
+     "Floral"
+    ],
+    "candle-type": [
+     "Container"
+    ],
+    "scent": [
+     "Floral",
+     "Aquatic",
+     "Fruity"
+    ],
+    "decoration-material": [
+     "Glass"
+    ]
+   },
+   "colors": [
+    "#f0e1d3",
+    "#e6b9b4",
+    "#ce908a",
+    "#b8736c"
+   ],
+   "price": {
+    "amount": 75,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "huntandbloom.com",
+   "url": "https://buy.trychannel3.com/mH2iTwB-KzH7-r1Q8ex?o=01M2H1DNJY48MV0DHS0WAGJK3E&aid=01M6B3377TWFYSTRG2R3Z38VFR",
+   "image": "https://cdn.trychannel3.com/95b266da-87ec-47a2-9046-450750f0b86d?aid=01M6B3377TWFYSTRG2R3Z38VFR&mid=KzH7",
+   "rating": {
+    "value": 4.5,
+    "count": 2
+   },
+   "dimensions": {
+    "length": null,
+    "width": null,
+    "height": null,
+    "weight": {
+     "number": 907,
+     "unit": "g"
+    }
+   }
+  },
+  {
+   "id": "p5DfK7l",
+   "title": "Scented Soy Wax Candles Tin Gift Set",
+   "brand": "Afoxsos",
+   "description": "This Christmas-themed gift set includes 12 scented soy wax candles, each weighing 2.5oz and housed in a portable tin. The assortment features various popular fragrances such as Orchid, Lavender, Rose, Sandalwood, and Bluebell. Each candle has an average burn time of 12 hours, and the vintage plant-print tins are reusable for storing small items after the wax is gone. The set comes packaged in a festive red Christmas box.",
+   "category": "Candles",
+   "materials": [
+    "soy wax"
+   ],
+   "key_features": [
+    "Set of 12 different fragrance scents including Orchid, Peony Cherry Blossom, and Lavender",
+    "Reusable tin containers for storing small items after use",
+    "Packaged in a red Christmas-themed gift box",
+    "Average burn time of 12 hours per candle",
+    "Portable size suitable for travel, yoga, or bathing"
+   ],
+   "attributes": {
+    "candle-material": [
+     "Soy wax"
+    ],
+    "candle-container-material": [
+     "Tin"
+    ],
+    "pattern": [
+     "Leaves"
+    ],
+    "scent": [
+     "Lavender",
+     "Rose",
+     "Sandalwood",
+     "Floral",
+     "Cherry"
+    ],
+    "candle-type": [
+     "Container"
+    ],
+    "usage-type": [
+     "Reusable"
+    ]
+   },
+   "colors": [
+    "#3d3f47",
+    "#1c0807",
+    "#ae977f",
+    "#55260e",
+    "#d8e0e8",
+    "#212026",
+    "#342321",
+    "#915744"
+   ],
+   "price": {
+    "amount": 61.65,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "lowes.com",
+   "url": "https://buy.trychannel3.com/p5DfK7l-Qqxu-r1Q8ex?o=01M1KN8SHG44K2YGR1MRPTTRCS&aid=01M6B3377TWFYSTRG2R3Z38VFR",
+   "image": "https://cdn.trychannel3.com/a6ac9cbd-0927-4e83-af20-96b0850856d1?aid=01M6B3377TWFYSTRG2R3Z38VFR&mid=Qqxu",
+   "rating": null,
+   "dimensions": {
+    "length": {
+     "number": 2.56,
+     "unit": "in"
+    },
+    "width": {
+     "number": 2.56,
+     "unit": "in"
+    },
+    "height": {
+     "number": 1.77,
+     "unit": "in"
+    },
+    "weight": {
+     "number": 3,
+     "unit": "oz"
+    }
+   }
+  },
+  {
+   "id": "SdXgd4Y",
+   "title": "Pine and Birch Scented 2-Wick Jar Candle, 14.5 oz.",
+   "brand": "Hallmark",
+   "description": "The product is a soy‑blend jar candle featuring two wicks for even burning. It is scented with pine and birch and is packaged in a 14.5‑oz glass jar with a cork lid, illustrated with pine cones and pine needles. The candle measures roughly 3.5\" wide by 4.5\" high by 3.5\" deep, making it an ideal hostess, house‑warming, or teacher appreciation gift.",
+   "category": "Candles",
+   "materials": [
+    "soy",
+    "glass",
+    "cork"
+   ],
+   "key_features": [
+    "Soy‑blend wax",
+    "Glass jar with cork lid",
+    "Illustrations of pine cones and pine needles",
+    "Double-wick for even burning",
+    "12‑hour burn time (approx.)",
+    "12 oz / 355 ml jar",
+    "4.5\" high",
+    "3.5\" in diameter"
+   ],
+   "attributes": {
+    "scent": [
+     "Pine",
+     "Woody"
+    ],
+    "pattern": [
+     "Abstract"
+    ],
+    "candle-container-material": [
+     "Glass"
+    ],
+    "decoration-material": [
+     "Glass"
+    ],
+    "fragrance-level": [
+     "Lightly scented"
+    ],
+    "candle-type": [
+     "Container"
+    ],
+    "candle-material": [
+     "Soy wax"
+    ]
+   },
+   "colors": [
+    "#c5cac0",
+    "#e3e9e2",
+    "#609270",
+    "#8ab499",
+    "#465339",
+    "#a7cdb8"
+   ],
+   "price": {
+    "amount": 19.99,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "hallmark.com",
+   "url": "https://buy.trychannel3.com/SdXgd4Y-f0Ej-r1Q8ex?o=01KF0467YZ5HCFG4N7J41TDRAG&aid=01M6B3377TWFYSTRG2R3Z38VFR",
+   "image": "https://cdn.trychannel3.com/12348476-7990-43f2-8ffd-f637d6af67de?aid=01M6B3377TWFYSTRG2R3Z38VFR&mid=f0Ej",
+   "rating": {
+    "value": 5,
+    "count": 3
+   },
+   "dimensions": {
+    "length": null,
+    "width": null,
+    "height": null,
+    "weight": {
+     "number": 14.5,
+     "unit": "oz"
+    }
+   }
+  },
+  {
+   "id": "K50QFrn",
+   "title": "Soy Candle Bundle",
+   "brand": "Broken Top",
+   "description": "This Sweet Soy Candle Bundle features a trio of hand-poured, 9oz soy candles in three popular sweet fragrances: Coffee Arabica, Cardamom Vanilla, and Honey Horchata. Made with 100% U.S.-grown soybean wax and cotton core wicks, these candles are vegan, gluten-free, paraben-free, and phthalate-free. Each candle provides approximately 50 hours of burn time, filling your space with cozy, sweet aromas.",
+   "category": "Candles",
+   "materials": [
+    "Soy wax",
+    "Cotton",
+    "Fragrance oils"
+   ],
+   "key_features": [
+    "Hand-poured with 100% U.S.-grown soybean wax",
+    "Includes Coffee Arabica, Cardamom Vanilla, and Honey Horchata scents",
+    "Approximately 50 hour burn time per candle",
+    "Vegan, gluten-free, paraben-free, and phthalate-free",
+    "Cotton core wicks"
+   ],
+   "attributes": {
+    "candle-container-material": [
+     "Glass"
+    ],
+    "candle-material": [
+     "Soy wax"
+    ],
+    "candle-type": [
+     "Container"
+    ],
+    "scent": [
+     "Vanilla"
+    ]
+   },
+   "colors": [
+    "#cdc7c1",
+    "#453630",
+    "#965330",
+    "#d59b74",
+    "#999088"
+   ],
+   "price": {
+    "amount": 66.3,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "brokentopcandleco.com",
+   "url": "https://buy.trychannel3.com/K50QFrn-Zjfw-r1Q8ex?o=01M0MP6EKPYQZH94E8NV837TMN&aid=01M6B3377TWFYSTRG2R3Z38VFR",
+   "image": "https://cdn.trychannel3.com/7ea73ece-b4ae-4b11-86a1-15babc7fd7e8?aid=01M6B3377TWFYSTRG2R3Z38VFR&mid=Zjfw",
+   "rating": null,
+   "dimensions": null
+  },
+  {
+   "id": "z2tBMQr",
+   "title": "FRAGA Scented Jar Candle Set",
+   "brand": "Blomus",
+   "description": "A set of two scented soy wax candles from Blomus, housed in beautifully colored concrete containers. These candles feature natural fragrances and are designed to be smoke-free and dripless. Once the candle has burned out, the concrete container can be repurposed as a storage jar or a small planter for succulents.",
+   "category": "Candles",
+   "materials": [
+    "Soy Wax",
+    "Concrete",
+    "Cotton"
+   ],
+   "key_features": [
+    "Scented",
+    "Dripless",
+    "Smoke-Free",
+    "Soy Wax",
+    "Concrete Container",
+    "Repurposable Container"
+   ],
+   "attributes": {
+    "candle-container-material": [
+     "Concrete"
+    ],
+    "pattern": [
+     "Solid"
+    ],
+    "candle-type": [
+     "Container"
+    ],
+    "scent": [
+     "Rose",
+     "Fresh linen",
+     "Sandalwood",
+     "Cinnamon",
+     "Fruity"
+    ],
+    "candle-material": [
+     "Soy wax"
+    ],
+    "usage-type": [
+     "Reusable"
+    ]
+   },
+   "colors": [
+    "#838887",
+    "#5c5d5a"
+   ],
+   "price": {
+    "amount": 47.99,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "wayfair.com",
+   "url": "https://buy.trychannel3.com/z2tBMQr-BIP9-r1Q8ex?o=01M5XPVRFSAAMT2WHB310Q1V14&aid=01M6B3377TWFYSTRG2R3Z38VFR",
+   "image": "https://cdn.trychannel3.com/5a2fc191-bed5-48d0-9faa-142c7c0aa216?aid=01M6B3377TWFYSTRG2R3Z38VFR&mid=BIP9",
+   "rating": null,
+   "dimensions": {
+    "length": {
+     "number": 6,
+     "unit": "in"
+    },
+    "width": {
+     "number": 3.5,
+     "unit": "in"
+    },
+    "height": {
+     "number": 4.3,
+     "unit": "in"
+    },
+    "weight": {
+     "number": 2.38,
+     "unit": "lb"
+    }
+   }
+  },
+  {
+   "id": "eE57mAd",
+   "title": "Moroccan Terracotta Soy Candle",
+   "brand": "Verve Culture",
+   "description": "A handmade terracotta glazed candle vessel from Morocco houses amber scented soy wax. Crafted in Marrakesh, each cup features hand-glazed finishes with a cream and terracotta color block. The candle offers a warm amber aroma, and once burned, the ceramic cup can be repurposed as a decorative piece or small storage. Specifications include a compact size and weight, with care instructions noting hand-washing due to terracotta’s porous nature and minor glaze cracking that may occur from artisanal production.",
+   "category": "Candles",
+   "materials": [
+    "Terracotta glaze",
+    "Soy Wax",
+    "Amber Scent"
+   ],
+   "key_features": [
+    "Handmade Moroccan terracotta vessel",
+    "Amber scented soy candle",
+    "Cream and terracotta color block glaze",
+    "Vessel is reusable after candle",
+    "Compact size: 2.5' height x 2.6' diameter",
+    "Care: hand-wash recommended",
+    "Includes hand-glazed, artisanal finish",
+    "Dimensions: approx 2.5 inches height x 2.6 inches diameter"
+   ],
+   "attributes": {
+    "candle-material": [
+     "Soy wax"
+    ],
+    "candle-type": [
+     "Container"
+    ],
+    "pattern": [
+     "Color-block"
+    ]
+   },
+   "colors": [
+    "#e2cda5",
+    "#f2e2c6",
+    "#baa484",
+    "#dbaa78",
+    "#b8906b",
+    "#a66b45"
+   ],
+   "price": {
+    "amount": 96,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "verveculture.com",
+   "url": "https://buy.trychannel3.com/eE57mAd-afYj-r1Q8ex?o=01KFDMAFSWBEVWWYN2D3K9513F&aid=01M6B3377TWFYSTRG2R3Z38VFR",
+   "image": "https://cdn.trychannel3.com/f432b43a-e451-4c05-97a3-138fcc12836f?aid=01M6B3377TWFYSTRG2R3Z38VFR&mid=afYj",
+   "rating": {
+    "value": 5,
+    "count": 1
+   },
+   "dimensions": {
+    "length": null,
+    "width": null,
+    "height": null,
+    "weight": {
+     "number": 8,
+     "unit": "oz"
+    }
+   }
+  }
+ ]
+}

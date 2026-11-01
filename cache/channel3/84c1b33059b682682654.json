@@ -1,0 +1,496 @@
+{
+ "query": "Find the cheapest deep orange soy candle available, under $15, no shipping fees.",
+ "at": "2026-11-01T08:18:36.568Z",
+ "products": [
+  {
+   "id": "iERWUah",
+   "title": "Soy Candle",
+   "brand": "Sweet Water Decor",
+   "description": "Elevate your Halloween decor with the Spooky Season soy candle. Housed in a chic matte orange jar, this candle features the Cozy Season fragrance—an enchanting blend of woods, warm spice, and citrus designed to create an inviting atmosphere for fall festivities. Made in the USA from a vegan and non-GMO soy-based wax blend, it provides a clean burn of over 70 hours.",
+   "category": "Candles",
+   "materials": [
+    "Soy Based Wax Blend",
+    "Cotton"
+   ],
+   "key_features": [
+    "Cozy Season scent with notes of woods, warm spice, and citrus",
+    "Burn time of 70+ hours",
+    "100% cotton wick (lead and zinc free)",
+    "Vegan, Non-GMO, and Kosher soy wax blend",
+    "Phthalate-free, non-toxic, and gluten-free",
+    "Made in USA"
+   ],
+   "attributes": {
+    "candle-container-material": [
+     "Glass"
+    ],
+    "candle-material": [
+     "Soy wax"
+    ],
+    "candle-type": [
+     "Container"
+    ],
+    "pattern": [
+     "Solid"
+    ],
+    "scent": [
+     "Citrus",
+     "Spicy",
+     "Woody"
+    ]
+   },
+   "colors": [
+    "#e07927",
+    "#eeece7",
+    "#c9732e"
+   ],
+   "price": {
+    "amount": 44,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "lindsayletters.co",
+   "url": "https://buy.trychannel3.com/iERWUah-AZxD-r1Q8ex?o=01M0SW9YDW3TM99A6CS7FEQ79R&aid=01M6B30S26ASTDMQK7CNYSDXF6",
+   "image": "https://cdn.trychannel3.com/c6b7fcc5-d961-4c04-91bf-2a1afe9f783a?aid=01M6B30S26ASTDMQK7CNYSDXF6&mid=AZxD",
+   "rating": null,
+   "dimensions": {
+    "length": {
+     "number": 3.25,
+     "unit": "in"
+    },
+    "width": {
+     "number": 3.63,
+     "unit": "in"
+    },
+    "height": {
+     "number": 4,
+     "unit": "in"
+    },
+    "weight": {
+     "number": 334,
+     "unit": "g"
+    }
+   }
+  },
+  {
+   "id": "h2rHz3a",
+   "title": "Cranberry Orange Soy Candle",
+   "brand": "Broken Top",
+   "description": "A hand-poured soy candle with a quintessential seasonal scent featuring tart cranberry and zesty citrus balanced with warm spices. It is made from 100% U.S.-grown soybean wax with a cotton core wick, and is vegan, gluten-free, paraben-free, and phthalate-free.",
+   "category": "Candles",
+   "materials": [
+    "Soy wax",
+    "Cotton",
+    "Essential Oil Infused Fragrance Oils"
+   ],
+   "key_features": [
+    "Hand-poured with 100% U.S.-grown soybean wax",
+    "Cotton core wick",
+    "Vegan",
+    "Gluten-free",
+    "Paraben-free",
+    "Phthalate-free",
+    "80 hour burn time for 16oz size"
+   ],
+   "attributes": {
+    "scent": [
+     "Citrus",
+     "Spicy"
+    ],
+    "candle-container-material": [
+     "Glass"
+    ],
+    "candle-material": [
+     "Soy wax"
+    ],
+    "candle-type": [
+     "Container"
+    ]
+   },
+   "colors": [
+    "#130e0a",
+    "#625038",
+    "#d4d8d1",
+    "#a6a9a2",
+    "#33302c",
+    "#746d5e"
+   ],
+   "price": {
+    "amount": 36,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "brokentopcandleco.com",
+   "url": "https://buy.trychannel3.com/h2rHz3a-Zjfw-r1Q8ex?o=01M43W2M91AB5K71B8FHF902G6&aid=01M6B30S26ASTDMQK7CNYSDXF6",
+   "image": "https://cdn.trychannel3.com/b40cc7a2-8335-4bea-9c87-69795b49b118?aid=01M6B30S26ASTDMQK7CNYSDXF6&mid=Zjfw",
+   "rating": null,
+   "dimensions": {
+    "length": null,
+    "width": null,
+    "height": null,
+    "weight": {
+     "number": 453,
+     "unit": "g"
+    }
+   }
+  },
+  {
+   "id": "UFM5QtJ",
+   "title": "In Season Pumpkin Spiced Cake Soy Candle",
+   "brand": "Glasshouse Fragrances",
+   "description": "A luxurious, large-format soy wax candle from Glasshouse Fragrances, presented in a sleek black vessel with a matching lid. This candle features the 'In Season' fragrance profile of Pumpkin Spiced Cake and weighs 380g (approximately 13.4 oz). The packaging is vibrant orange with diagonal stripes, highlighting the scent and size information.",
+   "category": "Candles",
+   "materials": [
+    "Soy wax"
+   ],
+   "key_features": [
+    "Pumpkin Spiced Cake fragrance",
+    "Soy wax construction",
+    "Large 380g / 13.4 oz size",
+    "Comes in a reusable black vessel with lid"
+   ],
+   "attributes": {
+    "scent": [
+     "Vanilla"
+    ],
+    "candle-container-material": [
+     "Glass"
+    ],
+    "candle-material": [
+     "Soy wax"
+    ],
+    "pattern": [
+     "Floral"
+    ],
+    "candle-type": [
+     "Container"
+    ]
+   },
+   "colors": [
+    "#120f0f",
+    "#3b3534",
+    "#b5a484",
+    "#69625f"
+   ],
+   "price": {
+    "amount": 55,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "neimanmarcus.com",
+   "url": "https://buy.trychannel3.com/UFM5QtJ-e6W9-r1Q8ex?o=01KC47CZKVV0TVM68W9SSK0HY5&aid=01M6B30S26ASTDMQK7CNYSDXF6",
+   "image": "https://cdn.trychannel3.com/9ffd8fb5-e3f3-44dd-896c-a03a0233f996?aid=01M6B30S26ASTDMQK7CNYSDXF6&mid=e6W9",
+   "rating": null,
+   "dimensions": null
+  },
+  {
+   "id": "HYtexr6",
+   "title": "Moroccan Terracotta Soy Candle",
+   "brand": "Verve Culture",
+   "description": "Handcrafted in Marrakesh, Morocco, this Moroccan Terracotta Soy Candle features a warm amber scent housed in a handmade glazed terracotta vessel. The natural soy wax creates a soothing atmosphere, and once the candle is burned through, the rustic cup can be repurposed as a decorative accent, a small storage container, or a coffee cup.",
+   "category": "Candles",
+   "materials": [
+    "terracotta",
+    "soy wax"
+   ],
+   "key_features": [
+    "Handmade glazed terracotta cup crafted by artisans in Marrakesh, Morocco",
+    "Natural soy wax blended with a rich amber fragrance",
+    "Reusable vessel can be repurposed for coffee, storage, or home decor",
+    "100% recyclable packaging",
+    "Traditional hand-glazed finishes"
+   ],
+   "attributes": {
+    "candle-material": [
+     "Soy wax"
+    ],
+    "candle-type": [
+     "Container"
+    ],
+    "usage-type": [
+     "Reusable"
+    ]
+   },
+   "colors": [
+    "#e2cda4",
+    "#f2e1c5",
+    "#dbaa78",
+    "#baa484",
+    "#b8906b",
+    "#a56b45"
+   ],
+   "price": {
+    "amount": 24,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "macys.com",
+   "url": "https://buy.trychannel3.com/HYtexr6-K6RA-r1Q8ex?o=01M48TWHPMT92W395E22NNS2ZX&aid=01M6B30S26ASTDMQK7CNYSDXF6",
+   "image": "https://cdn.trychannel3.com/20be4448-f3b8-460a-ad72-0e29d9e5a808?aid=01M6B30S26ASTDMQK7CNYSDXF6&mid=K6RA",
+   "rating": null,
+   "dimensions": {
+    "length": null,
+    "width": {
+     "number": 2.6,
+     "unit": "in"
+    },
+    "height": {
+     "number": 2.5,
+     "unit": "in"
+    },
+    "weight": null
+   }
+  },
+  {
+   "id": "eE57mAd",
+   "title": "Moroccan Terracotta Soy Candle",
+   "brand": "Verve Culture",
+   "description": "A handmade terracotta glazed candle vessel from Morocco houses amber scented soy wax. Crafted in Marrakesh, each cup features hand-glazed finishes with a cream and terracotta color block. The candle offers a warm amber aroma, and once burned, the ceramic cup can be repurposed as a decorative piece or small storage. Specifications include a compact size and weight, with care instructions noting hand-washing due to terracotta’s porous nature and minor glaze cracking that may occur from artisanal production.",
+   "category": "Candles",
+   "materials": [
+    "Terracotta glaze",
+    "Soy Wax",
+    "Amber Scent"
+   ],
+   "key_features": [
+    "Handmade Moroccan terracotta vessel",
+    "Amber scented soy candle",
+    "Cream and terracotta color block glaze",
+    "Vessel is reusable after candle",
+    "Compact size: 2.5' height x 2.6' diameter",
+    "Care: hand-wash recommended",
+    "Includes hand-glazed, artisanal finish",
+    "Dimensions: approx 2.5 inches height x 2.6 inches diameter"
+   ],
+   "attributes": {
+    "candle-material": [
+     "Soy wax"
+    ],
+    "candle-type": [
+     "Container"
+    ],
+    "pattern": [
+     "Color-block"
+    ]
+   },
+   "colors": [
+    "#e2cda5",
+    "#f2e2c6",
+    "#baa484",
+    "#dbaa78",
+    "#b8906b",
+    "#a66b45"
+   ],
+   "price": {
+    "amount": 96,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "verveculture.com",
+   "url": "https://buy.trychannel3.com/eE57mAd-afYj-r1Q8ex?o=01KFDMAFSWBEVWWYN2D3K9513F&aid=01M6B30S26ASTDMQK7CNYSDXF6",
+   "image": "https://cdn.trychannel3.com/f432b43a-e451-4c05-97a3-138fcc12836f?aid=01M6B30S26ASTDMQK7CNYSDXF6&mid=afYj",
+   "rating": {
+    "value": 5,
+    "count": 1
+   },
+   "dimensions": {
+    "length": null,
+    "width": null,
+    "height": null,
+    "weight": {
+     "number": 8,
+     "unit": "oz"
+    }
+   }
+  },
+  {
+   "id": "f5wdhjf",
+   "title": "Pyro Candle",
+   "brand": "Sitia",
+   "description": "A SIDIA Pyro Candle, a cylindrical wax candle with an orange amber gradient in a glass jar. Features a white label with the brand SIDIA and the product name PYRO, described as a wax candle (bougie de cire). 50-hour burn time, soy-coconut wax blend, cotton wick. Made in USA. Sold by Shopbop.",
+   "category": "Candles",
+   "materials": [
+    "soy-coconut wax blend",
+    "cotton wick"
+   ],
+   "key_features": [
+    "Top notes: Rainier Cherry, Mandarin, Peppercorn",
+    "Middle notes: Charred Rose, Peony, Saffron, Nutmeg",
+    "Base notes: Sandalwood, Precious Woods, Moss",
+    "50-hour burn time"
+   ],
+   "attributes": {
+    "candle-material": [
+     "Soy wax"
+    ],
+    "scent": [
+     "Cherry",
+     "Citrus",
+     "Spicy",
+     "Rose",
+     "Floral",
+     "Sandalwood",
+     "Woody"
+    ],
+    "candle-type": [
+     "Container"
+    ]
+   },
+   "colors": [
+    "#e7e2dc",
+    "#f47b0f",
+    "#dd4f13",
+    "#d87445",
+    "#f3921f",
+    "#b4391f",
+    "#eab97a"
+   ],
+   "price": {
+    "amount": 70,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "shopbop.com",
+   "url": "https://buy.trychannel3.com/f5wdhjf-pyJB-r1Q8ex?o=01KRHGWNY1QM3PRQMC7RT8CTD2&aid=01M6B30S26ASTDMQK7CNYSDXF6",
+   "image": "https://cdn.trychannel3.com/9f589f0a-6f85-4c8a-90f7-dcf927f49a6c?aid=01M6B30S26ASTDMQK7CNYSDXF6&mid=pyJB",
+   "rating": null,
+   "dimensions": null
+  },
+  {
+   "id": "HTmk05o",
+   "title": "Cozy Season Soy Candle",
+   "brand": "Sweet Water Decor",
+   "description": "A deep and inviting soy-based candle designed for Fall and Winter, featuring a fragrance blend of woods, warm spice, and citrus. This 9 oz candle comes in an amber jar and offers a burn time of over 40 hours.",
+   "category": "Candles",
+   "materials": [
+    "Proprietary Soy Based Wax Blend",
+    "Cotton"
+   ],
+   "key_features": [
+    "Scent notes of woods, warm spice, and citrus",
+    "Burn time of 40+ hours",
+    "100% Cotton wick (Lead and Zinc Free)",
+    "Vegan, Non-GMO, and Kosher wax",
+    "Gluten Free, Phthalate Free, and Non-Toxic",
+    "Made in USA"
+   ],
+   "attributes": {
+    "candle-container-material": [
+     "Glass"
+    ],
+    "candle-type": [
+     "Container"
+    ],
+    "scent": [
+     "Woody",
+     "Spicy",
+     "Citrus"
+    ],
+    "candle-material": [
+     "Soy wax"
+    ],
+    "pattern": [
+     "Solid"
+    ]
+   },
+   "colors": [
+    "#cecbc6",
+    "#422717",
+    "#241a0f",
+    "#aea191",
+    "#7e4626"
+   ],
+   "price": {
+    "amount": 24,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "lindsayletters.co",
+   "url": "https://buy.trychannel3.com/HTmk05o-AZxD-r1Q8ex?o=01M5XGE12H80W3JCPFPQGFE4TS&aid=01M6B30S26ASTDMQK7CNYSDXF6",
+   "image": "https://cdn.trychannel3.com/e7f96a35-153d-4d4d-a892-154f722b874d?aid=01M6B30S26ASTDMQK7CNYSDXF6&mid=AZxD",
+   "rating": null,
+   "dimensions": {
+    "length": {
+     "number": 2.75,
+     "unit": "in"
+    },
+    "width": {
+     "number": 2.75,
+     "unit": "in"
+    },
+    "height": {
+     "number": 3.5,
+     "unit": "in"
+    },
+    "weight": {
+     "number": 340,
+     "unit": "g"
+    }
+   }
+  },
+  {
+   "id": "a9aujQt",
+   "title": "Holiday Hearth Soy Candle",
+   "brand": "Woolzies",
+   "description": "Bring the warmth of the season home with the Woolzies Holiday Hearth Soy Candle. This cozy scent is a blend of Amber, Sandalwood, and Vanilla, designed to create an inviting fragrance perfectly suited for holiday evenings. Made with 100% natural soy wax and essential oils, it comes in an 11 oz (325 ml) jar with a burn time of up to 55 hours, making it an ideal choice for festive home décor or thoughtful seasonal gifting.",
+   "category": "Candles",
+   "materials": [
+    "Soy Wax",
+    "Amber Essential Oil",
+    "Sandalwood Essential Oil",
+    "Vanilla Essential Oil"
+   ],
+   "key_features": [
+    "100% natural soy candle",
+    "Warm Amber, Sandalwood & Vanilla aroma",
+    "Cozy, smooth & inviting scent profile",
+    "11 oz / 325 ml",
+    "Up to 55 hours burn time",
+    "Beautiful holiday-ready packaging"
+   ],
+   "attributes": {
+    "candle-container-material": [
+     "Glass"
+    ],
+    "pattern": [
+     "Plaid"
+    ],
+    "candle-type": [
+     "Container"
+    ],
+    "candle-material": [
+     "Soy wax"
+    ],
+    "scent": [
+     "Sandalwood",
+     "Vanilla"
+    ]
+   },
+   "colors": [
+    "#f5ecdf",
+    "#98141f",
+    "#5d0f0e",
+    "#a59c8c",
+    "#973333"
+   ],
+   "price": {
+    "amount": 19.99,
+    "currency": "USD"
+   },
+   "availability": "InStock",
+   "domain": "woolzies.com",
+   "url": "https://buy.trychannel3.com/a9aujQt-yKfk-r1Q8ex?o=01M50HA4HTBFTH9BC2NVH9AXK3&aid=01M6B30S26ASTDMQK7CNYSDXF6",
+   "image": "https://cdn.trychannel3.com/7da46d06-f0b5-4df5-bd3d-611e13297f73?aid=01M6B30S26ASTDMQK7CNYSDXF6&mid=yKfk",
+   "rating": null,
+   "dimensions": {
+    "length": null,
+    "width": null,
+    "height": null,
+    "weight": {
+     "number": 454,
+     "unit": "g"
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,606 @@
+{
+ "shop": "Amber & Aura",
+ "source": "https://candles.mock.shop",
+ "products": [
+  {
+   "id": "deep-orange-soy-candle",
+   "shop": "Amber & Aura",
+   "title": "Deep Orange Soy Candle",
+   "category": "Earthen Glow Vessels",
+   "description": "A handcrafted soy candle in a deep orange hue, presented on a minimalistic background. Its form and artisanal quality are highlighted by soft, even lighting.",
+   "price": 25,
+   "currency": "USD",
+   "attributes": {
+    "Vessel Color": "Sand, Charcoal",
+    "Wax Finish": "Matte, Satin, Glazed"
+   },
+   "tags": [
+    "earthen glow vessels",
+    "candles"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0926/4031/3366/files/79b939e2c98225cac8af487c3730124d.png?v=13171227",
+   "url": "https://candles.mock.shop/products/deep-orange-soy-candle",
+   "notes": ""
+  },
+  {
+   "id": "rust-red-campfire-candle",
+   "shop": "Amber & Aura",
+   "title": "Rust Red Campfire Candle",
+   "category": "Earthen Glow Vessels",
+   "description": "Light up bold nights with the crackling spirit of a Western campfire—no matches or marshmallows required. This hand-poured soy candle fills your space with smoky cedarwood and embers, evoking tales around the flames. Infuses rooms with deep, earthy warmth and subtle spice Sturdy glass vessel brings rustic, ranch-ready charm to any shelf Long, even burn to savor evenings that stretch on like open prairie",
+   "price": 38,
+   "currency": "USD",
+   "attributes": {
+    "Vessel Color": "Sand, Charcoal",
+    "Wax Finish": "Matte, Satin, Glazed"
+   },
+   "tags": [
+    "earthen glow vessels",
+    "candles"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0926/4031/3366/files/f65ac3b17248f2c344a72801b01a23b7.png?v=14944839",
+   "url": "https://candles.mock.shop/products/rust-red-campfire-candle",
+   "notes": ""
+  },
+  {
+   "id": "scented-candle-in-earthy-brown-container",
+   "shop": "Amber & Aura",
+   "title": "Scented Candle in Earthy Brown Container",
+   "category": "Earthen Glow Vessels",
+   "description": "A luxury scented candle housed in an elegant, earthy brown container. Its sophisticated design and natural elegance are highlighted by soft, even lighting.",
+   "price": 75,
+   "currency": "USD",
+   "attributes": {
+    "Wax Finish": "Matte, Satin, Glazed",
+    "Vessel Color": "Sand, Charcoal"
+   },
+   "tags": [
+    "earthen glow vessels",
+    "candles"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0926/4031/3366/files/b29716228db02c225ffc36fa7d088ce8.png?v=13560937",
+   "url": "https://candles.mock.shop/products/scented-candle-in-earthy-brown-container",
+   "notes": ""
+  },
+  {
+   "id": "earth-clay-scented-candle",
+   "shop": "Amber & Aura",
+   "title": "Earth clay scented candle",
+   "category": "Earthen Glow Vessels",
+   "description": "Experience grounding tranquility with a candle inspired by sun-warmed clay and cool stone. Subtle mineral and earth notes evoke serene natural spaces Soy wax delivers hours of gentle, toxin-free fragrance Understated matte vessel in warm beige tones, designed for calm homes",
+   "price": 32,
+   "currency": "USD",
+   "attributes": {
+    "Vessel Color": "Sand, Charcoal",
+    "Wax Finish": "Matte, Satin, Glazed"
+   },
+   "tags": [
+    "earthen glow vessels",
+    "candles"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0926/5994/1398/files/d0e845329e127b62faec12faf8ecd326.png?v=14946485",
+   "url": "https://candles.mock.shop/products/earth-clay-scented-candle",
+   "notes": ""
+  },
+  {
+   "id": "artisan-night-lamp",
+   "shop": "Amber & Aura",
+   "title": "Artisan Night Lamp",
+   "category": "Earthen Glow Vessels",
+   "description": "A straight-on shot of an artisan night lamp in Pale Blush, with subtle warm tones of Sunlit Wheat and Clay Terracotta. The lamp is perfectly centered and illuminated with soft, even, shadowless lighting.",
+   "price": 75,
+   "currency": "USD",
+   "attributes": {
+    "Vessel Color": "Sand, Charcoal",
+    "Wax Finish": "Matte, Satin, Glazed"
+   },
+   "tags": [
+    "earthen glow vessels",
+    "lamps"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0926/5994/1398/files/7e0e7c5e500ab144e7ec619823460886.png?v=12809230",
+   "url": "https://candles.mock.shop/products/artisan-night-lamp",
+   "notes": ""
+  },
+  {
+   "id": "handcrafted-ceramic-table-lamp",
+   "shop": "Amber & Aura",
+   "title": "Handcrafted Ceramic Table Lamp",
+   "category": "Earthen Glow Vessels",
+   "description": "A beautifully handcrafted ceramic table lamp, showcasing intricate texture and craftsmanship. Its elegant design is enhanced by soft, even lighting, creating a warm and inviting ambiance.",
+   "price": 125,
+   "currency": "USD",
+   "attributes": {
+    "Wax Finish": "Matte, Satin, Glazed",
+    "Vessel Color": "Sand, Charcoal"
+   },
+   "tags": [
+    "earthen glow vessels",
+    "lamps"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0926/4031/3366/files/b94cea3fa768b1ed66a8acc722ebd934.png?v=13163828",
+   "url": "https://candles.mock.shop/products/handcrafted-ceramic-table-lamp",
+   "notes": ""
+  },
+  {
+   "id": "earthy-toned-candle-warmer-lamp",
+   "shop": "Amber & Aura",
+   "title": "Earthy Toned Candle Warmer Lamp",
+   "category": "Earthen Glow Vessels",
+   "description": "This elegant candle warmer lamp features a rich, earthy tone that complements its surroundings. Its design highlights high-quality materials and is enhanced by soft, even lighting.",
+   "price": 45.99,
+   "currency": "USD",
+   "attributes": {
+    "Vessel Color": "Sand, Charcoal",
+    "Wax Finish": "Matte, Satin, Glazed"
+   },
+   "tags": [
+    "earthen glow vessels",
+    "lamps"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0926/5994/1398/files/ef2b394ad70140420bf05e391138cecf.png?v=12731201",
+   "url": "https://candles.mock.shop/products/earthy-toned-candle-warmer-lamp",
+   "notes": ""
+  },
+  {
+   "id": "organic-ceramic-table-lamp",
+   "shop": "Amber & Aura",
+   "title": "Organic Ceramic Table Lamp",
+   "category": "Earthen Glow Vessels",
+   "description": "A decorative ceramic table lamp featuring a smooth, organic shape and a textural finish in warm, natural tones. This lamp is designed to complement any home decor.",
+   "price": 75,
+   "currency": "USD",
+   "attributes": {
+    "Wax Finish": "Matte, Satin, Glazed",
+    "Vessel Color": "Sand, Charcoal"
+   },
+   "tags": [
+    "earthen glow vessels",
+    "lamps"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0926/4031/3366/files/965766c93849f086201b1d1cffb3710d.png?v=13133776",
+   "url": "https://candles.mock.shop/products/organic-ceramic-table-lamp",
+   "notes": ""
+  },
+  {
+   "id": "burnt-sienna-incense-set",
+   "shop": "Amber & Aura",
+   "title": "Burnt sienna incense set",
+   "category": "Ritual Incense Stations",
+   "description": "Let earthy burnt sienna incense infuse your evening with slow-burning, meditative warmth. This small-batch set is crafted for urban sanctuaries craving stillness after motion. Deep, resinous notes linger gently—perfect for unwinding or setting mindful intentions Each stick is hand-rolled and dusted with natural pigment for a tactile ritual experience Minimalist ceramic holder included, designed to complement modern interiors",
+   "price": 44,
+   "currency": "USD",
+   "attributes": {
+    "Holder Shape": "Crescent, Sphere, Pebble",
+    "Scent Note": "Cedar, Amber"
+   },
+   "tags": [
+    "ritual incense stations",
+    "incense"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0926/4031/3366/files/e39d4eade3fe874413e91c682c547776.png?v=14864408",
+   "url": "https://candles.mock.shop/products/burnt-sienna-incense-set",
+   "notes": ""
+  },
+  {
+   "id": "design-zundholzbox-terrakotta-rose",
+   "shop": "Amber & Aura",
+   "title": "Designer Matchbox Terracotta & Rose",
+   "category": "Ritual Incense Stations",
+   "description": "With the stylish matchbox in Urban Terracotta and Muted Rose, even lighting becomes part of your ritual. The textured surface feels pleasant in the hand and harmonizes perfectly with modern interiors. Long-lasting matches with smoothly gliding heads for effortless use Cardboard with a matte, elegant feel – an eye-catcher on any sideboard Ideal as a gift or addition for conscious everyday moments",
+   "price": 22,
+   "currency": "USD",
+   "attributes": {
+    "Holder Shape": "Crescent, Sphere, Pebble",
+    "Scent Note": "Cedar, Amber"
+   },
+   "tags": [
+    "ritual incense stations",
+    "incense"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0926/4031/3366/files/deb7d3d9c326455058ab851d71c7168d.png?v=14781855",
+   "url": "https://candles.mock.shop/products/design-zundholzbox-terrakotta-rose",
+   "notes": ""
+  },
+  {
+   "id": "incensario-ceramico-bege-com-incenso-natural",
+   "shop": "Amber & Aura",
+   "title": "Beige ceramic incense holder with natural incense",
+   "category": "Ritual Incense Stations",
+   "description": "The purity of the beige ceramic meets the earthy aroma of natural incense, creating a fragrant refuge for daily meditations. Minimalist design that integrates easily into any decor Includes handcrafted incense sticks with soft woody notes Raised edge prevents residue, keeping the environment clean",
+   "price": 63,
+   "currency": "USD",
+   "attributes": {
+    "Scent Note": "Cedar, Amber",
+    "Holder Shape": "Crescent, Sphere, Pebble"
+   },
+   "tags": [
+    "ritual incense stations",
+    "incense"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0926/4031/3366/files/e2da3a9fd4b36ac1f1e04b38ec96f5fa.png?v=14576862",
+   "url": "https://candles.mock.shop/products/incensario-ceramico-bege-com-incenso-natural",
+   "notes": ""
+  },
+  {
+   "id": "artisanal-incense-sticks",
+   "shop": "Amber & Aura",
+   "title": "Artisanal Incense Sticks",
+   "category": "Ritual Incense Stations",
+   "description": "Experience the rich aroma of these high-quality incense sticks, crafted with natural materials and an artisanal design. The vibrant colors and tactile packaging make them a beautiful addition to any home.",
+   "price": 25,
+   "currency": "USD",
+   "attributes": {
+    "Holder Shape": "Crescent, Sphere, Pebble",
+    "Scent Note": "Cedar, Amber"
+   },
+   "tags": [
+    "ritual incense stations",
+    "incense"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0926/5994/1398/files/f9b8c8cf169801eb3fd8468b44ecf6c3.png?v=13187595",
+   "url": "https://candles.mock.shop/products/artisanal-incense-sticks",
+   "notes": ""
+  },
+  {
+   "id": "incense-sticks-with-glazed-ceramic-holder",
+   "shop": "Amber & Aura",
+   "title": "Incense Sticks with Glazed Ceramic Holder",
+   "category": "Ritual Incense Stations",
+   "description": "Let your senses linger as smoky sandalwood and citrus unfurl slowly through the air. Hand-dipped incense delivers clean, lingering scent without harshness Accompanied by a glossy ceramic holder—each one unique, crafted for visual harmony Perfect for unwinding at dusk or as a subtle daily background ritual",
+   "price": 42,
+   "currency": "USD",
+   "attributes": {
+    "Scent Note": "Cedar, Amber",
+    "Holder Shape": "Crescent, Sphere, Pebble"
+   },
+   "tags": [
+    "ritual incense stations",
+    "incense holders"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0926/5994/1398/files/bdb4037947d636af766a9268e9bcceea.png?v=14984098",
+   "url": "https://candles.mock.shop/products/incense-sticks-with-glazed-ceramic-holder",
+   "notes": ""
+  },
+  {
+   "id": "ceramic-incense-holder-with-matte-glaze",
+   "shop": "Amber & Aura",
+   "title": "Ceramic Incense Holder With Matte Glaze",
+   "category": "Ritual Incense Stations",
+   "description": "Smooth to the touch and quietly sculptural, this incense holder elevates your ritual space while grounding your senses in the present moment. Weighted ceramic construction ensures stability during meditative use Soft matte glaze offers a tactile finish that soothes and calms Minimal footprint fits seamlessly into both home and studio environments",
+   "price": 42,
+   "currency": "USD",
+   "attributes": {
+    "Scent Note": "Cedar, Amber",
+    "Holder Shape": "Crescent, Sphere, Pebble"
+   },
+   "tags": [
+    "ritual incense stations",
+    "incense holders"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0926/5994/1398/files/33570d0ef9ba24c12013c817d2992904.png?v=14849289",
+   "url": "https://candles.mock.shop/products/ceramic-incense-holder-with-matte-glaze",
+   "notes": ""
+  },
+  {
+   "id": "incense-sticks-in-minimalist-holder",
+   "shop": "Amber & Aura",
+   "title": "Incense Sticks In Minimalist Holder",
+   "category": "Ritual Incense Stations",
+   "description": "Awaken your sacred space with incense crafted from hand-rolled botanicals, paired with a serene sage-toned holder. Each stick unfurls smoke that weaves through your home, drawing you into a moment of warm belonging. Sandalwood, cedar, and lavender blend for a scent that feels like walking through ancient woods at dusk. The minimalist ceramic holder anchors your ritual—simple, grounding, endlessly reusable. Sets the mood for meditation or gentle unwinding as day melts into night.",
+   "price": 32,
+   "currency": "USD",
+   "attributes": {
+    "Holder Shape": "Crescent, Sphere, Pebble",
+    "Scent Note": "Cedar, Amber"
+   },
+   "tags": [
+    "ritual incense stations",
+    "incense holders"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0926/5994/1398/files/ee31d6b80c87c3e7620915d2711ac3dc.png?v=14948254",
+   "url": "https://candles.mock.shop/products/incense-sticks-in-minimalist-holder",
+   "notes": ""
+  },
+  {
+   "id": "minimalist-stoneware-incense-holder-with-ash-well",
+   "shop": "Amber & Aura",
+   "title": "Minimalist Stoneware Incense Holder with Ash Well",
+   "category": "Ritual Incense Stations",
+   "description": "Breathe in the serenity of ritual: this minimalist incense holder is shaped from cool stoneware, its subtle well cradling ash for effortless tidiness. The hushed palette complements quiet mornings and contemplative evenings alike. Hand-formed details invite closer inspection and a tactile pause before lighting incense. A refined accent for desks, bedside tables, or meditation nooks—wherever calm is needed most.",
+   "price": 48,
+   "currency": "USD",
+   "attributes": {
+    "Scent Note": "Cedar, Amber",
+    "Holder Shape": "Crescent, Sphere, Pebble"
+   },
+   "tags": [
+    "ritual incense stations",
+    "incense holders"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0926/4031/3366/files/2067004c4066f8ae3552c0ac36f8270b.png?v=14857165",
+   "url": "https://candles.mock.shop/products/minimalist-stoneware-incense-holder-with-ash-well",
+   "notes": ""
+  },
+  {
+   "id": "handcrafted-ceramic-vase",
+   "shop": "Amber & Aura",
+   "title": "Handcrafted Ceramic Vase",
+   "category": "Sculptural Stillness",
+   "description": "A handcrafted ceramic vase with a smooth texture and elegant design. The vase features warm tones and a subtle matte finish, highlighting the richness of the material.",
+   "price": 75,
+   "currency": "USD",
+   "attributes": {
+    "Scale": "Small, Large",
+    "Texture": "Smooth, Grooved, Speckled"
+   },
+   "tags": [
+    "sculptural stillness",
+    "vases"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0926/5994/1398/files/0cde8a6d379b1cfe4e3a0c03915b76ec.png?v=13209192",
+   "url": "https://candles.mock.shop/products/handcrafted-ceramic-vase",
+   "notes": ""
+  },
+  {
+   "id": "ceramic-vase",
+   "shop": "Amber & Aura",
+   "title": "Ceramic Vase",
+   "category": "Sculptural Stillness",
+   "description": "A decorative ceramic vase with a smooth finish and a classic shape. Its earthy tones make it a versatile addition to any home decor.",
+   "price": 75,
+   "currency": "USD",
+   "attributes": {
+    "Scale": "Small, Large",
+    "Texture": "Smooth, Grooved, Speckled"
+   },
+   "tags": [
+    "sculptural stillness",
+    "vases"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0926/5994/1398/files/b936fa765837cf185fc4637670a5e1c6.png?v=13675961",
+   "url": "https://candles.mock.shop/products/ceramic-vase",
+   "notes": ""
+  },
+  {
+   "id": "textured-burnt-sienna-vase",
+   "shop": "Amber & Aura",
+   "title": "Textured Burnt Sienna Vase",
+   "category": "Sculptural Stillness",
+   "description": "A custom-made textured vase in a burnt sienna hue, featuring an elegant artistic design with a subtle matte finish. This vase is designed to add a timeless touch to any decor.",
+   "price": 75,
+   "currency": "USD",
+   "attributes": {
+    "Texture": "Smooth, Grooved, Speckled",
+    "Scale": "Small, Large"
+   },
+   "tags": [
+    "sculptural stillness",
+    "vases"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0926/5994/1398/files/457a11d41b12ea9b1a2d210519189afb.png?v=12889711",
+   "url": "https://candles.mock.shop/products/textured-burnt-sienna-vase",
+   "notes": ""
+  },
+  {
+   "id": "handcrafted-terracotta-ceramic-vase",
+   "shop": "Amber & Aura",
+   "title": "Handcrafted Terracotta Ceramic Vase",
+   "category": "Sculptural Stillness",
+   "description": "A beautifully crafted terracotta ceramic vase with earthy tones and a natural texture. Its simple, elegant design makes it a perfect addition to any home decor.",
+   "price": 75,
+   "currency": "USD",
+   "attributes": {
+    "Scale": "Small, Large",
+    "Texture": "Smooth, Grooved, Speckled"
+   },
+   "tags": [
+    "sculptural stillness",
+    "vases"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0926/5994/1398/files/bbfd7b7dc3cb9ec4d42189fffda2f843.png?v=13156511",
+   "url": "https://candles.mock.shop/products/handcrafted-terracotta-ceramic-vase",
+   "notes": ""
+  },
+  {
+   "id": "minimalist-ceramic-sculpture",
+   "shop": "Amber & Aura",
+   "title": "Minimalist Ceramic Sculpture",
+   "category": "Sculptural Stillness",
+   "description": "A minimalist ceramic sculpture with a smooth finish, presented in a neutral color palette. This art piece is designed to complement natural surfaces and interiors.",
+   "price": 120,
+   "currency": "USD",
+   "attributes": {
+    "Scale": "Small, Large",
+    "Texture": "Smooth, Grooved, Speckled"
+   },
+   "tags": [
+    "sculptural stillness",
+    "sculptures & statues"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0926/4031/3366/files/61c56ef0ba344ab650b6ad617ebd5816.png?v=13707262",
+   "url": "https://candles.mock.shop/products/minimalist-ceramic-sculpture",
+   "notes": ""
+  },
+  {
+   "id": "sculptural-orange-decorative-object",
+   "shop": "Amber & Aura",
+   "title": "Sculptural orange decorative object",
+   "category": "Sculptural Stillness",
+   "description": "Make a statement—this bold orange piece breaks up neutral spaces with editorial confidence. Its sculptural form twists, catches light, and refuses to fade into the background. Smooth resin surface feels cool and sharp in hand Abstract silhouette sparks conversation and visual intrigue Punchy color energizes shelves, consoles, or coffee tables",
+   "price": 72,
+   "currency": "USD",
+   "attributes": {
+    "Texture": "Smooth, Grooved, Speckled",
+    "Scale": "Small, Large"
+   },
+   "tags": [
+    "sculptural stillness",
+    "sculptures & statues"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0926/5994/1398/files/5c651b9d206959a260501d9a65264fcd.png?v=14697709",
+   "url": "https://candles.mock.shop/products/sculptural-orange-decorative-object",
+   "notes": ""
+  },
+  {
+   "id": "clay-shadow-incense-holder",
+   "shop": "Amber & Aura",
+   "title": "Clay Shadow Incense Holder",
+   "category": "Sculptural Stillness",
+   "description": "The clay shadow incense holder anchors your space with quiet presence. Its sculptural silhouette casts gentle shadows, inviting pause and reflection. Weighted base ensures stability during moments of meditation or winding down Matte charcoal finish pairs effortlessly with neutral palettes Sized for both stick and cone incense for versatility in scent rituals",
+   "price": 42,
+   "currency": "USD",
+   "attributes": {
+    "Scale": "Small, Large",
+    "Texture": "Smooth, Grooved, Speckled"
+   },
+   "tags": [
+    "sculptural stillness",
+    "sculptures & statues"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0926/5994/1398/files/7c69fe4063943cf094002b93240f5141.png?v=15051618",
+   "url": "https://candles.mock.shop/products/clay-shadow-incense-holder",
+   "notes": ""
+  },
+  {
+   "id": "oxblood-velvet-sculptural-candleholder",
+   "shop": "Amber & Aura",
+   "title": "Oxblood velvet sculptural candleholder",
+   "category": "Sculptural Stillness",
+   "description": "Let your table smolder with intrigue—this velvet-clad, oxblood candleholder pairs plush touch with bold silhouette for maximum drama. Sculptural curves cast striking shadows and flickering light Deep red velvet offers tactile allure and visual warmth Perfect centerpiece for late-night gatherings or solo reveries",
+   "price": 78,
+   "currency": "USD",
+   "attributes": {
+    "Scale": "Small, Large",
+    "Texture": "Smooth, Grooved, Speckled"
+   },
+   "tags": [
+    "sculptural stillness",
+    "sculptures & statues"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0926/4031/3366/files/bbb2ee21a94f661a394e0c5fc8a05891.png?v=14970264",
+   "url": "https://candles.mock.shop/products/oxblood-velvet-sculptural-candleholder",
+   "notes": ""
+  },
+  {
+   "id": "terracotta-ember-essential-oil-diffuser",
+   "shop": "Amber & Aura",
+   "title": "Terracotta Ember essential oil diffuser",
+   "category": "Sanctuary Elements",
+   "description": "Terracotta Ember casts a warm, grounding presence—its essential oil blend evokes the earthy calm of dawn. Reeds draw out notes of smoked cedar, sweet orange, and terracotta clay Matte gradient vessel blends seamlessly into modern interiors No flame required: pure diffusion brings gentle renewal to every corner",
+   "price": 62,
+   "currency": "USD",
+   "attributes": {
+    "Finish": "Raw, Burnished",
+    "Vessel Size": "Mini, Standard, Grand"
+   },
+   "tags": [
+    "sanctuary elements",
+    "reed diffusers"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0926/4031/3366/files/bf91d13130eccd239b181bc227560fac.png?v=15045270",
+   "url": "https://candles.mock.shop/products/terracotta-ember-essential-oil-diffuser",
+   "notes": ""
+  },
+  {
+   "id": "glass-and-ceramic-reed-diffuser",
+   "shop": "Amber & Aura",
+   "title": "Glass and Ceramic Reed Diffuser",
+   "category": "Sanctuary Elements",
+   "description": "A sleek reed diffuser crafted from glass and ceramic materials. Its elegant design is perfect for enhancing any home decor.",
+   "price": 45,
+   "currency": "USD",
+   "attributes": {
+    "Vessel Size": "Mini, Standard, Grand",
+    "Finish": "Raw, Burnished"
+   },
+   "tags": [
+    "sanctuary elements",
+    "reed diffusers"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0926/5994/1398/files/6ccad156cf0f92a51ab3194c32106880.png?v=13126048",
+   "url": "https://candles.mock.shop/products/glass-and-ceramic-reed-diffuser",
+   "notes": ""
+  },
+  {
+   "id": "terracotta-accent-display-tray",
+   "shop": "Amber & Aura",
+   "title": "Terracotta Accent Display Tray",
+   "category": "Sanctuary Elements",
+   "description": "Bring warmth and artistry to your collection with this terracotta accent display tray. The natural clay surface creates a grounding backdrop for showcasing favored items. Hand-glazed finish gives each tray nuanced tones and subtle variations Low-profile rim frames objects without distraction Sized to highlight small groupings while remaining unobtrusive on any surface",
+   "price": 38,
+   "currency": "USD",
+   "attributes": {
+    "Finish": "Raw, Burnished",
+    "Vessel Size": "Mini, Standard, Grand"
+   },
+   "tags": [
+    "sanctuary elements",
+    "decorative trays"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0926/5994/1398/files/3c9b82a9dfe04a5b80701bf81a72335d.png?v=14997619",
+   "url": "https://candles.mock.shop/products/terracotta-accent-display-tray",
+   "notes": ""
+  },
+  {
+   "id": "geschwungenes-tablett-aus-resin",
+   "shop": "Amber & Aura",
+   "title": "Curved Resin Tray",
+   "category": "Sanctuary Elements",
+   "description": "Subtle play of light on a gently curved surface – this tray organizes without being intrusive. Easy-care, matte resin feels pleasantly cool to the touch Ideally suited as a tray for favorite items or keys in the entryway Unobtrusive shape blends harmoniously into minimalist rooms",
+   "price": 42,
+   "currency": "USD",
+   "attributes": {
+    "Vessel Size": "Mini, Standard, Grand",
+    "Finish": "Raw, Burnished"
+   },
+   "tags": [
+    "sanctuary elements",
+    "decorative trays"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0926/5994/1398/files/7a2b24d7d4627a632e341e9495b11606.png?v=14785859",
+   "url": "https://candles.mock.shop/products/geschwungenes-tablett-aus-resin",
+   "notes": ""
+  },
+  {
+   "id": "dove-taupe-stone-catchall-bowl",
+   "shop": "Amber & Aura",
+   "title": "Dove taupe stone catchall bowl",
+   "category": "Sanctuary Elements",
+   "description": "A study in subtlety, this stone catchall bowl is designed for everyday ritual. Its dove taupe hue pairs effortlessly with contemporary spaces, inviting touch and contemplation. Solid stone construction offers satisfying weight and durability Smoothly polished interior makes dropping coins or keys a sensory pleasure Soft, rounded silhouette lends an organic elegance to entryways or nightstands",
+   "price": 74,
+   "currency": "USD",
+   "attributes": {
+    "Finish": "Raw, Burnished",
+    "Vessel Size": "Mini, Standard, Grand"
+   },
+   "tags": [
+    "sanctuary elements",
+    "decorative bowls"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0926/5994/1398/files/ecfcada7cda4a15e84fe7924498e9a41.png?v=14822800",
+   "url": "https://candles.mock.shop/products/dove-taupe-stone-catchall-bowl",
+   "notes": ""
+  },
+  {
+   "id": "siena-terra-accent-bowl-in-earthen-glaze",
+   "shop": "Amber & Aura",
+   "title": "Siena Terra Accent Bowl in Earthen Glaze",
+   "category": "Sanctuary Elements",
+   "description": "This Siena Terra accent bowl evokes the sun-warmed hills of Tuscany, its hand-applied earthen glaze offering rich, variegated tones unique to every piece. Place it on a console filled with fruit or let its sculptural beauty speak for itself. Robust ceramic holds up beautifully as a centerpiece or serving vessel The tactile finish invites touch—each bowl is pleasingly weighty and cool An artisanal conversation piece that captures the spirit of Italian abundance",
+   "price": 198,
+   "currency": "USD",
+   "attributes": {
+    "Finish": "Raw, Burnished",
+    "Vessel Size": "Mini, Standard, Grand"
+   },
+   "tags": [
+    "sanctuary elements",
+    "decorative bowls"
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0926/4031/3366/files/5c729dd47e04b6c8c2f4522664380778.png?v=14722119",
+   "url": "https://candles.mock.shop/products/siena-terra-accent-bowl-in-earthen-glaze",
+   "notes": ""
+  }
+ ]
+}

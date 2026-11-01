@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agent Shelf</title>
+<meta name="description" content="See your store the way AI shopping agents see it, fix listings with facts only you can confirm, and let an agent buy through PayPal.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,400..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/vendor/ag-grid/ag-grid.min.css">
+<link rel="stylesheet" href="/vendor/ag-grid/ag-theme-quartz.min.css">
+<link rel="stylesheet" href="/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='3' y='8' width='26' height='16' rx='2' fill='%23ffe45c' stroke='%2315181c' stroke-width='2'/%3E%3Cpath d='M8 14h10M8 18h6' stroke='%2315181c' stroke-width='2'/%3E%3C/svg%3E">
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-row">
+    <a class="mark" href="/"><span class="tag">Agent Shelf</span></a>
+    <span class="top-note">PayPal sandbox · product data from Channel3</span>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap">
+    <h1>Shopping agents can’t buy what your listing doesn’t say.</h1>
+    <p class="lede">Buyers now ask an AI agent to find and buy things for them. Agent Shelf reads your store the way those agents do, shows which buyer requests you lose and why, fills the gaps with facts only you can confirm, and then lets a real agent buy the product through PayPal.</p>
+    <form id="storeForm" class="store-form">
+      <label for="storeUrl">Shopify store</label>
+      <div class="row">
+        <input id="storeUrl" name="store" value="https://candles.mock.shop" spellcheck="false" autocomplete="off">
+        <button type="submit" class="btn primary">Read my shelf</button>
+      </div>
+      <p class="hint">The demo is <b>Amber &amp; Aura</b>, a public sample store from Shopify’s <a href="https://mock.shop" target="_blank" rel="noopener">mock.shop</a>. Any Shopify store with a public product feed works.</p>
+    </form>
+  </section>
+
+  <section id="shelf" class="wrap block" hidden>
+    <div class="block-head">
+      <h2>Your shelf, as agents read it</h2>
+      <p id="shelfSummary" class="sub"></p>
+    </div>
+    <div id="grid" class="ag-theme-quartz grid"></div>
+    <p class="hint">Each row is a product. The bar shows how much of what buyers ask for the listing states in words an agent can use. Pick a product to see the requests it loses.</p>
+  </section>
+
+  <section id="product" class="wrap block" hidden>
+    <div class="block-head">
+      <h2 id="pTitle"></h2>
+      <p id="pVerdict" class="verdict"></p>
+    </div>
+
+    <div class="views">
+      <article class="view human">
+        <h3>What a shopper sees</h3>
+        <img id="pImg" alt="">
+        <p id="pDesc" class="desc"></p>
+        <p id="pPrice" class="price"></p>
+      </article>
+      <article class="view agent">
+        <div class="view-head">
+          <h3>What an agent can use</h3>
+          <div class="toggle" role="tablist" aria-label="Whose needs">
+            <button role="tab" aria-selected="true" data-mode="customer">Buyer needs</button>
+            <button role="tab" aria-selected="false" data-mode="agent">Agent data</button>
+          </div>
+        </div>
+        <ul id="slots" class="slots"></ul>
+        <p id="slotsNote" class="hint"></p>
+      </article>
+    </div>
+
+    <h3 class="minor">The buyer requests, and where your product landed</h3>
+    <ol id="requests" class="requests"></ol>
+  </section>
+
+  <section id="ask" class="wrap block" hidden>
+    <div class="block-head">
+      <h2>Questions only you can answer</h2>
+      <p class="sub">Agent Shelf never invents a fact. Every new attribute must come from your answer, and the rewrite quotes it.</p>
+    </div>
+    <form id="askForm" class="ask"></form>
+    <div class="row actions">
+      <button id="demoAnswers" class="btn ghost" type="button" hidden>Fill the demo owner’s answers</button>
+      <button id="rewrite" class="btn primary" type="button">Rewrite for agents and test again</button>
+    </div>
+  </section>
+
+  <section id="after" class="wrap block" hidden>
+    <div class="block-head">
+      <h2>After the rewrite</h2>
+      <p id="aVerdict" class="verdict"></p>
+    </div>
+    <div class="compare">
+      <div class="stat"><span class="k">Picked first</span><span id="sWins" class="v"></span></div>
+      <div class="stat"><span class="k">Lost for missing facts</span><span id="sMissing" class="v"></span></div>
+      <div class="stat"><span class="k">Buyer needs stated</span><span id="sStated" class="v"></span></div>
+    </div>
+    <p class="label-line">New title</p>
+    <p id="aTitle" class="new-title"></p>
+    <ul id="added" class="added"></ul>
+    <h3 class="minor">Requests after the rewrite</h3>
+    <ol id="requestsAfter" class="requests"></ol>
+  </section>
+
+  <section id="buy" class="wrap block" hidden>
+    <div class="block-head">
+      <h2>Let a shopping agent buy it</h2>
+      <p class="sub">An AI agent with the PayPal Agent Toolkit reads a buyer’s request and your rewritten listing. If the product fits, it creates the PayPal order itself. The buyer approves the payment in PayPal (sandbox).</p>
+    </div>
+    <form id="buyForm" class="buy-form">
+      <label for="buyRequest">Buyer request</label>
+      <textarea id="buyRequest" rows="2"></textarea>
+      <div class="row actions">
+        <button class="btn primary" type="submit">Send the agent shopping</button>
+        <button id="publish" class="btn ghost" type="button">Publish listing to PayPal catalog</button>
+      </div>
+    </form>
+    <div id="buyOut" class="buy-out" hidden></div>
+  </section>
+
+  <section id="paid" class="wrap block" hidden>
+    <div class="block-head"><h2>Payment</h2></div>
+    <div id="paidOut" class="buy-out"></div>
+  </section>
+
+  <div id="progress" class="progress" hidden><span class="dot"></span><span id="progressText"></span></div>
+</main>
+
+<footer class="wrap foot">
+  <p>Agent Shelf · built for the PayPal AI Hackathon 2026 · PayPal runs in sandbox, no real money moves. Demo store data: Shopify mock.shop. Live competitor data: Channel3. Model: Qwen3.8-27B on NEAR AI Cloud.</p>
+</footer>
+
+<script src="/vendor/ag-grid/ag-grid-community.min.noStyle.js"></script>
+<script src="/app.js"></script>
+</body>
+</html>
