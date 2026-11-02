@@ -23,6 +23,7 @@ export const ROLES = {
   quant: chain('quant', ['mistralai/mistral-small-4', 'mistralai/mistral-large-3']),
   scout: chain('scout', ['mistralai/mistral-small-4', 'alibaba/qwen3-235b-a22b-instruct-2507']),
   guard: chain('guard', ['meta/llama-guard-4-12b']),
+  buyer: chain('buyer', ['mistralai/mistral-large-3', 'alibaba/qwen3-235b-a22b-instruct-2507']), // PayPal Agent Toolkit tool calling
 };
 // The shopper panel: three shopping agents built on three different open-weight model families.
 export const SHOPPERS = [
@@ -40,9 +41,16 @@ const LEDGER = new URL('../cache/otari-spend.json', import.meta.url);
 let ledger = {};
 try { if (existsSync(LEDGER)) ledger = JSON.parse(readFileSync(LEDGER, 'utf8')); } catch { ledger = {}; }
 const limitUsd = () => Number(process.env.MERCHANT_BUDGET_USD || 0.25);
+const today = () => new Date().toISOString().slice(0, 10);
+// the allowance is per UTC day, like a calendar_day budget in Otari
+const entry = (merchant) => {
+  let e = ledger[merchant];
+  if (!e || e.day !== today()) e = ledger[merchant] = { day: today(), spent: 0, calls: 0 };
+  return e;
+};
 function record(merchant, cost) {
   if (!merchant || !cost) return;
-  const e = (ledger[merchant] ||= { spent: 0, calls: 0 });
+  const e = entry(merchant);
   e.spent = Math.round((e.spent + cost) * 1e6) / 1e6; e.calls++;
   try { mkdirSync(new URL('../cache/', import.meta.url), { recursive: true }); writeFileSync(LEDGER, JSON.stringify(ledger, null, 1)); } catch {}
 }
@@ -50,13 +58,14 @@ export const merchantId = (storeUrl) => 'merchant:' + new URL(storeUrl.startsWit
 
 /** Refuse a run before it starts when this merchant has used its allowance. */
 export function assertBudget(merchant) {
-  const e = ledger[merchant];
-  if (e && e.spent >= limitUsd()) throw new OtariRefusal(`This store has used its AI budget ($${e.spent.toFixed(4)} of $${limitUsd().toFixed(2)}). Raise MERCHANT_BUDGET_USD or wait for the reset.`, { code: 'merchant_budget_exceeded', scope: 'merchant' });
+  if (!merchant || merchant === 'guardrail-service') return;
+  const e = entry(merchant);
+  if (e.spent >= limitUsd()) throw new OtariRefusal(`This store has used today's AI budget ($${e.spent.toFixed(4)} of $${limitUsd().toFixed(2)}). It resets at midnight UTC.`, { status: 402, code: 'merchant_budget_exceeded', scope: 'merchant' });
 }
 
 /** Budget view for the UI: the app ledger, plus Otari's own end-user record when a service key is configured. */
 export async function budget(merchant) {
-  const e = ledger[merchant] || { spent: 0, calls: 0 };
+  const e = merchant ? entry(merchant) : { spent: 0, calls: 0 };
   const out = { merchant, limit: limitUsd(), spent: e.spent, calls: e.calls, remaining: Math.max(0, limitUsd() - e.spent), otari: null, mode: serviceKey() ? 'otari-end-user' : 'app-ledger' };
   if (serviceKey()) {
     try {
@@ -82,6 +91,7 @@ export async function chat({ models, role = 'worker', messages, maxTokens = 800,
   const list = models || ROLES[role];
   const tried = [];
   for (const model of list) {
+    assertBudget(merchant); // checked before every call, fallbacks included: a run stops as soon as the allowance is gone
     const body = { model, messages, max_tokens: maxTokens, temperature, ...extra };
     if (tools?.length) body.tools = tools;
     if (mcpServers?.length) body.mcp_servers = mcpServers;
@@ -107,6 +117,7 @@ export async function chat({ models, role = 'worker', messages, maxTokens = 800,
     if (!res.ok) {
       const detail = typeof j.detail === 'string' ? j.detail : (j.detail?.message || j.error?.message || text.slice(0, 160));
       // budget and policy refusals are answers, not outages: never fall back around them
+      if (res.status === 401) throw new OtariRefusal('Otari rejected the API key (401). Check OTARI_API_KEY and OTARI_BASE_URL (EU keys need https://eu.api.otari.ai/api/v1).', { status: 401, code: 'invalid_key' });
       if (code === 'budget_exceeded' || code === 'end_user_limit_reached' || res.status === 402) {
         throw new OtariRefusal(`Otari refused the call: budget used up (${h('otari-budget-scope') || 'budget'})${h('retry-after') ? `, resets in ${Math.ceil(Number(h('retry-after')) / 3600)} h` : ''}.`, { status: res.status, code: code || 'budget_exceeded', scope: h('otari-budget-scope'), retryAfter: h('retry-after') });
       }

@@ -306,7 +306,7 @@ async function sendAgent(ev) {
     const r = await run('/api/buy', { listing, request: $('#buyRequest').value }, 'The shopping agent is deciding');
     const out = $('#buyOut'); out.hidden = false;
     const call = r.transcript.find((t) => t.tool === 'create_order' && t.args);
-    out.innerHTML = `<p class="decision">${r.decision === 'buy' ? 'The agent is buying it.' : 'The agent skipped it.'}</p><p>${esc(r.reason || '')}</p>` +
+    out.innerHTML = `<p class="decision">${r.decision === 'buy' ? 'The agent is buying it.' : 'The agent skipped it.'}</p><p>${esc(r.reason || '')}</p>${r.model ? `<p class="hint">Agent model: <span class="mono">${esc(r.model)}</span>${state.config.otari?.on ? ' through Otari' : ''}</p>` : ''}` +
       (call ? `<p class="hint">Tool call through the PayPal Agent Toolkit:</p><div class="call">create_order(${esc(JSON.stringify(call.args, null, 2))})</div>` : '') +
       (r.order ? `<dl class="kv"><dt>PayPal order</dt><dd>${esc(r.order.id)}</dd><dt>Status</dt><dd>${esc(r.order.status)}</dd></dl>
         <p>The buyer now confirms in PayPal. <a class="btn primary" href="${esc(r.order.approve)}" target="_blank" rel="noopener">Approve as the buyer (sandbox)</a></p>

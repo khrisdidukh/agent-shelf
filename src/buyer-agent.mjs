@@ -4,12 +4,17 @@
 import { generateText } from 'ai';
 import { createOpenAICompatible } from '@ai-sdk/openai-compatible';
 import { PayPalAgentToolkit } from '@paypal/agent-toolkit/ai-sdk';
+import * as OT from './otari.mjs';
 
-const provider = () => createOpenAICompatible({
-  name: 'nearai',
-  baseURL: process.env.AI_BASE_URL || 'https://cloud-api.near.ai/v1',
-  apiKey: process.env.AI_API_KEY || process.env.NEARAI_API_KEY,
-});
+// Otari mode: the buying agent is Mistral Large 3 (open weights) through Otari, with the role's fallback model behind it
+const provider = () => OT.on()
+  ? createOpenAICompatible({ name: 'otari', baseURL: OT.BASE, apiKey: process.env.OTARI_API_KEY || process.env.OTARI_SERVICE_KEY })
+  : createOpenAICompatible({
+    name: 'nearai',
+    baseURL: process.env.AI_BASE_URL || 'https://cloud-api.near.ai/v1',
+    apiKey: process.env.AI_API_KEY || process.env.NEARAI_API_KEY,
+  });
+const buyerModels = () => (OT.on() ? OT.ROLES.buyer : [process.env.AI_MODEL || 'Qwen/Qwen3.8-27B']);
 
 let toolkit;
 function paypalTools() {
@@ -27,9 +32,25 @@ const facts = (l) => [`Title: ${l.title}`, `Price: ${l.price} ${l.currency}`, l.
 
 /** buy(listing, request) -> { decision, reason, order?, transcript[] } */
 export async function buy(listing, request) {
-  const transcript = [];
-  const res = await generateText({
-    model: provider()(process.env.AI_MODEL || 'Qwen/Qwen3.8-27B'),
+  let res, transcript, model;
+  for (model of buyerModels()) {
+    transcript = [];
+    try { res = await attempt(model, listing, request, transcript); break; } catch (e) { if (model === buyerModels().at(-1)) throw e; }
+  }
+  let verdict = {};
+  try { verdict = JSON.parse(res.text.replace(/<think>[\s\S]*?<\/think>/g, '').match(/\{[\s\S]*\}/)[0]); } catch { verdict = { decision: transcript.length ? 'buy' : 'skip', reason: res.text.slice(0, 160) }; }
+  const created = transcript.find((t) => t.tool === 'create_order' && t.result);
+  let order = null;
+  if (created) {
+    const r = typeof created.result === 'string' ? JSON.parse(created.result) : created.result;
+    order = { id: r.id, status: r.status, approve: r.links?.find((l) => l.rel === 'approve' || l.rel === 'payer-action')?.href };
+  }
+  return { decision: verdict.decision, reason: verdict.reason, order, transcript, model };
+}
+
+function attempt(model, listing, request, transcript) {
+  return generateText({
+    model: provider()(model),
     tools: paypalTools(),
     maxSteps: 4,
     temperature: 0,
@@ -44,13 +65,4 @@ export async function buy(listing, request) {
       for (const r of s.toolResults || []) transcript.push({ tool: r.toolName, result: r.result });
     },
   });
-  let verdict = {};
-  try { verdict = JSON.parse(res.text.replace(/<think>[\s\S]*?<\/think>/g, '').match(/\{[\s\S]*\}/)[0]); } catch { verdict = { decision: transcript.length ? 'buy' : 'skip', reason: res.text.slice(0, 160) }; }
-  const created = transcript.find((t) => t.tool === 'create_order' && t.result);
-  let order = null;
-  if (created) {
-    const r = typeof created.result === 'string' ? JSON.parse(created.result) : created.result;
-    order = { id: r.id, status: r.status, approve: r.links?.find((l) => l.rel === 'approve' || l.rel === 'payer-action')?.href };
-  }
-  return { decision: verdict.decision, reason: verdict.reason, order, transcript };
 }
