@@ -102,10 +102,15 @@ const server = http.createServer(async (req, res) => {
     }
     if (req.method === 'POST' && url.pathname === '/api/panel') {
       if (!OT.on()) throw new Error('The agent panel runs on Otari: set OTARI_API_KEY');
-      const { store, id, intent } = await readBody(req);
+      const { store, id, intent, listing } = await readBody(req);
       const st = await getStore(store || DEMO_STORE);
-      const report = saved('product-' + hash(st.source + id));
+      let report = saved('product-' + hash(st.source + id));
       if (!report) throw new Error('Analyse the product first');
+      // optionally judge the rewritten listing (same product, same buyers, same competitors)
+      if (listing?.title) {
+        const attributes = Object.fromEntries(Object.entries(listing.attributes || {}).slice(0, 30).map(([k, v]) => [String(k).slice(0, 60), String(v).slice(0, 300)]));
+        report = { ...report, listing: { ...report.listing, title: String(listing.title).slice(0, 160), attributes } };
+      }
       spend(1);
       const m = checkBudget(st.source);
       const job = startJob('panel', async (log) => {

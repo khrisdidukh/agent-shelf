@@ -78,13 +78,14 @@ function drawGrid(rows) {
 async function openProduct(id) {
   state.product = state.products.find((p) => p.id === id);
   state.after = null;
-  ['#after', '#buy'].forEach((s) => ($(s).hidden = true));
+  ['#after', '#buy', '#panelOut', '#useAfterWrap'].forEach((s) => ($(s).hidden = true));
   try {
     const r = await run('/api/product', { store: state.store, id }, 'Asking agents about this product');
     state.report = r;
     drawProduct();
     await drawQuestions();
     $('#product').hidden = false; $('#ask').hidden = false;
+    if (state.config.otari?.on) showPanel();
     $('#product').scrollIntoView({ behavior: 'smooth' });
   } catch (e) { fail($('#shelf'), e); }
 }
@@ -183,13 +184,117 @@ function drawAfter() {
   $('#sMissing').innerHTML = `<s>${b.lostToMissing}</s>${a.lostToMissing}`;
   $('#sStated').innerHTML = `<s>${pct(b.needsStated)}</s>${pct(a.needsStated)}`;
   $('#aTitle').textContent = state.after.listing.title;
+  if (state.after.guard) $('#aTitle').title = 'Your answers passed the input guardrail (' + (state.after.guard.by === 'otari' ? 'enforced by Otari' : 'run by the app') + ')';
   $('#added').innerHTML = state.after.fixes.add.map((x) => `<li><span class="a">${esc(x.attribute)}</span><span>${esc(x.value)}</span><span class="from">from your answer: “${esc(x.fact_quote)}”</span></li>`).join('');
   drawRequests($('#requestsAfter'), state.after);
   drawSlots();
   const win = state.after.verdicts.find((v) => v.rank === 1) || state.after.verdicts[0];
   $('#buyRequest').value = state.config.demoRequests?.[state.product.id] || (win ? win.query : '');
   $('#buy').hidden = false;
+  $('#useAfterWrap').hidden = !state.config.otari?.on;
   $('#after').scrollIntoView({ behavior: 'smooth' });
+}
+
+/* ---------- Otari: the agent panel ---------- */
+const money = (x) => x == null ? '' : '$' + (x < 0.01 ? Number(x).toFixed(4) : Number(x).toFixed(2));
+const short = (m) => String(m || '').split('/').pop();
+
+async function drawBudget() {
+  try {
+    const b = await api('/api/budget?store=' + encodeURIComponent(state.store || state.config.demoStore));
+    if (b.mode === 'off') return;
+    const used = Math.min(1, b.spent / (b.limit || 1));
+    const who = b.mode === 'otari-end-user' ? 'Otari end user' : 'this store';
+    $('#budget').innerHTML = `<span class="k">AI budget for ${esc(who)} <b>${esc(b.merchant.replace('merchant:', ''))}</b></span>
+      <span class="meter wide"><i><b style="width:${pct(used)}"></b></i></span>
+      <span class="v">${money(b.spent)} of ${money(b.limit)} used · ${b.calls} calls${b.otari ? ` · Otari spend ${money(b.otari.spend)}${b.otari.blocked ? ' · blocked' : ''}` : ''}</span>`;
+  } catch {}
+}
+
+function showPanel() {
+  $('#panel').hidden = false;
+  $('#panelIntent').innerHTML = state.report.intents.map((i) => `<option value="${esc(i.id)}">${esc(i.query)}</option>`).join('');
+  drawBudget();
+}
+
+function served(meta) {
+  if (!meta) return '';
+  const fb = (meta.skipped || []).map((s) => `<span class="badge warn" title="${esc(s.error)}">fallback: ${esc(short(s.model))} → ${esc(short(meta.requested))}</span>`).join('');
+  const ofb = meta.otariFallback ? `<span class="badge warn">Otari provider fallback (${meta.attempts} tries)</span>` : '';
+  return `<p class="served"><span class="mono">${esc(meta.served || meta.model)}</span> via ${esc(meta.provider || '?')} ${fb}${ofb}<span class="cost">${money(meta.cost)} · ${(meta.ms / 1000).toFixed(1)}s</span></p>`;
+}
+
+function drawPanel(r) {
+  $('#panelOut').hidden = false;
+  $('#agents').innerHTML = r.agents.map((a) => {
+    if (!a.verdict) return `<article class="card agent-card"><h3>${esc(a.label)}</h3><p class="err">${esc(a.error)}</p></article>`;
+    const v = a.verdict;
+    const pips = Array.from({ length: v.of }, (_, i) => `<span class="pip ${i + 1 === v.rank ? 'me' + (v.rank === 1 ? ' first' : '') : ''}">${i + 1 === v.rank ? 'you' : i + 1}</span>`).join('');
+    const label = v.rank === 1 ? 'picked you first' : ({ fits: 'fits, ranked lower', missing_facts: 'missing facts', not_a_fit: 'not a fit' }[v.status] || v.status);
+    return `<article class="card agent-card"><h3>${esc(a.label)}</h3>${served(a.meta)}
+      <p class="pips">${pips}</p><p><span class="status ${v.rank === 1 ? 'fits' : v.status}">${esc(label)}.</span> ${esc(v.merchant_reason || '')}</p>
+      <p class="hint">Picked: ${esc(v.winner === 'merchant' ? 'your product' : (v.winnerTitle || v.winner))}. ${esc(v.pick_reason || '')}</p></article>`;
+  }).join('');
+
+  const p = r.price, st = p.stats;
+  $('#priceCard').innerHTML = `<h3>Price position</h3>${served(p.meta)}
+    <p class="big">${st.percentile}% <small>of ${st.n} competing products are cheaper</small></p>
+    <dl class="kv"><dt>Median competitor</dt><dd>${money(st.median)} (you: ${st.gap_to_median >= 0 ? '+' : ''}${money(Math.abs(st.gap_to_median)).replace('$', st.gap_to_median < 0 ? '−$' : '$')})</dd><dt>Range</dt><dd>${money(st.min)} – ${money(st.max)}</dd>${st.within_budget_pct != null ? `<dt>Within buyer’s ${money(p.ceiling)}</dt><dd>${st.within_budget_pct}% of competitors</dd>` : ''}</dl>
+    <p class="hint">${p.error ? 'The sandbox step failed (' + esc(p.error) + '); these numbers are computed by the app.' : `Computed with Python in Otari’s code-execution sandbox${p.verified ? ', and the app recomputed every number: they match.' : '; the app’s own numbers differ, so those are shown.'}`}</p>
+    ${p.code ? `<details><summary>Code the model ran</summary><div class="call">${esc(p.code)}</div></details>` : ''}`;
+
+  const w = r.web;
+  $('#webCard').innerHTML = `<h3>Live web check</h3>${served(w.meta)}` + (w.skipped
+    ? `<p class="hint">Not run: ${esc(w.skipped)}. In Otari: Tools &amp; Guardrails → Web search, turn web access on for this workspace.</p>`
+    : `${w.page ? `<p class="hint">Read with Otari web fetch: <a href="${esc(w.target)}" target="_blank" rel="noopener">a competing product page</a></p>` : ''}
+       <ul class="facts">${(w.competitor_facts || []).map((f) => `<li><b>${esc(f.fact)}</b> “${esc(f.quote)}”</li>`).join('')}</ul>
+       ${(w.buyer_checklist || []).length ? `<p class="hint">What buyers are told to check (Otari web search):</p><ul class="facts">${w.buyer_checklist.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>` : ''}${w.note ? `<p class="hint">${esc(w.note)}</p>` : ''}`);
+
+  const a = r.analysis;
+  const g = a.guard;
+  const guardLine = g.by === 'otari'
+    ? `Input guardrail enforced by Otari (block mode): ${esc(JSON.stringify(g.otari || 'passed'))}`
+    : `Input guardrail passed: Llama Guard 4 ${g.verdict?.model ? '(' + esc(g.verdict.model) + ')' : ''} + personal-data and prompt-injection checks, run by the app because Otari can’t reach localhost.`;
+  const mcpLine = a.mcp.used
+    ? `Read Agent Shelf’s diagnosis through MCP (<span class="mono">product_gaps</span>, called by Otari). ${a.mcp.verified ? 'Its quote matches the tool’s answer: “' + esc(a.mcp.quote) + '”' : 'Its quote did not match the tool’s answer, so treat it with care.'}`
+    : `MCP not used: ${esc(a.mcp.error || '')}`;
+  $('#analystCard').innerHTML = `<h3>The analyst</h3>${served(a.meta)}
+    <p class="decision">${esc(a.headline || '')}</p>
+    <dl class="kv"><dt>Agents agree</dt><dd>${esc(a.agree || '')}</dd><dt>They differ</dt><dd>${esc(a.disagree || '')}</dd></dl>
+    <ol class="fixes">${a.fixes.map((f) => `<li><b>${esc(f.change)}</b> <span class="hint">${esc(f.why || '')}</span> ${(f.agents || []).map((x) => `<span class="badge">${esc(x)}</span>`).join('')}${f.unverified?.length ? ` <span class="badge warn">numbers ${esc(f.unverified.join(', '))} are examples, not your facts</span>` : ''}</li>`).join('')}</ol>
+    ${a.ask.length ? `<p class="hint">Questions for you:</p><ul class="facts">${a.ask.map((q) => `<li>${esc(q)}</li>`).join('')}</ul>` : ''}
+    <p class="hint">${mcpLine}</p><p class="hint">${guardLine}</p>`;
+
+  const all = [];
+  for (const e of r._events || []) all.push(e);
+  $('#calls').innerHTML = `<table><thead><tr><th>Role</th><th>Model asked</th><th>Answered by</th><th>Provider</th><th>Cost</th><th>Note</th></tr></thead><tbody>${all.map((e) => e.type === 'call'
+    ? `<tr><td>${esc(e.role)}</td><td class="mono">${esc(e.requested)}</td><td class="mono">${esc(e.served)}</td><td>${esc(e.provider)}</td><td>${money(e.cost)}</td><td>${e.otariFallback ? 'Otari fallback' : ''}${e.guardrails ? ' guardrail ' + esc(JSON.stringify(e.guardrails)) : ''}</td></tr>`
+    : `<tr class="fb"><td>${esc(e.role)}</td><td class="mono">${esc(e.model)}</td><td colspan="2">failed, next model</td><td>${money(e.cost)}</td><td>${esc(e.reason)}</td></tr>`).join('')}</tbody></table>
+    <p class="hint">Total this run: ${money(all.reduce((s, e) => s + (e.cost || 0), 0))}. “Answered by” and “Provider” come from Otari’s response headers.</p>`;
+  if (r.budget) drawBudget();
+}
+
+async function runAgentPanel(ev) {
+  ev.preventDefault();
+  const btn = $('#panelForm button'); btn.disabled = true;
+  try {
+    const listing = state.after && $('#useAfter').checked ? state.after.listing : undefined;
+    const first = await api('/api/panel', { store: state.store, id: state.product.id, intent: $('#panelIntent').value, listing });
+    progress('Asking three shopping agents');
+    let j;
+    for (;;) {
+      await new Promise((r) => setTimeout(r, 1200));
+      j = await api('/api/job/' + first.job);
+      const last = j.steps[j.steps.length - 1];
+      if (last) progress(last.text);
+      if (j.status !== 'running') break;
+    }
+    progress();
+    if (j.status === 'failed') throw new Error(j.error);
+    drawPanel({ ...j.result, _events: j.events });
+    $('#panelOut').scrollIntoView({ behavior: 'smooth' });
+  } catch (e) { fail($('#panelForm'), e); drawBudget(); }
+  btn.disabled = false;
 }
 
 /* ---------- agent purchase ---------- */
@@ -251,10 +356,15 @@ $('#demoAnswers').addEventListener('click', () => {
   for (const i of $('#askForm').querySelectorAll('input')) if (demo[i.name]) i.value = demo[i.name];
 });
 $('#buyForm').addEventListener('submit', sendAgent);
+$('#panelForm').addEventListener('submit', runAgentPanel);
 $('#publish').addEventListener('click', publish);
 
 (async () => {
   state.config = await api('/api/config');
+  if (state.config.otari?.on) {
+    $('#topNote').textContent = 'Models: open-weight, through Otari · PayPal sandbox · product data from Channel3';
+    document.querySelector('.foot p').textContent = 'Agent Shelf · open-weight models (Llama, Qwen, Gemma, Mistral, DeepSeek, Llama Guard) through Mozilla.ai’s Otari gateway · PayPal runs in sandbox, no real money moves. Demo store data: Shopify mock.shop. Live competitor data: Channel3.';
+  }
   if (await returnedFromPayPal()) return;
   readShelf($('#storeUrl').value.trim());
 })();

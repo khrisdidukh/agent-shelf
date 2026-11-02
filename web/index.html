@@ -16,7 +16,7 @@
 <header class="top">
   <div class="wrap top-row">
     <a class="mark" href="/"><span class="tag">Agent Shelf</span></a>
-    <span class="top-note">PayPal sandbox · product data from Channel3</span>
+    <span class="top-note" id="topNote">PayPal sandbox · product data from Channel3</span>
   </div>
 </header>
 
@@ -71,6 +71,31 @@
 
     <h3 class="minor">The buyer requests, and where your product landed</h3>
     <ol id="requests" class="requests"></ol>
+  </section>
+
+  <section id="panel" class="wrap block" hidden>
+    <div class="block-head">
+      <h2>How different shopping agents see it</h2>
+      <p class="sub">Shopping agents run on different models, and they don’t all read a listing the same way. Here three agents on three open-weight model families judge your product for one buyer request, against the same live competitors. An analyst then turns their verdicts into fixes. Every call goes through <a href="https://github.com/mozilla-ai/otari" target="_blank" rel="noopener">Otari</a>, Mozilla.ai’s open-source AI gateway.</p>
+    </div>
+    <div class="budget" id="budget" aria-live="polite"></div>
+    <form id="panelForm" class="panel-form">
+      <label for="panelIntent">Buyer request</label>
+      <div class="row">
+        <select id="panelIntent"></select>
+        <button class="btn primary" type="submit">Run the agent panel</button>
+      </div>
+      <label class="opt" id="useAfterWrap" hidden><input type="checkbox" id="useAfter" checked> Judge the rewritten listing</label>
+    </form>
+    <div id="panelOut" hidden>
+      <div id="agents" class="agents"></div>
+      <div class="panel-grid">
+        <article class="card" id="priceCard"></article>
+        <article class="card" id="webCard"></article>
+      </div>
+      <article class="card analyst" id="analystCard"></article>
+      <details class="calls"><summary>Every Otari call in this run</summary><div id="calls"></div></details>
+    </div>
   </section>
 
   <section id="ask" class="wrap block" hidden>
