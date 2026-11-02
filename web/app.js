@@ -161,7 +161,7 @@ function drawAfter() {
   drawRequests($('#requestsAfter'), state.after);
   drawSlots();
   const win = state.after.verdicts.find((v) => v.rank === 1) || state.after.verdicts[0];
-  $('#buyRequest').value = win ? win.query : '';
+  $('#buyRequest').value = state.config.demoRequests?.[state.product.id] || (win ? win.query : '');
   $('#buy').hidden = false;
   $('#after').scrollIntoView({ behavior: 'smooth' });
 }

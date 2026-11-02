@@ -14,6 +14,7 @@ const REPORTS = new URL('./cache/reports/', import.meta.url);
 mkdirSync(REPORTS, { recursive: true });
 const DEMO_STORE = 'https://candles.mock.shop';
 const DEMO_ANSWERS = JSON.parse(readFileSync(new URL('./fixtures/demo-answers.json', import.meta.url), 'utf8'));
+const DEMO_REQUESTS = JSON.parse(readFileSync(new URL('./fixtures/demo-requests.json', import.meta.url), 'utf8'));
 const jobs = new Map();
 const stores = new Map(); // source -> imported store
 const TYPES = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.svg': 'image/svg+xml', '.png': 'image/png', '.json': 'application/json', '.ico': 'image/x-icon' };
@@ -74,7 +75,7 @@ const server = http.createServer(async (req, res) => {
       if (req.method !== 'POST') { res.writeHead(405, { Allow: 'POST' }); return res.end(); }
       return mcp(req, res, await readBody(req));
     }
-    if (url.pathname === '/api/config') return send(res, 200, { demoStore: DEMO_STORE, demoAnswers: DEMO_ANSWERS, paypal: 'sandbox' });
+    if (url.pathname === '/api/config') return send(res, 200, { demoStore: DEMO_STORE, demoAnswers: DEMO_ANSWERS, demoRequests: DEMO_REQUESTS, paypal: 'sandbox' });
     if (url.pathname.startsWith('/api/job/')) {
       const j = jobs.get(url.pathname.split('/').pop());
       return j ? send(res, 200, j) : send(res, 404, { error: 'This job is gone (the server restarted). Run it again.' });
