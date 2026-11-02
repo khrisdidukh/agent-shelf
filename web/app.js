@@ -114,9 +114,35 @@ function drawSlots() {
     $('#slotsNote').textContent = 'Buyer needs come from the requests below. A need counts only when the listing states it; the quote is checked word for word.';
   } else {
     const a = state.report.agent;
-    ul.innerHTML = a.rows.slice(0, 12).map((x) => `<li class="slot ${x.coverage >= 0.5 ? 'on' : 'off'}"><span class="n">${esc(x.field)}</span><span class="q">${pct(x.coverage)} of competing products carry it</span><span class="s">${x.kind}</span></li>`).join('');
-    $('#slotsNote').textContent = `Measured on ${a.sample} competing products that a live product search (Channel3) returned for these requests. This is what agents are used to receiving.`;
+    const l = (state.after || state.report).listing;
+    ul.innerHTML = a.rows.slice(0, 12).map((x) => {
+      const has = merchantHas(x.field, l, r.checks);
+      const you = has === null ? 'you: n/a' : has ? 'you: stated' : 'you: missing';
+      return `<li class="slot ${has === false ? 'off' : 'on'}"><span class="n">${esc(x.field)}</span><span class="q">${pct(x.coverage)} of competing products state it</span><span class="s">${you}</span></li>`;
+    }).join('');
+    $('#slotsNote').textContent = `Measured on ${a.sample} competing products that a live product search (Channel3) returned for these buyer requests: this is what agents are used to receiving. Marked: what your listing has.`;
   }
+}
+
+// does the merchant's listing carry a field that competing products carry? (null = not applicable to a Shopify listing)
+function merchantHas(field, l, checks) {
+  const stated = (re) => checks.some((c) => c.stated && re.test(c.need));
+  const attrs = Object.keys(l.attributes || {}).map((k) => k.toLowerCase());
+  const key = field.toLowerCase().split(/[^a-z]+/).filter((w) => w && w !== 'candle')[0] || '';
+  const syn = { material: 'material|wax', type: 'type|wax', container: 'container|vessel', scent: 'scent|fragrance' }[key] || key;
+  switch (field) {
+    case 'price': return l.price != null;
+    case 'image': return !!l.image;
+    case 'brand': return !!l.shop;
+    case 'in-stock signal': return null;
+    case 'rating & reviews': return false;
+    case 'description 300+ chars': return (l.description || '').length >= 300;
+    case '3+ key features': return attrs.length >= 5;
+    case 'dimensions': return stated(/size|dimension/);
+    case 'materials': return stated(/material|wax|container/);
+  }
+  if (key && attrs.some((k) => new RegExp(syn).test(k))) return true;
+  return key ? stated(new RegExp(syn)) : false;
 }
 
 function drawRequests(ol, r) {

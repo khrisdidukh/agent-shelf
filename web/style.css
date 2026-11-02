@@ -56,6 +56,7 @@ input:focus, textarea:focus, button:focus-visible { outline: 3px solid var(--age
 textarea { width: 100%; resize: vertical; }
 .btn { font: inherit; font-weight: 700; border-radius: 6px; padding: 11px 18px; cursor: pointer; border: 1.5px solid var(--ink); background: transparent; color: var(--ink); }
 .btn.primary { background: var(--ink); color: var(--paper); }
+a.btn { display: inline-block; text-decoration: none; }
 .btn.primary:hover { background: var(--agent); border-color: var(--agent); color: #fff; }
 .btn.ghost:hover { background: var(--card); }
 .btn[disabled] { opacity: .45; cursor: progress; }
