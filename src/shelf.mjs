@@ -122,7 +122,9 @@ export function rankPrompt(intent, listing, products, top = 5) {
 }
 
 export function rankParse(out, intent, cands) {
-  const ranking = (out.ranking || []).map(String).filter((id) => cands.some((c) => c.id === id));
+  // models sometimes answer with titles or "id=..." instead of bare ids: map those back to ids
+  const toId = (x) => { const v = String(x).replace(/^id\s*=\s*/, '').trim(); return cands.find((c) => c.id === v)?.id || cands.find((c) => norm(c.title) === norm(v))?.id || v; };
+  const ranking = [...new Set((out.ranking || []).map(toId))].filter((id) => cands.some((c) => c.id === id));
   return { intent: intent.id, query: intent.query, rank: ranking.indexOf('merchant') + 1 || cands.length, of: cands.length, winner: ranking[0], winnerTitle: cands.find((c) => c.id === ranking[0])?.title, pick_reason: out.pick_reason, merchant_reason: out.merchant_reason, status: ['fits', 'missing_facts', 'not_a_fit'].includes(out.merchant_status) ? out.merchant_status : 'missing_facts' };
 }
 

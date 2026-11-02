@@ -233,7 +233,7 @@ function drawPanel(r) {
     const label = v.rank === 1 ? 'picked you first' : ({ fits: 'fits, ranked lower', missing_facts: 'missing facts', not_a_fit: 'not a fit' }[v.status] || v.status);
     return `<article class="card agent-card"><h3>${esc(a.label)}</h3>${served(a.meta)}
       <p class="pips">${pips}</p><p><span class="status ${v.rank === 1 ? 'fits' : v.status}">${esc(label)}.</span> ${esc(v.merchant_reason || '')}</p>
-      <p class="hint">Picked: ${esc(v.winner === 'merchant' ? 'your product' : (v.winnerTitle || v.winner))}. ${esc(v.pick_reason || '')}</p></article>`;
+      <p class="hint">${v.winner ? `Picked: ${esc(v.winner === 'merchant' ? 'your product' : (v.winnerTitle || v.winner))}. ` : ''}${esc(v.pick_reason || '')}</p></article>`;
   }).join('');
 
   const p = r.price, st = p.stats;
