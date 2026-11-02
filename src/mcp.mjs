@@ -7,6 +7,14 @@ import { z } from 'zod';
 
 const pct = (x) => Math.round(x * 100) + '%';
 
+/** The product_gaps answer, shared so Otari mode can check what the analyst quotes from this MCP tool. */
+export function gapsText(r) {
+  const s = r.score;
+  const gaps = r.checks.filter((c) => !c.stated).map((c) => `- ${c.need}: ${c.count} of ${r.intents.length} buyers ask (e.g. "${c.examples[0]}")`);
+  const lost = r.verdicts.filter((v) => v.rank > 1).map((v) => `- "${v.query}": ranked ${v.rank}/${v.of}. ${v.merchant_reason}`);
+  return `Picked first in ${s.wins}/${s.requests} buyer requests; lost ${s.lostToMissing} only for missing facts.\n\nAsk the merchant about:\n${gaps.join('\n')}\n\nRequests lost:\n${lost.join('\n')}`;
+}
+
 export function mcpHandler({ storeReport, productReport }) {
   return async (req, res, body) => {
     const server = new McpServer({ name: 'agent-shelf', version: '1.0.0' });
@@ -23,10 +31,7 @@ export function mcpHandler({ storeReport, productReport }) {
       { store_url: z.string(), product: z.string().describe('Product handle, e.g. deep-orange-soy-candle') },
       async ({ store_url, product }) => {
         const r = await productReport(store_url, product);
-        const s = r.score;
-        const gaps = r.checks.filter((c) => !c.stated).map((c) => `- ${c.need}: ${c.count} of ${r.intents.length} buyers ask (e.g. "${c.examples[0]}")`);
-        const lost = r.verdicts.filter((v) => v.rank > 1).map((v) => `- "${v.query}": ranked ${v.rank}/${v.of}. ${v.merchant_reason}`);
-        return { content: [{ type: 'text', text: `Picked first in ${s.wins}/${s.requests} buyer requests; lost ${s.lostToMissing} only for missing facts.\n\nAsk the merchant about:\n${gaps.join('\n')}\n\nRequests lost:\n${lost.join('\n')}` }] };
+        return { content: [{ type: 'text', text: gapsText(r) }] };
       });
 
     const transport = new StreamableHTTPServerTransport({ sessionIdGenerator: undefined });

@@ -2,3 +2,8 @@ node_modules
 .env
 cache/ai/
 keys.txt
+.otari-env
+*.env
+.env.*
+!.env.example
+cache/otari-spend.json

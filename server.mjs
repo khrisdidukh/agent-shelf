@@ -8,6 +8,9 @@ import { importStore } from './src/shopify.mjs';
 import { buy } from './src/buyer-agent.mjs';
 import { publishProduct, getOrder, captureOrder } from './src/paypal.mjs';
 import { mcpHandler } from './src/mcp.mjs';
+import * as OT from './src/otari.mjs';
+import * as guard from './src/guard.mjs';
+import { runPanel, mcpUrl } from './src/panel.mjs';
 
 const ROOT = new URL('./web/', import.meta.url).pathname;
 const REPORTS = new URL('./cache/reports/', import.meta.url);
@@ -34,14 +37,17 @@ function spend(n = 1) {
   budget.used += n;
 }
 
-function startJob(kind, fn) {
-  const job = { id: randomUUID(), kind, status: 'running', steps: [], result: null, error: null };
+// In Otari mode a job runs in a scope: every model call it makes is billed to the store's merchant and logged as an event
+function startJob(kind, fn, merchant = null) {
+  const job = { id: randomUUID(), kind, status: 'running', steps: [], events: [], result: null, error: null };
   jobs.set(job.id, job);
-  fn((m) => job.steps.push({ at: Date.now(), text: m }))
+  OT.scope.run({ merchant, events: job.events }, () => fn((m) => job.steps.push({ at: Date.now(), text: m })))
     .then((r) => { job.result = r; job.status = 'done'; })
-    .catch((e) => { job.error = e.message; job.status = 'failed'; console.error(kind, e); });
+    .catch((e) => { job.error = e.message; job.code = e.code; job.status = 'failed'; console.error(kind, e.message); });
   return job;
 }
+const merchantOf = (store) => (OT.on() ? OT.merchantId(store || DEMO_STORE) : null);
+const checkBudget = (store) => { const m = merchantOf(store); if (m) OT.assertBudget(m); return m; };
 
 async function getStore(url) {
   const src = new URL(url.startsWith('http') ? url : 'https://' + url).origin;
@@ -68,6 +74,13 @@ async function productReport(url, id) {
 }
 const mcp = mcpHandler({ storeReport, productReport });
 
+// what the browser may know about Otari mode: model names and which features are wired, never keys
+function otariConfig() {
+  if (!OT.on()) return { on: false };
+  return { on: true, base: OT.BASE, roles: OT.ROLES, shoppers: OT.SHOPPERS.map(({ id, label, models }) => ({ id, label, models })),
+    mcp: mcpUrl(), guardrail: guard.serviceUrl() ? 'otari' : 'app', perUserBudgets: !!process.env.OTARI_SERVICE_KEY };
+}
+
 const server = http.createServer(async (req, res) => {
   const url = new URL(req.url, 'http://x');
   try {
@@ -75,7 +88,32 @@ const server = http.createServer(async (req, res) => {
       if (req.method !== 'POST') { res.writeHead(405, { Allow: 'POST' }); return res.end(); }
       return mcp(req, res, await readBody(req));
     }
-    if (url.pathname === '/api/config') return send(res, 200, { demoStore: DEMO_STORE, demoAnswers: DEMO_ANSWERS, demoRequests: DEMO_REQUESTS, paypal: 'sandbox' });
+    if (url.pathname === '/api/config') return send(res, 200, { demoStore: DEMO_STORE, demoAnswers: DEMO_ANSWERS, demoRequests: DEMO_REQUESTS, paypal: 'sandbox', otari: otariConfig() });
+    // Otari guardrail service contract: Otari POSTs {profile, input_text} to <url>/validate (the token in the path keeps it private)
+    const g = url.pathname.match(/^\/guardrails\/([a-f0-9]+)\/validate$/);
+    if (g && req.method === 'POST') {
+      if (!guard.tokenOk(g[1])) return send(res, 404, { error: 'not found' });
+      const gb = await readBody(req);
+      return send(res, 200, await OT.scope.run({ merchant: 'guardrail-service', events: null }, () => guard.validate(gb)));
+    }
+    if (url.pathname === '/api/budget') {
+      if (!OT.on()) return send(res, 200, { mode: 'off' });
+      return send(res, 200, await OT.budget(merchantOf(url.searchParams.get('store'))));
+    }
+    if (req.method === 'POST' && url.pathname === '/api/panel') {
+      if (!OT.on()) throw new Error('The agent panel runs on Otari: set OTARI_API_KEY');
+      const { store, id, intent } = await readBody(req);
+      const st = await getStore(store || DEMO_STORE);
+      const report = saved('product-' + hash(st.source + id));
+      if (!report) throw new Error('Analyse the product first');
+      spend(1);
+      const m = checkBudget(st.source);
+      const job = startJob('panel', async (log) => {
+        const r = await runPanel(report, { intentId: intent, store: st.source, log });
+        return { ...r, budget: await OT.budget(m) };
+      }, m);
+      return send(res, 202, { job: job.id });
+    }
     if (url.pathname.startsWith('/api/job/')) {
       const j = jobs.get(url.pathname.split('/').pop());
       return j ? send(res, 200, j) : send(res, 404, { error: 'This job is gone (the server restarted). Run it again.' });
@@ -87,7 +125,8 @@ const server = http.createServer(async (req, res) => {
       const cached = saved(key);
       if (cached) return send(res, 200, { done: { ...cached, products: st.products } });
       spend(3);
-      const job = startJob('store', async (log) => { const a = await auditStore(st, { log }); save(key, a); return { ...a, products: st.products }; });
+      const m = checkBudget(st.source);
+      const job = startJob('store', async (log) => { const a = await auditStore(st, { log }); save(key, a); return { ...a, products: st.products }; }, m);
       return send(res, 202, { job: job.id });
     }
     if (req.method === 'POST' && url.pathname === '/api/product') {
@@ -99,7 +138,8 @@ const server = http.createServer(async (req, res) => {
       const cached = saved(key);
       if (cached) return send(res, 200, { done: cached });
       spend(1);
-      const job = startJob('product', async (log) => { const r = await analyse(p, { log }); save(key, r); return r; });
+      const m = checkBudget(st.source);
+      const job = startJob('product', async (log) => { const r = await analyse(p, { log }); save(key, r); return r; }, m);
       return send(res, 202, { job: job.id });
     }
     if (req.method === 'POST' && url.pathname === '/api/improve') {
@@ -112,7 +152,8 @@ const server = http.createServer(async (req, res) => {
       const cached = saved(key);
       if (cached) return send(res, 200, { done: cached });
       spend(1);
-      const job = startJob('improve', async (log) => { const r = await improve(report, facts, { log }); save(key, r); return r; });
+      const m = checkBudget(st.source);
+      const job = startJob('improve', async (log) => { const r = await improve(report, facts, { log }); save(key, r); return r; }, m);
       return send(res, 202, { job: job.id });
     }
     if (req.method === 'POST' && url.pathname === '/api/questions') {
@@ -155,7 +196,7 @@ const server = http.createServer(async (req, res) => {
     res.writeHead(200, { 'Content-Type': TYPES[extname(p)] || 'application/octet-stream' });
     res.end(readFileSync(p));
   } catch (e) {
-    send(res, 400, { error: e.message });
+    send(res, e instanceof OT.OtariRefusal ? (e.status === 402 ? 402 : 403) : 400, { error: e.message, code: e.code });
   }
 });
 

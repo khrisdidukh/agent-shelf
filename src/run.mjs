@@ -1,5 +1,7 @@
 // Full Agent Shelf pass for one listing: before -> fixes -> after, plus the PayPal steps.
 import * as S from './shelf.mjs';
+import * as OT from './otari.mjs';
+import { protect } from './guard.mjs';
 
 export async function analyse(listing, { n = 8, log = () => {} } = {}) {
   log('Writing the requests real buyers send to shopping agents');
@@ -27,7 +29,10 @@ export function score(checks, verdicts) {
 export async function improve(report, facts, { log = () => {} } = {}) {
   log('Filling gaps from facts you already gave, asking about the rest');
   const gaps = report.checks.filter((c) => !c.stated);
-  const fixes = await S.proposeFixes(report.listing, gaps, facts);
+  // Otari mode: the merchant's answers pass the input guardrail (personal data, prompt injection, Llama Guard) first
+  let guarded = null;
+  if (OT.on()) { log('Checking your answers with the input guardrail'); guarded = await protect(facts); }
+  const fixes = await S.proposeFixes(report.listing, gaps, facts, { guardrails: guarded?.guardrails });
   const after = S.applyFixes(report.listing, fixes);
   log('Re-checking the improved listing');
   const checks = await S.checkListing(after, report.customer);
@@ -36,7 +41,7 @@ export async function improve(report, facts, { log = () => {} } = {}) {
     const intent = report.intents.find((i) => i.id === f.intent);
     verdicts.push(await S.rankAsAgent(intent, after, f.products));
   }
-  return { fixes, listing: after, checks, verdicts, score: score(checks, verdicts) };
+  return { fixes, listing: after, checks, verdicts, score: score(checks, verdicts), guard: guarded && { by: guarded.by, model: guarded.verdict?.guard?.served || null } };
 }
 
 async function pool(items, n, fn) {
