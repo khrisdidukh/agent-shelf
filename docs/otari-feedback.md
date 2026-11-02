@@ -53,7 +53,13 @@ On `/api/v1/responses` with `otari_code_execution` and `mcp_servers`, the respon
 ### 8. A model that hangs, and no gateway-side failover for it
 `meta/llama-4-scout-17b` answered `429 upstream_rate_limited` (“Model busy, retry later”) in 3 s on one call (request `82024608-c191-4091-a643-0bce52a2cb6c`) and on others sent nothing until our client gave up (25 s in the app; one direct call over 60 s). As a catalog id it didn’t fail over to another provider, presumably because it has one offering. We handle it with our own chain (Llama 4 Scout → Llama 3.3 70B); a per-request timeout header, or a documented way to pass fallbacks per request without creating a dashboard policy, would make that Otari’s job.
 
-### 9. Smaller things
+### 9. Web fetch does not follow redirects
+`otari_web_fetch` on a product link that redirects (an affiliate `buy.…` link to the merchant page) fails with `{"status":"failed","error":{"provider":"builtin","tag":"redirect","retryable":false}}` (request `844ae136-5b70-4e83-bd17-eece36738a7b`). Most shopping links redirect at least once. Following a small number of redirects (and re-checking each hop against the URL safety rules) would make fetch usable for commerce pages; failing that, returning the `Location` so the model can fetch it would help.
+
+### 10. A guardrail that cannot be evaluated: the caller never learns why
+The first request after our guardrail host woke up from idle was refused with `502 guardrail profile 'shelf-input' could not be evaluated`; the next identical request passed (`valid: true`). The detail goes to the gateway log only, so the caller can’t tell a timeout from a bad response from a URL Otari refused to call. A short machine-readable reason (`timeout`, `http_status`, `malformed`) in the 502 would be enough. We now fall back to screening in the app and retrying without the Otari-side entry.
+
+### 11. Smaller things
 - `alibaba/qwen3-32b` returned empty `content` with everything in `reasoning` for a short `max_tokens`; there’s no documented, provider-independent way to turn thinking off. We used instruct (non-thinking) models.
 - `alibaba/qwen3-235b-a22b-instruct-2507` via DeepInfra took 10–60 s per call, so we lead the worker chain with Mistral Small 4 and keep Qwen behind it.
 - `Otari-Guardrails` is only on non-streamed responses (documented).

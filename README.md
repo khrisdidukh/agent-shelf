@@ -11,6 +11,7 @@ Agent Shelf is a tool for merchants. It reads a store the way shopping agents do
 - Live demo: https://agent-shelf.onrender.com (free hosting: the first load after a quiet period can take ~1 minute)
 - Demo video: https://youtu.be/htdqV0a3loo
 - MCP endpoint for other agents: `https://agent-shelf.onrender.com/mcp`
+- Otari mode (hackathon branch `otari-hackathon`), live: https://agent-shelf-otari.onrender.com — open a product and press **Run the agent panel**
 
 ## Try it (3 minutes)
 
