@@ -94,7 +94,10 @@ const server = http.createServer(async (req, res) => {
     if (g && req.method === 'POST') {
       if (!guard.tokenOk(g[1])) return send(res, 404, { error: 'not found' });
       const gb = await readBody(req);
-      return send(res, 200, await OT.scope.run({ merchant: 'guardrail-service', events: null }, () => guard.validate(gb)));
+      const t0 = Date.now();
+      const out = await OT.scope.run({ merchant: 'guardrail-service', events: null }, () => guard.validate(gb));
+      console.log(`guardrail ${gb?.profile} valid=${out.result.valid} ${Date.now() - t0}ms`);
+      return send(res, 200, out);
     }
     if (url.pathname === '/api/budget') {
       if (!OT.on()) return send(res, 200, { mode: 'off' });

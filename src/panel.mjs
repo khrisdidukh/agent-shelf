@@ -109,11 +109,11 @@ async function analyst({ listing, intent, agents, price, web, report, store }) {
     `SHOPPING AGENTS' VERDICTS:\n${lines.join('\n') || '(none answered)'}\n\n` +
     `PRICE POSITION (computed in a sandbox): ${JSON.stringify(price.stats)}\n\n` +
     `LIVE WEB CHECK: ${web.skipped ? 'not available' : JSON.stringify({ competitor_facts: web.competitor_facts, buyer_checklist: web.buyer_checklist }).slice(0, 1500)}`;
-  const guard = await protect(input); // throws when the app-side guardrail flags the input
+  let guard = await protect(input); // throws when the app-side guardrail flags the input
   const url = mcpUrl();
   const handle = listing.id;
-  const ask = (withMcp) => OT.chatJson({
-    role: 'analyst', tag: 'analyst', maxTokens: 900, timeoutMs: 90_000, guardrails: guard.guardrails || undefined,
+  const ask = (withMcp, guardrails) => OT.chatJson({
+    role: 'analyst', tag: 'analyst', maxTokens: 900, timeoutMs: 90_000, guardrails,
     mcpServers: withMcp ? [{ name: 'agent_shelf', url, allowed_tools: ['product_gaps'], purpose_hint: 'Agent Shelf diagnosis of one product: which buyer requests it loses and which facts are missing.' }] : undefined,
     extra: withMcp ? { max_tool_iterations: 3 } : {},
     messages: [
@@ -124,14 +124,24 @@ async function analyst({ listing, intent, agents, price, web, report, store }) {
         (withMcp ? '"mcp_quote":"one line copied exactly from the product_gaps result"' : '"mcp_quote":null') + '}' },
     ],
   });
+  // Otari fails closed when it cannot evaluate our guardrail service; then the app screens the input itself and retries
+  const tryAsk = async (withMcp) => {
+    try { return await ask(withMcp, guard.guardrails || undefined); }
+    catch (e) {
+      if (e?.code !== 'guardrail_unavailable') throw e;
+      console.log('guardrail: Otari could not evaluate it, screening in the app instead');
+      guard = { ...(await protect(input, { app: true })), fallback: true };
+      return ask(withMcp, undefined);
+    }
+  };
   let out, mcp = { url, used: false };
   try {
     if (!url) throw Object.assign(new Error('no public MCP URL (set OTARI_MCP_URL or a public PUBLIC_URL)'), { soft: true });
-    out = await ask(true); mcp.used = true;
+    out = await tryAsk(true); mcp.used = true;
   } catch (e) {
     if (e instanceof OT.OtariRefusal) throw e;
     mcp.error = e.message;
-    out = await ask(false);
+    out = await tryAsk(false);
   }
   const a = out.json;
   // output check in code: a number the analyst writes into a fix must exist in what it was given, otherwise it is a question
@@ -143,7 +153,7 @@ async function analyst({ listing, intent, agents, price, web, report, store }) {
   });
   if (mcp.used) mcp.verified = quoted(a.mcp_quote, gapsText(report)), mcp.quote = a.mcp_quote || null;
   return { headline: a.headline, agree: a.agree, disagree: a.disagree, fixes, ask: (a.ask_merchant || []).slice(0, 5), meta: out.meta, mcp,
-    guard: { by: guard.by, verdict: guard.verdict && { valid: guard.verdict.valid, model: guard.verdict.guard?.served || null }, otari: out.meta.guardrails } };
+    guard: { by: guard.by, fallback: !!guard.fallback, verdict: guard.verdict && { valid: guard.verdict.valid, model: guard.verdict.guard?.served || null }, otari: out.meta.guardrails } };
 }
 
 /** The whole panel for one product report and one buyer request. */

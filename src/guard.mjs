@@ -69,10 +69,26 @@ export function serviceUrl() {
  * Localhost -> screens here first and throws when the input is flagged.
  * Either way returns { guardrails, verdict } so the UI can show what was checked and by whom.
  */
-export async function protect(text) {
-  const url = serviceUrl();
+export async function protect(text, { app = false } = {}) {
+  const url = app ? null : serviceUrl();
   if (url) return { by: 'otari', guardrails: [{ profile: PROFILE, url, mode: 'block', on_unavailable: 'block' }], verdict: null };
   const verdict = await screen(text);
   if (!verdict.valid) throw new OT.OtariRefusal('Blocked by the input guardrail: ' + verdict.reasons.join('; ') + '. Remove it and try again.', { code: 'guardrail_blocked' });
   return { by: 'app', guardrails: null, verdict };
+}
+
+/**
+ * guarded(text, call): run call(guardrails) behind the input guardrail.
+ * If Otari cannot evaluate our guardrail service (it fails closed with 502), screen the input in the app
+ * and retry without the Otari-side entry, so a slow or cold guardrail host never takes the feature down.
+ */
+export async function guarded(text, call) {
+  const g = await protect(text);
+  try { return { guard: g, out: await call(g.guardrails || undefined) }; }
+  catch (e) {
+    if (e?.code !== 'guardrail_unavailable') throw e;
+    console.log('guardrail: Otari could not evaluate it, screening in the app instead');
+    const a = await protect(text, { app: true });
+    return { guard: { ...a, fallback: true }, out: await call(undefined) };
+  }
 }

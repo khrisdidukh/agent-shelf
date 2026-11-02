@@ -1,7 +1,7 @@
 // Full Agent Shelf pass for one listing: before -> fixes -> after, plus the PayPal steps.
 import * as S from './shelf.mjs';
 import * as OT from './otari.mjs';
-import { protect } from './guard.mjs';
+import { guarded as guardedCall } from './guard.mjs';
 
 export async function analyse(listing, { n = 8, log = () => {} } = {}) {
   log('Writing the requests real buyers send to shopping agents');
@@ -31,8 +31,12 @@ export async function improve(report, facts, { log = () => {} } = {}) {
   const gaps = report.checks.filter((c) => !c.stated);
   // Otari mode: the merchant's answers pass the input guardrail (personal data, prompt injection, Llama Guard) first
   let guarded = null;
-  if (OT.on()) { log('Checking your answers with the input guardrail'); guarded = await protect(facts); }
-  const fixes = await S.proposeFixes(report.listing, gaps, facts, { guardrails: guarded?.guardrails });
+  let fixes;
+  if (OT.on()) {
+    log('Checking your answers with the input guardrail');
+    const r = await guardedCall(facts, (guardrails) => S.proposeFixes(report.listing, gaps, facts, { guardrails }));
+    guarded = r.guard; fixes = r.out;
+  } else fixes = await S.proposeFixes(report.listing, gaps, facts, {});
   const after = S.applyFixes(report.listing, fixes);
   log('Re-checking the improved listing');
   const checks = await S.checkListing(after, report.customer);
