@@ -4,10 +4,12 @@
 
 Buyers have started asking AI agents to find and buy things for them (“a soy candle for my mom, lavender, gift-wrapped, under $30”). The agent can only choose a product whose listing *states* those facts. Most small shops write descriptions for people looking at a photo, so agents skip them.
 
+The same facts help people too: scent, size, burn time and delivery are what every shopper checks before buying. A listing an agent can read is a clearer listing for humans.
+
 Agent Shelf is a tool for merchants. It reads a store the way shopping agents do, shows which buyer requests each product loses and why, fills the gaps **only with facts the merchant confirms**, re-tests the listing, publishes it to the merchant’s PayPal catalog, and lets a real AI agent buy it through PayPal.
 
 - Live demo: https://agent-shelf.onrender.com (free hosting: the first load after a quiet period can take ~1 minute)
-- Demo video: _link added on submission_
+- Demo video: https://youtu.be/htdqV0a3loo
 - MCP endpoint for other agents: `https://agent-shelf.onrender.com/mcp`
 
 ## Try it (3 minutes)

@@ -7,7 +7,7 @@ Shopping agents can’t buy what your listing doesn’t say. Agent Shelf shows a
 
 **Try it:** https://agent-shelf.onrender.com
 **Code:** https://github.com/khrisdidukh/agent-shelf
-**Video:** (YouTube link)
+**Video:** https://youtu.be/htdqV0a3loo
 
 **Built with:** paypal, paypal-agent-toolkit, paypal-orders-api, paypal-catalog-products-api, channel3, ag-grid, shopify, mock.shop, model-context-protocol, vercel-ai-sdk, qwen, near-ai-cloud, node.js, javascript, render
 
@@ -24,9 +24,10 @@ Big retailers have teams for product data. A shop with 30 products has the owner
 1. **Reads the shelf.** Import a Shopify store (the demo is Amber & Aura from Shopify’s public mock.shop). An AG Grid table ranks every product by how much of what buyers ask agents for its listing actually states.
 2. **Shows what agents see.** For one product, Agent Shelf writes 8 realistic buyer requests, runs each against live competitor data from **Channel3**, and has a shopping agent rank the listing against the top 5. The demo candle: picked first in **0 of 8**, lost 7 *only* because the listing doesn’t say enough. A toggle switches between *buyer needs* (what people ask) and *agent data* (what competing products carry: 77% state scent, this one doesn’t).
 3. **Asks, never invents.** Missing needs become questions for the owner (“How many hours does it burn?”). The rewrite uses only the owner’s answers, and every new attribute quotes them. Code checks each quote word for word; anything unquoted is dropped and asked again.
-4. **Re-tests.** Same requests, same competitors. Lost for missing facts: **7 → 1**. Buyer needs stated: **26% → 100%**. The remaining losses are honest: those buyers want lavender, not orange.
-5. **Lets an agent buy it through PayPal.** An LLM with the **PayPal Agent Toolkit** reads a buyer’s request and the new listing, decides to buy, and calls `create_order` itself. The buyer approves in PayPal, Agent Shelf captures the payment: **COMPLETED, $25.00**. The listing can also be published to the merchant’s **PayPal Catalog** in one click.
-6. **Answers other agents.** An MCP endpoint (`/mcp`) exposes `shelf_readiness` and `product_gaps`, so a store’s own assistant or any MCP client can ask “is this product ready to be bought by agents, and what’s missing?”
+4. **Clearer for agents and for people.** The facts agents need (scent, size, burn time, delivery) are what every human shopper checks too, so the rewritten listing reads better for both.
+5. **Re-tests.** Same requests, same competitors. Lost for missing facts: **7 → 1**. Buyer needs stated: **26% → 100%**. The remaining losses are honest: those buyers want lavender, not orange.
+6. **Lets an agent buy it through PayPal.** An LLM with the **PayPal Agent Toolkit** reads a buyer’s request and the new listing, decides to buy, and calls `create_order` itself. The buyer approves in PayPal, Agent Shelf captures the payment: **COMPLETED, $25.00**. The listing can also be published to the merchant’s **PayPal Catalog** in one click.
+7. **Answers other agents.** An MCP endpoint (`/mcp`) exposes `shelf_readiness` and `product_gaps`, so a store’s own assistant or any MCP client can ask “is this product ready to be bought by agents, and what’s missing?”
 
 ## How we built it
 
