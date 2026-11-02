@@ -18,7 +18,8 @@ const apiKey = () => serviceKey() || process.env.OTARI_API_KEY || '';
 // A routing policy created in the Otari dashboard can lead any chain: OTARI_POLICY_<ROLE>=policy-name.
 const chain = (role, models) => [process.env['OTARI_POLICY_' + role.toUpperCase()], ...models].filter(Boolean);
 export const ROLES = {
-  worker: chain('worker', ['alibaba/qwen3-235b-a22b-instruct-2507', 'meta/llama-3.3-70b-instruct', 'deepseek/deepseek-v3.2']),
+  // listing audit, buyer requests, rewrite: fast first, a larger model behind it
+  worker: chain('worker', ['mistralai/mistral-small-4', 'alibaba/qwen3-235b-a22b-instruct-2507', 'meta/llama-3.3-70b-instruct']),
   analyst: chain('analyst', ['mistralai/mistral-large-3', 'deepseek/deepseek-v3.2']),
   quant: chain('quant', ['mistralai/mistral-small-4', 'mistralai/mistral-large-3']),
   scout: chain('scout', ['mistralai/mistral-small-4', 'alibaba/qwen3-235b-a22b-instruct-2507']),

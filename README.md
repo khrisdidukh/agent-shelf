@@ -45,6 +45,37 @@ Model: Qwen3.8-27B on NEAR AI Cloud through its OpenAI-compatible API (any OpenA
 
 An AI that writes product copy will happily invent a burn time. That is a liability for the merchant and poison for agents. Agent Shelf never lets the model add a fact on its own: every “stated” need quotes the listing, every new attribute quotes the merchant, and both quotes are verified by plain string matching in code.
 
+## Built with Otari
+
+Agent Shelf also runs on **[Otari](https://github.com/mozilla-ai/otari)**, Mozilla.ai’s open-source AI gateway (OpenAI-compatible). Set `OTARI_API_KEY` and every model call goes through Otari to **open-weight models**, and a new section appears under each product: **How different shopping agents see it**.
+
+Real shopping agents run on different models, and they don’t read a listing the same way. For one buyer request and the same live competitors, three shopping agents built on three open-weight model families rank the merchant’s listing; a quant prices it in a code sandbox; a scout reads a competing page on the live web; an analyst reads Agent Shelf’s own diagnosis over MCP and turns all of it into fixes. Each card names the model that really answered, the provider Otari routed to, any fallback, and the cost.
+
+| Otari feature | How Agent Shelf uses it | Where |
+| --- | --- | --- |
+| **Open-weight models, distinct roles** | Shopping agents: Llama 3.3 70B / Llama 4 Scout, Qwen3 235B, Gemma 4 26B. Analyst: Mistral Large 3. Quant and scout: Mistral Small 4. Listing audit, buyer requests and rewrite: Mistral Small 4 (Qwen3 235B, Llama 3.3 70B behind it). Safety classifier: Llama Guard 4. PayPal buying agent: Mistral Large 3. | `src/otari.mjs` `ROLES`, `SHOPPERS` |
+| **Routing & fallbacks** | Every role is a chain; when a model fails, times out or answers empty, the next one serves (e.g. Llama 4 Scout busy → Llama 3.3 70B). Catalog ids also let Otari fail over across providers; the app reads `Otari-Model`, `Otari-Provider`, `Otari-Fallback`, `Otari-Attempt-Count` and shows them. A routing policy from the dashboard can lead any chain (`OTARI_POLICY_<ROLE>`). | `src/otari.mjs` `chat()` |
+| **Code execution** | The quant computes the merchant’s price percentile, median gap and share of competitors within the buyer’s budget with Python in Otari’s sandbox (`otari_code_execution`); the app recomputes every number and says whether they match. | `src/panel.mjs` `quant()` |
+| **Web fetch / web search** | The scout fetches a competing product page (`otari_web_fetch`) and searches what buyers check (`otari_web_search`, `max_uses: 1`), quoting what the page states. | `src/panel.mjs` `scout()` |
+| **MCP** | The analyst gets Agent Shelf’s own MCP server through Otari’s `mcp_servers` (`product_gaps` tool) and must quote it; code checks the quote against the tool’s real answer. | `src/panel.mjs` `analyst()`, `src/mcp.mjs` |
+| **Guardrails** | Merchant answers and the analyst’s input pass an input guardrail: Llama Guard 4 plus checks for personal data (emails, phones, card numbers) and prompt injection. It is served as an Otari guardrail service (`POST /guardrails/<token>/validate`) and requested with `guardrails: [{profile, url, mode: "block"}]`, so Otari refuses flagged input before any provider sees it. On localhost (Otari can’t reach it) the app runs the same check itself. A fix the analyst writes with a number it was never given is flagged in code. | `src/guard.mjs`, `src/run.mjs` `improve()`, `src/panel.mjs` `analyst()` |
+| **Budgets & spending limits** | Otari reports each call’s cost (`usage.cost_usd`); each store gets a daily allowance (`MERCHANT_BUDGET_USD`), checked before every call, fallbacks included. Otari’s own budget refusals (`budget_exceeded`, `402`) stop a run with a clear message instead of falling back. Every request is tagged with `metadata` (`app`, `role`, `merchant`) for Otari’s usage views. | `src/otari.mjs` `assertBudget()`, `budget()`, `chat()` |
+| **Per-user budgets** | With an Otari service key (`OTARI_SERVICE_KEY`), each store is billed as its own Otari end user (`user: "merchant:<host>"`, optional `Otari-End-User-Budget`), and the UI reads its spend from `GET /end-users`. | `src/otari.mjs` `chat()`, `budget()` |
+
+### Run it on Otari
+
+```sh
+cp .env.example .env
+# OTARI_API_KEY=...            your Otari key
+# OTARI_BASE_URL=https://eu.api.otari.ai/api/v1   (EU accounts; api.otari.ai answers 421 for an EU key)
+# OTARI_MCP_URL=https://agent-shelf.onrender.com/mcp   (any public Agent Shelf; Otari must reach it)
+node --env-file=.env server.mjs
+```
+
+Open a product and press **Run the agent panel** (about 40 seconds, about $0.02). In the Otari dashboard: turn on web access for the workspace (Tools & Guardrails → Web search) for the scout, and optionally create a service key with an end-user budget for per-store budgets. Deployed on a public `https://` `PUBLIC_URL`, Otari itself enforces the guardrail and reaches the MCP server at `PUBLIC_URL/mcp`.
+
+Notes on what worked and what didn’t: [docs/otari-feedback.md](docs/otari-feedback.md).
+
 ## Run it locally
 
 ```sh
