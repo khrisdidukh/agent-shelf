@@ -7,7 +7,7 @@ Shopping agents can’t buy what your listing doesn’t say. Agent Shelf shows a
 
 **Try it:** https://agent-shelf.onrender.com
 **Code:** https://github.com/khrisdidukh/agent-shelf
-**Video:** https://youtu.be/htdqV0a3loo
+**Video:** https://youtu.be/3fiIO9899XA (live demo; trailer: https://youtu.be/htdqV0a3loo)
 
 **Built with:** paypal, paypal-agent-toolkit, paypal-orders-api, paypal-catalog-products-api, channel3, ag-grid, shopify, mock.shop, model-context-protocol, vercel-ai-sdk, qwen, near-ai-cloud, node.js, javascript, render
 

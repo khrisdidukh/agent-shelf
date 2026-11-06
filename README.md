@@ -9,7 +9,8 @@ The same facts help people too: scent, size, burn time and delivery are what eve
 Agent Shelf is a tool for merchants. It reads a store the way shopping agents do, shows which buyer requests each product loses and why, fills the gaps **only with facts the merchant confirms**, re-tests the listing, publishes it to the merchant’s PayPal catalog, and lets a real AI agent buy it through PayPal.
 
 - Live demo: https://agent-shelf.onrender.com (free hosting: the first load after a quiet period can take ~1 minute)
-- Demo video: https://youtu.be/htdqV0a3loo
+- Demo video (live screen recording): https://youtu.be/3fiIO9899XA
+- Short trailer: https://youtu.be/htdqV0a3loo
 - MCP endpoint for other agents: `https://agent-shelf.onrender.com/mcp`
 
 ## Try it (3 minutes)
